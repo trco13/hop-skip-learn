@@ -37,14 +37,14 @@
   $('fontYes').addEventListener('click', function () { set('rFont', 'pass', 'letter shapes look right'); }, false);
   $('fontNo').addEventListener('click', function () { set('rFont', 'fail', 'letter shapes look wrong'); }, false);
   function fontCheck(tries) {
-    // Compare the width of text in Andika with a fallback font.
+    // Compare the width of text in the game font with a fallback font.
     var span = document.createElement('span');
     span.style.cssText = 'position:absolute;left:-999px;top:0;font-size:60px;font-weight:bold;white-space:nowrap';
     span.innerHTML = 'aggyIl47mw';
     document.body.appendChild(span);
     span.style.fontFamily = 'serif';
     var w1 = span.offsetWidth;
-    span.style.fontFamily = "'Andika', serif";
+    span.style.fontFamily = "'LetterFont', serif";
     var w2 = span.offsetWidth;
     document.body.removeChild(span);
     if (w1 !== w2) set('rFontLoad', 'pass', 'loaded');
