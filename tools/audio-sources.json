@@ -1,0 +1,1637 @@
+{
+ "album": {
+  "ipa": "hˈɪɹ ɑːɹ jʊɹ stˈɪkɚz ænd kɹˈaʊnz!",
+  "key": "f4559a2af5cc",
+  "text": "Here are your stickers and crowns!"
+ },
+ "check": {
+  "ipa": "həlˈoʊ! ɪf juː kæn hˈɪɹ mˌiː, ðə sˈaʊnd ɪz wˈɜːkɪŋ.",
+  "key": "5f80aad5fd5d",
+  "text": "Hello! If you can hear me, the sound is working."
+ },
+ "crown": {
+  "ipa": "juː ˈɜːnd ɐ kɹˈaʊn! ɡɹˈeɪt plˈeɪɪŋ tədˈeɪ!",
+  "key": "c6245d3b6308",
+  "text": "You earned a crown! Great playing today!"
+ },
+ "find_lc_a": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈeɪ.",
+  "key": "9c210ff95fb5",
+  "text": "Find lowercase a."
+ },
+ "find_lc_b": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs bˈiː.",
+  "key": "35979bfd3f56",
+  "text": "Find lowercase b."
+ },
+ "find_lc_c": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs sˈiː.",
+  "key": "09507066ad9e",
+  "text": "Find lowercase c."
+ },
+ "find_lc_d": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs dˈiː.",
+  "key": "2c88fd04ab8a",
+  "text": "Find lowercase d."
+ },
+ "find_lc_e": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈiː.",
+  "key": "b7b840892476",
+  "text": "Find lowercase e."
+ },
+ "find_lc_f": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈɛf.",
+  "key": "6bdf0b124cd9",
+  "text": "Find lowercase f."
+ },
+ "find_lc_g": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs dʒˈiː.",
+  "key": "d7cf47dc25a0",
+  "text": "Find lowercase g."
+ },
+ "find_lc_h": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈeɪtʃ.",
+  "key": "0939ffb06717",
+  "text": "Find lowercase h."
+ },
+ "find_lc_i": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈaɪ.",
+  "key": "5880cb797746",
+  "text": "Find lowercase i."
+ },
+ "find_lc_j": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs dʒˈeɪ.",
+  "key": "b5840506c753",
+  "text": "Find lowercase j."
+ },
+ "find_lc_k": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs kˈeɪ.",
+  "key": "b3649b82f579",
+  "text": "Find lowercase k."
+ },
+ "find_lc_l": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈɛl.",
+  "key": "ef2d316af5af",
+  "text": "Find lowercase l."
+ },
+ "find_lc_m": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈɛm.",
+  "key": "8a39925f57eb",
+  "text": "Find lowercase m."
+ },
+ "find_lc_n": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈɛn.",
+  "key": "7013efbe1d17",
+  "text": "Find lowercase n."
+ },
+ "find_lc_o": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈoʊ.",
+  "key": "3f2e04b1a652",
+  "text": "Find lowercase o."
+ },
+ "find_lc_p": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs pˈiː.",
+  "key": "206478e89249",
+  "text": "Find lowercase p."
+ },
+ "find_lc_q": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs kjˈuː.",
+  "key": "e5ec4f18ac74",
+  "text": "Find lowercase q."
+ },
+ "find_lc_r": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈɑːɹ.",
+  "key": "08e4fde6007c",
+  "text": "Find lowercase r."
+ },
+ "find_lc_s": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈɛs.",
+  "key": "85c0fa6b8b78",
+  "text": "Find lowercase s."
+ },
+ "find_lc_t": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs tˈiː.",
+  "key": "fccb4c4caa21",
+  "text": "Find lowercase t."
+ },
+ "find_lc_u": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs jˈuː.",
+  "key": "26054e34a4bd",
+  "text": "Find lowercase u."
+ },
+ "find_lc_v": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs vˈiː.",
+  "key": "bf2657cfcb51",
+  "text": "Find lowercase v."
+ },
+ "find_lc_w": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs dˈʌbəljˌuː.",
+  "key": "6f9e4656af6d",
+  "text": "Find lowercase w."
+ },
+ "find_lc_x": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs ˈɛks.",
+  "key": "84357243ff64",
+  "text": "Find lowercase x."
+ },
+ "find_lc_y": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs wˈaɪ.",
+  "key": "186eb69dfff0",
+  "text": "Find lowercase y."
+ },
+ "find_lc_z": {
+  "ipa": "fˈaɪnd lˈoʊɚkˌeɪs zˈiː.",
+  "key": "476a765aaaf0",
+  "text": "Find lowercase z."
+ },
+ "find_uc_A": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈeɪ.",
+  "key": "b735e213b613",
+  "text": "Find capital A."
+ },
+ "find_uc_B": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl bˈiː.",
+  "key": "f982ce09f3c9",
+  "text": "Find capital B."
+ },
+ "find_uc_C": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl sˈiː.",
+  "key": "122811e8ade3",
+  "text": "Find capital C."
+ },
+ "find_uc_D": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl dˈiː.",
+  "key": "3896ae69d969",
+  "text": "Find capital D."
+ },
+ "find_uc_E": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈiː.",
+  "key": "94a844b0db81",
+  "text": "Find capital E."
+ },
+ "find_uc_F": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈɛf.",
+  "key": "13c4e96a6f62",
+  "text": "Find capital F."
+ },
+ "find_uc_G": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl dʒˈiː.",
+  "key": "53d3c8295a72",
+  "text": "Find capital G."
+ },
+ "find_uc_H": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈeɪtʃ.",
+  "key": "b3fc217a79d8",
+  "text": "Find capital H."
+ },
+ "find_uc_I": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈaɪ.",
+  "key": "d27b80d7d9d8",
+  "text": "Find capital I."
+ },
+ "find_uc_J": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl dʒˈeɪ.",
+  "key": "40f6284977b2",
+  "text": "Find capital J."
+ },
+ "find_uc_K": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl kˈeɪ.",
+  "key": "ff626a3858e9",
+  "text": "Find capital K."
+ },
+ "find_uc_L": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈɛl.",
+  "key": "d5829416b222",
+  "text": "Find capital L."
+ },
+ "find_uc_M": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈɛm.",
+  "key": "6067f047bef1",
+  "text": "Find capital M."
+ },
+ "find_uc_N": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈɛn.",
+  "key": "6b4d4337b48a",
+  "text": "Find capital N."
+ },
+ "find_uc_O": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈoʊ.",
+  "key": "5cde5992c2e6",
+  "text": "Find capital O."
+ },
+ "find_uc_P": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl pˈiː.",
+  "key": "6f7c6ef02cb6",
+  "text": "Find capital P."
+ },
+ "find_uc_Q": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl kjˈuː.",
+  "key": "bd6ccdd35c26",
+  "text": "Find capital Q."
+ },
+ "find_uc_R": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈɑːɹ.",
+  "key": "2b0216ac4023",
+  "text": "Find capital R."
+ },
+ "find_uc_S": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈɛs.",
+  "key": "bb321823a9c6",
+  "text": "Find capital S."
+ },
+ "find_uc_T": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl tˈiː.",
+  "key": "3d661147ec6b",
+  "text": "Find capital T."
+ },
+ "find_uc_U": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl jˈuː.",
+  "key": "26242696b730",
+  "text": "Find capital U."
+ },
+ "find_uc_V": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl vˈiː.",
+  "key": "e308957f789f",
+  "text": "Find capital V."
+ },
+ "find_uc_W": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl dˈʌbəljˌuː.",
+  "key": "cf54b97ece41",
+  "text": "Find capital W."
+ },
+ "find_uc_X": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl ˈɛks.",
+  "key": "45cf6007804c",
+  "text": "Find capital X."
+ },
+ "find_uc_Y": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl wˈaɪ.",
+  "key": "187e72994505",
+  "text": "Find capital Y."
+ },
+ "find_uc_Z": {
+  "ipa": "fˈaɪnd kˈæpɪɾəl zˈiː.",
+  "key": "1cbe7a80b51b",
+  "text": "Find capital Z."
+ },
+ "here": {
+  "ipa": "hˈɪɹ ɪɾ ˈɪz! tˈæp ɪt.",
+  "key": "407e4ea99e1c",
+  "text": "Here it is! Tap it."
+ },
+ "home": {
+  "ipa": "tˈæp ðə stˈɑːɹ tə plˈeɪ!",
+  "key": "fdddbced9da5",
+  "text": "Tap the star to play!"
+ },
+ "intro_letters": {
+  "ipa": "lˈɛts fˈaɪnd lˈɛɾɚz! lˈɪsən, ðˈɛn tˈæp ðə lˈɛɾɚɹ aɪ sˈeɪ.",
+  "key": "e618904ea9af",
+  "text": "Let's find letters! Listen, then tap the letter I say."
+ },
+ "match_prompt": {
+  "ipa": "fˈaɪnd ðə lˈoʊɚkˌeɪs lˈɛɾɚ ðæt ɡoʊz wɪð ðɪs kˈæpɪɾəl lˈɛɾɚ.",
+  "key": "92f0a0e1ae57",
+  "text": "Find the lowercase letter that goes with this capital letter."
+ },
+ "pair_A": {
+  "ipa": "kˈæpɪɾəl ˈeɪ, lˈoʊɚkˌeɪs ˈeɪ!",
+  "key": "1c3166e6b49d",
+  "text": "Capital A, lowercase a!"
+ },
+ "pair_B": {
+  "ipa": "kˈæpɪɾəl bˈiː, lˈoʊɚkˌeɪs bˈiː!",
+  "key": "e6565a07dfb1",
+  "text": "Capital B, lowercase b!"
+ },
+ "pair_C": {
+  "ipa": "kˈæpɪɾəl sˈiː, lˈoʊɚkˌeɪs sˈiː!",
+  "key": "477c5f8e014e",
+  "text": "Capital C, lowercase c!"
+ },
+ "pair_D": {
+  "ipa": "kˈæpɪɾəl dˈiː, lˈoʊɚkˌeɪs dˈiː!",
+  "key": "9b7a45ff513d",
+  "text": "Capital D, lowercase d!"
+ },
+ "pair_E": {
+  "ipa": "kˈæpɪɾəl ˈiː, lˈoʊɚkˌeɪs ˈiː!",
+  "key": "fc6fab427b88",
+  "text": "Capital E, lowercase e!"
+ },
+ "pair_F": {
+  "ipa": "kˈæpɪɾəl ˈɛf, lˈoʊɚkˌeɪs ˈɛf!",
+  "key": "fc1a423f4f2d",
+  "text": "Capital F, lowercase f!"
+ },
+ "pair_G": {
+  "ipa": "kˈæpɪɾəl dʒˈiː, lˈoʊɚkˌeɪs dʒˈiː!",
+  "key": "743b7c5efb85",
+  "text": "Capital G, lowercase g!"
+ },
+ "pair_H": {
+  "ipa": "kˈæpɪɾəl ˈeɪtʃ, lˈoʊɚkˌeɪs ˈeɪtʃ!",
+  "key": "54f4d94de2b3",
+  "text": "Capital H, lowercase h!"
+ },
+ "pair_I": {
+  "ipa": "kˈæpɪɾəl ˈaɪ, lˈoʊɚkˌeɪs ˈaɪ!",
+  "key": "8b489699ed46",
+  "text": "Capital I, lowercase i!"
+ },
+ "pair_J": {
+  "ipa": "kˈæpɪɾəl dʒˈeɪ, lˈoʊɚkˌeɪs dʒˈeɪ!",
+  "key": "daad6323afda",
+  "text": "Capital J, lowercase j!"
+ },
+ "pair_K": {
+  "ipa": "kˈæpɪɾəl kˈeɪ, lˈoʊɚkˌeɪs kˈeɪ!",
+  "key": "1cbb917ba438",
+  "text": "Capital K, lowercase k!"
+ },
+ "pair_L": {
+  "ipa": "kˈæpɪɾəl ˈɛl, lˈoʊɚkˌeɪs ˈɛl!",
+  "key": "6cee5ec9ef09",
+  "text": "Capital L, lowercase l!"
+ },
+ "pair_M": {
+  "ipa": "kˈæpɪɾəl ˈɛm, lˈoʊɚkˌeɪs ˈɛm!",
+  "key": "9a5f34911cf2",
+  "text": "Capital M, lowercase m!"
+ },
+ "pair_N": {
+  "ipa": "kˈæpɪɾəl ˈɛn, lˈoʊɚkˌeɪs ˈɛn!",
+  "key": "a85ecc36a6f3",
+  "text": "Capital N, lowercase n!"
+ },
+ "pair_O": {
+  "ipa": "kˈæpɪɾəl ˈoʊ, lˈoʊɚkˌeɪs ˈoʊ!",
+  "key": "febb531d232c",
+  "text": "Capital O, lowercase o!"
+ },
+ "pair_P": {
+  "ipa": "kˈæpɪɾəl pˈiː, lˈoʊɚkˌeɪs pˈiː!",
+  "key": "590f6d70573d",
+  "text": "Capital P, lowercase p!"
+ },
+ "pair_Q": {
+  "ipa": "kˈæpɪɾəl kjˈuː, lˈoʊɚkˌeɪs kjˈuː!",
+  "key": "89bbfc4ee588",
+  "text": "Capital Q, lowercase q!"
+ },
+ "pair_R": {
+  "ipa": "kˈæpɪɾəl ˈɑːɹ, lˈoʊɚkˌeɪs ˈɑːɹ!",
+  "key": "bc85be48181a",
+  "text": "Capital R, lowercase r!"
+ },
+ "pair_S": {
+  "ipa": "kˈæpɪɾəl ˈɛs, lˈoʊɚkˌeɪs ˈɛs!",
+  "key": "b958cdecf2e9",
+  "text": "Capital S, lowercase s!"
+ },
+ "pair_T": {
+  "ipa": "kˈæpɪɾəl tˈiː, lˈoʊɚkˌeɪs tˈiː!",
+  "key": "772614c5d244",
+  "text": "Capital T, lowercase t!"
+ },
+ "pair_U": {
+  "ipa": "kˈæpɪɾəl jˈuː, lˈoʊɚkˌeɪs jˈuː!",
+  "key": "24ade9ca00d8",
+  "text": "Capital U, lowercase u!"
+ },
+ "pair_V": {
+  "ipa": "kˈæpɪɾəl vˈiː, lˈoʊɚkˌeɪs vˈiː!",
+  "key": "7cafa4736ab9",
+  "text": "Capital V, lowercase v!"
+ },
+ "pair_W": {
+  "ipa": "kˈæpɪɾəl dˈʌbəljˌuː, lˈoʊɚkˌeɪs dˈʌbəljˌuː!",
+  "key": "90ccfef18855",
+  "text": "Capital W, lowercase w!"
+ },
+ "pair_X": {
+  "ipa": "kˈæpɪɾəl ˈɛks, lˈoʊɚkˌeɪs ˈɛks!",
+  "key": "8957c0a5d2b9",
+  "text": "Capital X, lowercase x!"
+ },
+ "pair_Y": {
+  "ipa": "kˈæpɪɾəl wˈaɪ, lˈoʊɚkˌeɪs wˈaɪ!",
+  "key": "628c555adb26",
+  "text": "Capital Y, lowercase y!"
+ },
+ "pair_Z": {
+  "ipa": "kˈæpɪɾəl zˈiː, lˈoʊɚkˌeɪs zˈiː!",
+  "key": "8141b2cdcc86",
+  "text": "Capital Z, lowercase z!"
+ },
+ "praise_1": {
+  "ipa": "jˈɛs!",
+  "key": "62b4eb31a49a",
+  "text": "Yes!"
+ },
+ "praise_2": {
+  "ipa": "ɡɹˈeɪt dʒˈɑːb!",
+  "key": "8ee829e003e8",
+  "text": "Great job!"
+ },
+ "praise_3": {
+  "ipa": "juː ɡˈɑːt ɪt!",
+  "key": "82fd2258acbe",
+  "text": "You got it!"
+ },
+ "praise_4": {
+  "ipa": "sˈuːpɚ!",
+  "key": "2814620dd831",
+  "text": "Super!"
+ },
+ "praise_5": {
+  "ipa": "spˈɑːɹkli!",
+  "key": "c63ece64b8cf",
+  "text": "Sparkly!"
+ },
+ "praise_6": {
+  "ipa": "wˈʌndɚfəl!",
+  "key": "6460ff42284a",
+  "text": "Wonderful!"
+ },
+ "praise_7": {
+  "ipa": "wˈeɪ tə ɡˈoʊ!",
+  "key": "7cf51a37aea9",
+  "text": "Way to go!"
+ },
+ "praise_8": {
+  "ipa": "ðæts ɹˈaɪt!",
+  "key": "c86c106404cf",
+  "text": "That's right!"
+ },
+ "sticker": {
+  "ipa": "jˈeɪ! juː ˈɜːnd ɐ stˈɪkɚ!",
+  "key": "d352caf1e3a2",
+  "text": "Yay! You earned a sticker!"
+ },
+ "thats_A": {
+  "ipa": "ðˈætwˌʌn ɪz ˈeɪ.",
+  "key": "82c346f0728e",
+  "text": "That one is A."
+ },
+ "thats_B": {
+  "ipa": "ðˈætwˌʌn ɪz bˈiː.",
+  "key": "85b21caa35bc",
+  "text": "That one is B."
+ },
+ "thats_C": {
+  "ipa": "ðˈætwˌʌn ɪz sˈiː.",
+  "key": "f13a5aebae0f",
+  "text": "That one is C."
+ },
+ "thats_D": {
+  "ipa": "ðˈætwˌʌn ɪz dˈiː.",
+  "key": "91bab9a3b99c",
+  "text": "That one is D."
+ },
+ "thats_E": {
+  "ipa": "ðˈætwˌʌn ɪz ˈiː.",
+  "key": "d9b93f33dc60",
+  "text": "That one is E."
+ },
+ "thats_F": {
+  "ipa": "ðˈætwˌʌn ɪz ˈɛf.",
+  "key": "582c4225a5ea",
+  "text": "That one is F."
+ },
+ "thats_G": {
+  "ipa": "ðˈætwˌʌn ɪz dʒˈiː.",
+  "key": "796e2d0fd485",
+  "text": "That one is G."
+ },
+ "thats_H": {
+  "ipa": "ðˈætwˌʌn ɪz ˈeɪtʃ.",
+  "key": "318292b2e980",
+  "text": "That one is H."
+ },
+ "thats_I": {
+  "ipa": "ðˈætwˌʌn ɪz ˈaɪ.",
+  "key": "d82ede550b71",
+  "text": "That one is I."
+ },
+ "thats_J": {
+  "ipa": "ðˈætwˌʌn ɪz dʒˈeɪ.",
+  "key": "e7164f448bbd",
+  "text": "That one is J."
+ },
+ "thats_K": {
+  "ipa": "ðˈætwˌʌn ɪz kˈeɪ.",
+  "key": "6ac0cba54bae",
+  "text": "That one is K."
+ },
+ "thats_L": {
+  "ipa": "ðˈætwˌʌn ɪz ˈɛl.",
+  "key": "4ce424ba7e6b",
+  "text": "That one is L."
+ },
+ "thats_M": {
+  "ipa": "ðˈætwˌʌn ɪz ˈɛm.",
+  "key": "c4521bf9af9c",
+  "text": "That one is M."
+ },
+ "thats_N": {
+  "ipa": "ðˈætwˌʌn ɪz ˈɛn.",
+  "key": "6219da206a96",
+  "text": "That one is N."
+ },
+ "thats_O": {
+  "ipa": "ðˈætwˌʌn ɪz ˈoʊ.",
+  "key": "306f20970002",
+  "text": "That one is O."
+ },
+ "thats_P": {
+  "ipa": "ðˈætwˌʌn ɪz pˈiː.",
+  "key": "88caa834ef08",
+  "text": "That one is P."
+ },
+ "thats_Q": {
+  "ipa": "ðˈætwˌʌn ɪz kjˈuː.",
+  "key": "9ccccde8748a",
+  "text": "That one is Q."
+ },
+ "thats_R": {
+  "ipa": "ðˈætwˌʌn ɪz ˈɑːɹ.",
+  "key": "67a36d4d10a0",
+  "text": "That one is R."
+ },
+ "thats_S": {
+  "ipa": "ðˈætwˌʌn ɪz ˈɛs.",
+  "key": "42e58e3b23d9",
+  "text": "That one is S."
+ },
+ "thats_T": {
+  "ipa": "ðˈætwˌʌn ɪz tˈiː.",
+  "key": "5621c1f32162",
+  "text": "That one is T."
+ },
+ "thats_U": {
+  "ipa": "ðˈætwˌʌn ɪz jˈuː.",
+  "key": "cc7c7cb70863",
+  "text": "That one is U."
+ },
+ "thats_V": {
+  "ipa": "ðˈætwˌʌn ɪz vˈiː.",
+  "key": "d424c9db2f82",
+  "text": "That one is V."
+ },
+ "thats_W": {
+  "ipa": "ðˈætwˌʌn ɪz dˈʌbəljˌuː.",
+  "key": "1d118caaa3d5",
+  "text": "That one is W."
+ },
+ "thats_X": {
+  "ipa": "ðˈætwˌʌn ɪz ˈɛks.",
+  "key": "aaded39c558e",
+  "text": "That one is X."
+ },
+ "thats_Y": {
+  "ipa": "ðˈætwˌʌn ɪz wˈaɪ.",
+  "key": "bc77d7dc2b42",
+  "text": "That one is Y."
+ },
+ "thats_Z": {
+  "ipa": "ðˈætwˌʌn ɪz zˈiː.",
+  "key": "a7e7e943f035",
+  "text": "That one is Z."
+ },
+ "try_1": {
+  "ipa": "həm, tɹˈaɪ ɐɡˈɛn.",
+  "key": "708696689268",
+  "text": "Hmm, try again."
+ },
+ "try_2": {
+  "ipa": "ˈuːps! tɹˈaɪ ɐnˈʌðɚ wˌʌn.",
+  "key": "953d0907ce6b",
+  "text": "Oops! Try another one."
+ },
+ "try_3": {
+  "ipa": "ˈɔːlmoʊst! tɹˈaɪ ɐɡˈɛn.",
+  "key": "901626c8e6ba",
+  "text": "Almost! Try again."
+ },
+ "word_a": {
+  "ipa": "ˈeɪ",
+  "key": "8f48baff8156",
+  "text": "a."
+ },
+ "word_after": {
+  "ipa": "ˈæftɚ",
+  "key": "61e2bf5e26a8",
+  "text": "after."
+ },
+ "word_again": {
+  "ipa": "ɐɡˈɛn",
+  "key": "2a7dcaf27c40",
+  "text": "again."
+ },
+ "word_all": {
+  "ipa": "ˈɔːl",
+  "key": "583c7abad100",
+  "text": "all."
+ },
+ "word_am": {
+  "ipa": "ˈæm",
+  "key": "0432bc9887d1",
+  "text": "am."
+ },
+ "word_an": {
+  "ipa": "ˈæn",
+  "key": "f60273d8f9ac",
+  "text": "an."
+ },
+ "word_and": {
+  "ipa": "ˈænd",
+  "key": "e3a0034dea76",
+  "text": "and."
+ },
+ "word_any": {
+  "ipa": "ˈɛni",
+  "key": "9060308786e8",
+  "text": "any."
+ },
+ "word_are": {
+  "ipa": "ˈɑːɹ",
+  "key": "ea53637afbc7",
+  "text": "are."
+ },
+ "word_as": {
+  "ipa": "ˈæz",
+  "key": "3f6040835432",
+  "text": "as."
+ },
+ "word_ask": {
+  "ipa": "ˈæsk",
+  "key": "37e6d318442c",
+  "text": "ask."
+ },
+ "word_at": {
+  "ipa": "ˈæt",
+  "key": "43b1b10c84a5",
+  "text": "at."
+ },
+ "word_away": {
+  "ipa": "ɐwˈeɪ",
+  "key": "7d77b5c94fad",
+  "text": "away."
+ },
+ "word_be": {
+  "ipa": "bˈiː",
+  "key": "951af0284d2e",
+  "text": "be."
+ },
+ "word_big": {
+  "ipa": "bˈɪɡ",
+  "key": "63d8297eadf7",
+  "text": "big."
+ },
+ "word_black": {
+  "ipa": "blˈæk",
+  "key": "50ca94e87f50",
+  "text": "black."
+ },
+ "word_blue": {
+  "ipa": "blˈuː",
+  "key": "f2eda863cb24",
+  "text": "blue."
+ },
+ "word_book": {
+  "ipa": "bˈʊk",
+  "key": "14fd9dab13c6",
+  "text": "book."
+ },
+ "word_boy": {
+  "ipa": "bˈɔɪ",
+  "key": "0e815b7d46ae",
+  "text": "boy."
+ },
+ "word_brown": {
+  "ipa": "bɹˈaʊn",
+  "key": "852ce4b6b100",
+  "text": "brown."
+ },
+ "word_but": {
+  "ipa": "bˈʌt",
+  "key": "70062cb36e25",
+  "text": "but."
+ },
+ "word_butterfly": {
+  "ipa": "bˈʌɾɚflˌaɪ",
+  "key": "867f3178582e",
+  "text": "butterfly."
+ },
+ "word_by": {
+  "ipa": "bˈaɪ",
+  "key": "788425807b37",
+  "text": "by."
+ },
+ "word_cake": {
+  "ipa": "kˈeɪk",
+  "key": "f724bd7e1452",
+  "text": "cake."
+ },
+ "word_came": {
+  "ipa": "kˈeɪm",
+  "key": "f833979ea142",
+  "text": "came."
+ },
+ "word_can": {
+  "ipa": "kˈæn",
+  "key": "9395a3f26ffe",
+  "text": "can."
+ },
+ "word_cat": {
+  "ipa": "kˈæt",
+  "key": "a4673a7ffd9f",
+  "text": "cat."
+ },
+ "word_come": {
+  "ipa": "kˈʌm",
+  "key": "2734474ebc31",
+  "text": "come."
+ },
+ "word_could": {
+  "ipa": "kˈʊd",
+  "key": "d4ee7070cc1c",
+  "text": "could."
+ },
+ "word_crown": {
+  "ipa": "kɹˈaʊn",
+  "key": "28b41fbd3b0a",
+  "text": "crown."
+ },
+ "word_cupcake": {
+  "ipa": "kˈʌpkeɪk",
+  "key": "75dc56d576a1",
+  "text": "cupcake."
+ },
+ "word_dad": {
+  "ipa": "dˈæd",
+  "key": "223b48ac7e8d",
+  "text": "dad."
+ },
+ "word_day": {
+  "ipa": "dˈeɪ",
+  "key": "e1deb927824c",
+  "text": "day."
+ },
+ "word_did": {
+  "ipa": "dˈɪd",
+  "key": "a698de3433ff",
+  "text": "did."
+ },
+ "word_do": {
+  "ipa": "dˈuː",
+  "key": "c800dab41652",
+  "text": "do."
+ },
+ "word_dog": {
+  "ipa": "dˈɑːɡ",
+  "key": "00ea87388582",
+  "text": "dog."
+ },
+ "word_down": {
+  "ipa": "dˈaʊn",
+  "key": "6cd97cb3428a",
+  "text": "down."
+ },
+ "word_eat": {
+  "ipa": "ˈiːt",
+  "key": "b7abb1080aa6",
+  "text": "eat."
+ },
+ "word_eight": {
+  "ipa": "ˈeɪt",
+  "key": "58c6bc5290a1",
+  "text": "eight."
+ },
+ "word_eighteen": {
+  "ipa": "ˈeɪtiːn",
+  "key": "a3dd1e718eac",
+  "text": "eighteen."
+ },
+ "word_eleven": {
+  "ipa": "ᵻlˈɛvən",
+  "key": "2c2aa2007388",
+  "text": "eleven."
+ },
+ "word_every": {
+  "ipa": "ˈɛvɹi",
+  "key": "d39fe46c2909",
+  "text": "every."
+ },
+ "word_fifteen": {
+  "ipa": "fˈɪftiːn",
+  "key": "69f4cb9bdbcb",
+  "text": "fifteen."
+ },
+ "word_find": {
+  "ipa": "fˈaɪnd",
+  "key": "0f178278006a",
+  "text": "find."
+ },
+ "word_fish": {
+  "ipa": "fˈɪʃ",
+  "key": "2b4717d15230",
+  "text": "fish."
+ },
+ "word_five": {
+  "ipa": "fˈaɪv",
+  "key": "be5faa2e18d3",
+  "text": "five."
+ },
+ "word_fly": {
+  "ipa": "flˈaɪ",
+  "key": "173fa2487823",
+  "text": "fly."
+ },
+ "word_for": {
+  "ipa": "fˈɔːɹ",
+  "key": "a617e9e7e66a",
+  "text": "for."
+ },
+ "word_four": {
+  "ipa": "fˈɔːɹ",
+  "key": "a617e9e7e66a",
+  "text": "four."
+ },
+ "word_fourteen": {
+  "ipa": "fˈɔːɹtiːn",
+  "key": "7bcc51c8f59c",
+  "text": "fourteen."
+ },
+ "word_friend": {
+  "ipa": "fɹˈɛnd",
+  "key": "fa77f921ba70",
+  "text": "friend."
+ },
+ "word_from": {
+  "ipa": "fɹˈʌm",
+  "key": "c02603570528",
+  "text": "from."
+ },
+ "word_funny": {
+  "ipa": "fˈʌni",
+  "key": "0ad5f6804b81",
+  "text": "funny."
+ },
+ "word_get": {
+  "ipa": "ɡˈɛt",
+  "key": "84fd1c131ab3",
+  "text": "get."
+ },
+ "word_girl": {
+  "ipa": "ɡˈɜːl",
+  "key": "2b31f416740a",
+  "text": "girl."
+ },
+ "word_give": {
+  "ipa": "ɡˈɪv",
+  "key": "11dbc1c42e72",
+  "text": "give."
+ },
+ "word_go": {
+  "ipa": "ɡˈoʊ",
+  "key": "70b3407fd700",
+  "text": "go."
+ },
+ "word_going": {
+  "ipa": "ɡˈoʊɪŋ",
+  "key": "58112b381ae1",
+  "text": "going."
+ },
+ "word_good": {
+  "ipa": "ɡˈʊd",
+  "key": "dbdd3d5e2d00",
+  "text": "good."
+ },
+ "word_gray": {
+  "ipa": "ɡɹˈeɪ",
+  "key": "5fd1956b962e",
+  "text": "gray."
+ },
+ "word_green": {
+  "ipa": "ɡɹˈiːn",
+  "key": "4ab7873a07af",
+  "text": "green."
+ },
+ "word_had": {
+  "ipa": "hˈæd",
+  "key": "081f0ed32658",
+  "text": "had."
+ },
+ "word_happy": {
+  "ipa": "hˈæpi",
+  "key": "32cadd8f5556",
+  "text": "happy."
+ },
+ "word_has": {
+  "ipa": "hˈæz",
+  "key": "6608a9d64940",
+  "text": "has."
+ },
+ "word_have": {
+  "ipa": "hˈæv",
+  "key": "ffb475c1ddcd",
+  "text": "have."
+ },
+ "word_he": {
+  "ipa": "hˈiː",
+  "key": "09e032e753fa",
+  "text": "he."
+ },
+ "word_help": {
+  "ipa": "hˈɛlp",
+  "key": "c942027b5174",
+  "text": "help."
+ },
+ "word_her": {
+  "ipa": "hˈɜː",
+  "key": "aa85931176fb",
+  "text": "her."
+ },
+ "word_here": {
+  "ipa": "hˈɪɹ",
+  "key": "f872719ada01",
+  "text": "here."
+ },
+ "word_him": {
+  "ipa": "hˈɪm",
+  "key": "f82ea5135f92",
+  "text": "him."
+ },
+ "word_his": {
+  "ipa": "hˈɪz",
+  "key": "71f838629754",
+  "text": "his."
+ },
+ "word_home": {
+  "ipa": "hˈoʊm",
+  "key": "3b9a636f73d7",
+  "text": "home."
+ },
+ "word_how": {
+  "ipa": "hˈaʊ",
+  "key": "882817c16bff",
+  "text": "how."
+ },
+ "word_i": {
+  "ipa": "ˈaɪ",
+  "key": "ff56756e846d",
+  "text": "I."
+ },
+ "word_if": {
+  "ipa": "ˈɪf",
+  "key": "f84a01abb7eb",
+  "text": "if."
+ },
+ "word_in": {
+  "ipa": "ˈɪn",
+  "key": "f904dc5e015d",
+  "text": "in."
+ },
+ "word_into": {
+  "ipa": "ˈɪntʊ",
+  "key": "cee3ffcb4c5a",
+  "text": "into."
+ },
+ "word_is": {
+  "ipa": "ˈɪz",
+  "key": "43ecabfd1cc2",
+  "text": "is."
+ },
+ "word_it": {
+  "ipa": "ˈɪt",
+  "key": "9c48765ba5fc",
+  "text": "it."
+ },
+ "word_its": {
+  "ipa": "ˈɪts",
+  "key": "9986faf0fb27",
+  "text": "its."
+ },
+ "word_jump": {
+  "ipa": "dʒˈʌmp",
+  "key": "5a626657a6ba",
+  "text": "jump."
+ },
+ "word_just": {
+  "ipa": "dʒˈʌst",
+  "key": "10aa64c8202f",
+  "text": "just."
+ },
+ "word_king": {
+  "ipa": "kˈɪŋ",
+  "key": "dbe3ca92d8d2",
+  "text": "king."
+ },
+ "word_know": {
+  "ipa": "nˈoʊ",
+  "key": "c64d09013cad",
+  "text": "know."
+ },
+ "word_let": {
+  "ipa": "lˈɛt",
+  "key": "f7cd365d0a65",
+  "text": "let."
+ },
+ "word_like": {
+  "ipa": "lˈaɪk",
+  "key": "bdbb343fe4c9",
+  "text": "like."
+ },
+ "word_little": {
+  "ipa": "lˈɪɾəl",
+  "key": "44b07ac54599",
+  "text": "little."
+ },
+ "word_long": {
+  "ipa": "lˈɔŋ",
+  "key": "61d941b542b2",
+  "text": "long."
+ },
+ "word_look": {
+  "ipa": "lˈʊk",
+  "key": "9989f4ec83c4",
+  "text": "look."
+ },
+ "word_love": {
+  "ipa": "lˈʌv",
+  "key": "71988214f351",
+  "text": "love."
+ },
+ "word_made": {
+  "ipa": "mˈeɪd",
+  "key": "1a74b9228930",
+  "text": "made."
+ },
+ "word_make": {
+  "ipa": "mˈeɪk",
+  "key": "5753aff9eece",
+  "text": "make."
+ },
+ "word_many": {
+  "ipa": "mˈɛni",
+  "key": "bd6d99ca8e54",
+  "text": "many."
+ },
+ "word_may": {
+  "ipa": "mˈeɪ",
+  "key": "09c4f19e3451",
+  "text": "may."
+ },
+ "word_me": {
+  "ipa": "mˈiː",
+  "key": "b4055c7bbcfd",
+  "text": "me."
+ },
+ "word_mermaid": {
+  "ipa": "mˈɜːmeɪd",
+  "key": "dc09fa97d99f",
+  "text": "mermaid."
+ },
+ "word_mom": {
+  "ipa": "mˈɑːm",
+  "key": "9f01b28afa13",
+  "text": "mom."
+ },
+ "word_moon": {
+  "ipa": "mˈuːn",
+  "key": "d29c444d727f",
+  "text": "moon."
+ },
+ "word_more": {
+  "ipa": "mˈɔːɹ",
+  "key": "ab9c2c1cc5cb",
+  "text": "more."
+ },
+ "word_must": {
+  "ipa": "mˈʌst",
+  "key": "bb17baa9526b",
+  "text": "must."
+ },
+ "word_my": {
+  "ipa": "mˈaɪ",
+  "key": "8bee5b7318df",
+  "text": "my."
+ },
+ "word_myself": {
+  "ipa": "maɪsˈɛlf",
+  "key": "a4464a9ca16f",
+  "text": "myself."
+ },
+ "word_new": {
+  "ipa": "nˈuː",
+  "key": "e491beced318",
+  "text": "new."
+ },
+ "word_nine": {
+  "ipa": "nˈaɪn",
+  "key": "e3f595c5ce61",
+  "text": "nine."
+ },
+ "word_nineteen": {
+  "ipa": "nˈaɪntiːn",
+  "key": "200cf4d76e9f",
+  "text": "nineteen."
+ },
+ "word_no": {
+  "ipa": "nˈoʊ",
+  "key": "c64d09013cad",
+  "text": "no."
+ },
+ "word_not": {
+  "ipa": "nˈɑːt",
+  "key": "10fb54c86256",
+  "text": "not."
+ },
+ "word_now": {
+  "ipa": "nˈaʊ",
+  "key": "407beb083300",
+  "text": "now."
+ },
+ "word_of": {
+  "ipa": "ˈʌv",
+  "key": "33398838d61f",
+  "text": "of."
+ },
+ "word_off": {
+  "ipa": "ˈɔf",
+  "key": "ac3db2220946",
+  "text": "off."
+ },
+ "word_old": {
+  "ipa": "ˈoʊld",
+  "key": "105967473793",
+  "text": "old."
+ },
+ "word_on": {
+  "ipa": "ˈɔn",
+  "key": "58f0391afdf1",
+  "text": "on."
+ },
+ "word_once": {
+  "ipa": "wˈʌns",
+  "key": "16d2fb92e51d",
+  "text": "once."
+ },
+ "word_one": {
+  "ipa": "wˈʌn",
+  "key": "800752dde4ab",
+  "text": "one."
+ },
+ "word_only": {
+  "ipa": "ˈoʊnli",
+  "key": "814fae7cdb96",
+  "text": "only."
+ },
+ "word_open": {
+  "ipa": "ˈoʊpən",
+  "key": "27124c3dbcac",
+  "text": "open."
+ },
+ "word_or": {
+  "ipa": "ˈɔːɹ",
+  "key": "52b726dfa6f4",
+  "text": "or."
+ },
+ "word_orange": {
+  "ipa": "ˈɔɹɪndʒ",
+  "key": "fb7ac81f2e24",
+  "text": "orange."
+ },
+ "word_our": {
+  "ipa": "ˈaʊɚ",
+  "key": "4d971f9dc033",
+  "text": "our."
+ },
+ "word_out": {
+  "ipa": "ˈaʊt",
+  "key": "19215b14fa76",
+  "text": "out."
+ },
+ "word_over": {
+  "ipa": "ˈoʊvɚ",
+  "key": "9e7a72e06b25",
+  "text": "over."
+ },
+ "word_own": {
+  "ipa": "ˈoʊn",
+  "key": "9e1ff6a1bc93",
+  "text": "own."
+ },
+ "word_pick": {
+  "ipa": "pˈɪk",
+  "key": "5cd49bd61671",
+  "text": "pick."
+ },
+ "word_pink": {
+  "ipa": "pˈɪŋk",
+  "key": "3ee1e4053f89",
+  "text": "pink."
+ },
+ "word_play": {
+  "ipa": "plˈeɪ",
+  "key": "1a0c4bea9cd4",
+  "text": "play."
+ },
+ "word_please": {
+  "ipa": "plˈiːz",
+  "key": "5cdac14b6241",
+  "text": "please."
+ },
+ "word_pretty": {
+  "ipa": "pɹˈɪɾi",
+  "key": "5b881f83a198",
+  "text": "pretty."
+ },
+ "word_princess": {
+  "ipa": "pɹˈɪnsɛs",
+  "key": "643e100c0b4a",
+  "text": "princess."
+ },
+ "word_purple": {
+  "ipa": "pˈɜːpəl",
+  "key": "9cac88e9c121",
+  "text": "purple."
+ },
+ "word_put": {
+  "ipa": "pˈʊt",
+  "key": "ccd8c514ae65",
+  "text": "put."
+ },
+ "word_queen": {
+  "ipa": "kwˈiːn",
+  "key": "5d7af9c5cf81",
+  "text": "queen."
+ },
+ "word_ran": {
+  "ipa": "ɹˈæn",
+  "key": "10b7d1e8c6ac",
+  "text": "ran."
+ },
+ "word_red": {
+  "ipa": "ɹˈɛd",
+  "key": "1608193ae8bd",
+  "text": "red."
+ },
+ "word_ride": {
+  "ipa": "ɹˈaɪd",
+  "key": "6467dcf53abf",
+  "text": "ride."
+ },
+ "word_round": {
+  "ipa": "ɹˈaʊnd",
+  "key": "ef15f4eb878e",
+  "text": "round."
+ },
+ "word_run": {
+  "ipa": "ɹˈʌn",
+  "key": "324a5f03b790",
+  "text": "run."
+ },
+ "word_said": {
+  "ipa": "sˈɛd",
+  "key": "90219172ea7b",
+  "text": "said."
+ },
+ "word_saw": {
+  "ipa": "sˈɔː",
+  "key": "489eabed430b",
+  "text": "saw."
+ },
+ "word_say": {
+  "ipa": "sˈeɪ",
+  "key": "c92bf96c6766",
+  "text": "say."
+ },
+ "word_school": {
+  "ipa": "skˈuːl",
+  "key": "e35f20a47fe0",
+  "text": "school."
+ },
+ "word_see": {
+  "ipa": "sˈiː",
+  "key": "543db698be93",
+  "text": "see."
+ },
+ "word_seven": {
+  "ipa": "sˈɛvən",
+  "key": "0f3f97f1a5bc",
+  "text": "seven."
+ },
+ "word_seventeen": {
+  "ipa": "sˈɛvəntˌiːn",
+  "key": "1099ad8f8796",
+  "text": "seventeen."
+ },
+ "word_she": {
+  "ipa": "ʃˈiː",
+  "key": "e288b14c5ae7",
+  "text": "she."
+ },
+ "word_show": {
+  "ipa": "ʃˈoʊ",
+  "key": "04c6075bc98a",
+  "text": "show."
+ },
+ "word_sing": {
+  "ipa": "sˈɪŋ",
+  "key": "9fcae4512021",
+  "text": "sing."
+ },
+ "word_sit": {
+  "ipa": "sˈɪt",
+  "key": "e79799ce5b47",
+  "text": "sit."
+ },
+ "word_six": {
+  "ipa": "sˈɪks",
+  "key": "746b7376f60a",
+  "text": "six."
+ },
+ "word_sixteen": {
+  "ipa": "sˈɪkstiːn",
+  "key": "4d784117203f",
+  "text": "sixteen."
+ },
+ "word_sleep": {
+  "ipa": "slˈiːp",
+  "key": "4bbe615f3512",
+  "text": "sleep."
+ },
+ "word_so": {
+  "ipa": "sˈoʊ",
+  "key": "6b2e4ed64684",
+  "text": "so."
+ },
+ "word_some": {
+  "ipa": "sˈʌm",
+  "key": "918dd3fc98d8",
+  "text": "some."
+ },
+ "word_soon": {
+  "ipa": "sˈuːn",
+  "key": "d656dbbe5383",
+  "text": "soon."
+ },
+ "word_star": {
+  "ipa": "stˈɑːɹ",
+  "key": "127c6966aa23",
+  "text": "star."
+ },
+ "word_start": {
+  "ipa": "stˈɑːɹt",
+  "key": "061f1285958e",
+  "text": "start."
+ },
+ "word_stop": {
+  "ipa": "stˈɑːp",
+  "key": "6a5627c95886",
+  "text": "stop."
+ },
+ "word_sun": {
+  "ipa": "sˈʌn",
+  "key": "00513486570a",
+  "text": "sun."
+ },
+ "word_take": {
+  "ipa": "tˈeɪk",
+  "key": "7c3f08289af5",
+  "text": "take."
+ },
+ "word_tell": {
+  "ipa": "tˈɛl",
+  "key": "18ca847fdae4",
+  "text": "tell."
+ },
+ "word_ten": {
+  "ipa": "tˈɛn",
+  "key": "27d54ef5713c",
+  "text": "ten."
+ },
+ "word_thank": {
+  "ipa": "θˈæŋk",
+  "key": "b736d35d77fd",
+  "text": "thank."
+ },
+ "word_that": {
+  "ipa": "ðˈæt",
+  "key": "17fe5336861d",
+  "text": "that."
+ },
+ "word_the": {
+  "ipa": "ðˈʌ",
+  "key": "c53d8117fe69",
+  "text": "the."
+ },
+ "word_them": {
+  "ipa": "ðˈɛm",
+  "key": "bab10d10af9a",
+  "text": "them."
+ },
+ "word_then": {
+  "ipa": "ðˈɛn",
+  "key": "917caa1620c5",
+  "text": "then."
+ },
+ "word_there": {
+  "ipa": "ðˈɛɹ",
+  "key": "e6ec19f799a0",
+  "text": "there."
+ },
+ "word_they": {
+  "ipa": "ðˈeɪ",
+  "key": "22e9240d8ade",
+  "text": "they."
+ },
+ "word_think": {
+  "ipa": "θˈɪŋk",
+  "key": "ee70f4abcb7a",
+  "text": "think."
+ },
+ "word_thirteen": {
+  "ipa": "θˈɜːtiːn",
+  "key": "09a00f7d1c6d",
+  "text": "thirteen."
+ },
+ "word_this": {
+  "ipa": "ðˈɪs",
+  "key": "98fb28feea21",
+  "text": "this."
+ },
+ "word_three": {
+  "ipa": "θɹˈiː",
+  "key": "fc6065392ac9",
+  "text": "three."
+ },
+ "word_to": {
+  "ipa": "tˈuː",
+  "key": "7417ddf86de8",
+  "text": "to."
+ },
+ "word_today": {
+  "ipa": "tədˈeɪ",
+  "key": "fb7eae5ca3d5",
+  "text": "today."
+ },
+ "word_together": {
+  "ipa": "təɡˈɛðɚ",
+  "key": "6b4a71eb4695",
+  "text": "together."
+ },
+ "word_too": {
+  "ipa": "tˈuː",
+  "key": "7417ddf86de8",
+  "text": "too."
+ },
+ "word_tree": {
+  "ipa": "tɹˈiː",
+  "key": "6cb24b022983",
+  "text": "tree."
+ },
+ "word_try": {
+  "ipa": "tɹˈaɪ",
+  "key": "a4c7e246f809",
+  "text": "try."
+ },
+ "word_twelve": {
+  "ipa": "twˈɛlv",
+  "key": "e0fe99c3aea6",
+  "text": "twelve."
+ },
+ "word_twenty": {
+  "ipa": "twˈɛnti",
+  "key": "8417a1f608f6",
+  "text": "twenty."
+ },
+ "word_two": {
+  "ipa": "tˈuː",
+  "key": "7417ddf86de8",
+  "text": "two."
+ },
+ "word_under": {
+  "ipa": "ˈʌndɚ",
+  "key": "de2188c976af",
+  "text": "under."
+ },
+ "word_unicorn": {
+  "ipa": "jˈuːnɪkˌɔːɹn",
+  "key": "82cc96a0e13c",
+  "text": "unicorn."
+ },
+ "word_up": {
+  "ipa": "ˈʌp",
+  "key": "d80da00b042f",
+  "text": "up."
+ },
+ "word_us": {
+  "ipa": "ˈʌs",
+  "key": "d6e575e6b4a8",
+  "text": "us."
+ },
+ "word_very": {
+  "ipa": "vˈɛɹi",
+  "key": "c107408157ab",
+  "text": "very."
+ },
+ "word_walk": {
+  "ipa": "wˈɔːk",
+  "key": "e9bf91354796",
+  "text": "walk."
+ },
+ "word_want": {
+  "ipa": "wˈɔnt",
+  "key": "952cfcca6d7d",
+  "text": "want."
+ },
+ "word_warm": {
+  "ipa": "wˈɔːɹm",
+  "key": "b33bfa44cb44",
+  "text": "warm."
+ },
+ "word_was": {
+  "ipa": "wˈʌz",
+  "key": "18e673f5ce72",
+  "text": "was."
+ },
+ "word_we": {
+  "ipa": "wˈiː",
+  "key": "008955a4f41c",
+  "text": "we."
+ },
+ "word_well": {
+  "ipa": "wˈɛl",
+  "key": "95230414589d",
+  "text": "well."
+ },
+ "word_went": {
+  "ipa": "wˈɛnt",
+  "key": "ff9a3179bd70",
+  "text": "went."
+ },
+ "word_were": {
+  "ipa": "wˈɜː",
+  "key": "6eaaa4f37f73",
+  "text": "were."
+ },
+ "word_what": {
+  "ipa": "wˈʌt",
+  "key": "b44a0d7290e6",
+  "text": "what."
+ },
+ "word_when": {
+  "ipa": "wˈɛn",
+  "key": "cdb9fd330a98",
+  "text": "when."
+ },
+ "word_where": {
+  "ipa": "wˈɛɹ",
+  "key": "0673873affce",
+  "text": "where."
+ },
+ "word_white": {
+  "ipa": "wˈaɪt",
+  "key": "1b648d22e107",
+  "text": "white."
+ },
+ "word_who": {
+  "ipa": "hˈuː",
+  "key": "a288f0e243a8",
+  "text": "who."
+ },
+ "word_will": {
+  "ipa": "wˈɪl",
+  "key": "5a333c1347c0",
+  "text": "will."
+ },
+ "word_with": {
+  "ipa": "wˈɪð",
+  "key": "e8cd839b1fd2",
+  "text": "with."
+ },
+ "word_yellow": {
+  "ipa": "jˈɛloʊ",
+  "key": "1f5a0103ab49",
+  "text": "yellow."
+ },
+ "word_yes": {
+  "ipa": "jˈɛs",
+  "key": "b7058434c5f9",
+  "text": "yes."
+ },
+ "word_you": {
+  "ipa": "jˈuː",
+  "key": "c6d1d1ac53b8",
+  "text": "you."
+ },
+ "word_your": {
+  "ipa": "jˈʊɹ",
+  "key": "e095b2e8069c",
+  "text": "your."
+ }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "hop-skip-learn",
+  "private": true,
+  "description": "Learning games. Static site, no build step. Node is only used for tests.",
+  "scripts": {
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#a98bf0">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Hop Skip Learn</title>
+<link rel="preload" href="fonts/andika-bold.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="twinkles" class="twinkles"></div>
+
+<section id="home" class="screen">
+  <div id="parentHold" class="parent-hold" aria-hidden="true"></div>
+  <div id="homeCount" class="home-count"></div>
+  <div id="heroArt" class="hero"></div>
+  <div class="home-buttons">
+    <button id="playBtn" class="round-btn play-btn" aria-label="Play"></button>
+    <button id="albumBtn" class="round-btn album-btn" aria-label="Stickers"></button>
+  </div>
+  <div id="storageWarn" class="storage-warn hidden">This browser is not saving progress.</div>
+</section>
+
+<section id="game" class="screen hidden">
+  <div class="topbar">
+    <button id="homeBtn" class="round-btn small" aria-label="Home"></button>
+    <div id="stars" class="stars"></div>
+    <button id="sayBtn" class="round-btn small say-btn" aria-label="Say it again"></button>
+  </div>
+  <div id="cue" class="cue empty"></div>
+  <div id="choices" class="choices"></div>
+</section>
+
+<section id="album" class="screen hidden">
+  <div class="topbar">
+    <button id="albumHome" class="round-btn small" aria-label="Home"></button>
+  </div>
+  <div id="crownRow" class="crown-row"></div>
+  <div id="stickerGrid" class="sticker-grid"></div>
+</section>
+
+<section id="parent" class="screen hidden">
+  <div class="parent">
+    <div class="parent-top">
+      <h2>Parent area</h2>
+      <button id="pClose" class="pbtn">Back to the game</button>
+    </div>
+    <div id="pFlash" class="flash hidden"></div>
+
+    <details open>
+      <summary>Progress</summary>
+      <div id="pProgress"></div>
+    </details>
+
+    <details>
+      <summary>Sight words from the teacher</summary>
+      <p>Add each week's words here. They get priority in the sight word game (coming next).</p>
+      <div class="row">
+        <input id="pWordInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="for example: see, the">
+        <button id="pWordAdd" class="pbtn">Add</button>
+      </div>
+      <div id="pWordList" class="chips"></div>
+      <p id="pWordNote" class="note"></p>
+    </details>
+
+    <details>
+      <summary>Settings</summary>
+      <label class="setting">Session length: <b id="pMinutesOut"></b>
+        <input id="pMinutes" type="range" min="5" max="10" step="1">
+      </label>
+      <label class="setting">Most choices on screen:
+        <select id="pChoices">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+      <p>The game shows fewer choices on its own when she is learning something new or having a hard time.</p>
+      <div class="setting">Practice:
+        <label><input id="pCapitals" type="checkbox"> capital letters</label>
+        <label><input id="pLowercase" type="checkbox"> lowercase letters</label>
+        <label><input id="pMatching" type="checkbox"> capital to lowercase</label>
+      </div>
+    </details>
+
+    <details>
+      <summary>Backup and reset</summary>
+      <p>Progress is saved only in this browser on this device.</p>
+      <div class="row">
+        <button id="pExport" class="pbtn">Make backup text</button>
+        <button id="pImport" class="pbtn">Load backup text</button>
+        <button id="pReset" class="pbtn danger">Erase progress</button>
+      </div>
+      <textarea id="pData" rows="4" spellcheck="false"></textarea>
+    </details>
+
+    <p class="links"><a href="device-check.html">Device check</a></p>
+  </div>
+</section>
+
+<div id="overlay" class="overlay hidden"></div>
+
+<script src="js/storage.js"></script>
+<script src="js/content.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/audio-manifest.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/art.js"></script>
+<script src="js/rewards.js"></script>
+<script src="js/app.js"></script>
+<script src="js/letters-game.js"></script>
+<script src="js/parent.js"></script>
+</body>
+</html>
