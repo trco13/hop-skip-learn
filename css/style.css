@@ -2,14 +2,14 @@
    animations. No CSS grid, no variables. */
 
 @font-face {
-  font-family: 'Andika';
-  src: url('../fonts/andika-regular.woff') format('woff');
+  font-family: 'LetterFont';
+  src: url('../fonts/lexend-400.woff') format('woff');
   font-weight: normal;
   font-display: block;
 }
 @font-face {
-  font-family: 'Andika';
-  src: url('../fonts/andika-bold.woff') format('woff');
+  font-family: 'LetterFont';
+  src: url('../fonts/lexend-700.woff') format('woff');
   font-weight: bold;
   font-display: block;
 }
@@ -24,7 +24,7 @@ html, body {
 }
 
 body {
-  font-family: 'Andika', sans-serif;
+  font-family: 'LetterFont', sans-serif;
   color: #5b3a6e;
   background: #c4a6ff;
   background: -webkit-linear-gradient(top, #b9a2ff 0%, #ffc4e6 60%, #ffe7c4 100%);

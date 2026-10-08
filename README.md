@@ -52,6 +52,6 @@ rebuilds only clips whose text changed, and it writes `js/audio-manifest.js`.
 
 ## Credits
 
-- Font: Andika by SIL International, SIL Open Font License (`fonts/ANDIKA-OFL.txt`).
+- Font: Lexend by The Lexend Project Authors, SIL Open Font License (`fonts/LEXEND-OFL.txt`). It draws the simple one-loop "a" and "g" by default.
 - Voice: Kokoro-82M (Apache 2.0).
 - All artwork is original SVG in `js/art.js`.
