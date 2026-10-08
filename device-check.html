@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Device check</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  html, body { overflow: auto; height: auto; }
+  body { background: #fbf8ff; -webkit-user-select: text; user-select: text; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 12px 16px 60px; font-size: 17px; line-height: 1.4; color: #3d2a4a; }
+  .check { background: #fff; border: 1px solid #e3d8f0; border-radius: 10px; margin: 10px 0; padding: 10px 14px; }
+  .check h3 { margin: 0 0 6px; font-size: 18px; }
+  .res { font-weight: bold; }
+  .pass { color: #2f8f5b; } .warn { color: #b07a00; } .fail { color: #c0304f; }
+  .fontdemo { font-family: 'Andika', serif; font-size: 54px; font-weight: bold; letter-spacing: 6px; }
+  .touchpad { height: 120px; border-radius: 12px; background: #efe7fb; text-align: center; line-height: 120px; font-size: 20px; }
+  .art-demo { width: 120px; height: 120px; display: inline-block; }
+  #summary { width: 100%; font-family: monospace; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h2>Device check</h2>
+  <p>Open this on each device. Do the sound, font and touch steps, then copy the summary at the bottom and send it to Claude if anything is red or yellow.</p>
+
+  <div class="check"><h3>1. Sound</h3>
+    <p>Turn the volume up, then tap the button. You should hear a voice.</p>
+    <button id="soundBtn" class="pbtn">Play test sound</button>
+    <span id="soundHeard" class="hidden">Did you hear it?
+      <button id="heardYes" class="pbtn">Yes</button>
+      <button id="heardNo" class="pbtn danger">No</button></span>
+    <div>Result: <span id="rSound" class="res">not tested yet</span></div>
+  </div>
+
+  <div class="check"><h3>2. Letter shapes</h3>
+    <div class="fontdemo">a g y Il 4 7</div>
+    <p>The "a" should look like a circle with a stick (like handwriting), and "g" should have one loop. Do they?</p>
+    <button id="fontYes" class="pbtn">Yes</button>
+    <button id="fontNo" class="pbtn danger">No</button>
+    <div>Font file: <span id="rFontLoad" class="res">checking</span></div>
+    <div>Result: <span id="rFont" class="res">not answered</span></div>
+  </div>
+
+  <div class="check"><h3>3. Touch</h3>
+    <div id="touchpad" class="touchpad">Tap here</div>
+    <div>Result: <span id="rTouch" class="res">not tested yet</span></div>
+    <p>Then press and hold here for 3 seconds (this is how the parent area opens):</p>
+    <div id="holdpad" class="touchpad">Press and hold</div>
+    <div>Result: <span id="rHold" class="res">not tested yet</span></div>
+  </div>
+
+  <div class="check"><h3>4. Pictures and animation</h3>
+    <span id="artDemo" class="art-demo"></span>
+    <p>You should see a cupcake that gently pulses.</p>
+    <div>Result: <span id="rArt" class="res">checking</span></div>
+  </div>
+
+  <div class="check"><h3>5. Saving progress</h3>
+    <div>Result: <span id="rStore" class="res">checking</span></div>
+    <div id="rVisit"></div>
+  </div>
+
+  <div class="check"><h3>6. Browser features</h3>
+    <div id="rFeatures"></div>
+  </div>
+
+  <div class="check"><h3>7. Screen</h3>
+    <div id="rScreen"></div>
+  </div>
+
+  <div class="check"><h3>Summary</h3>
+    <textarea id="summary" rows="10" readonly></textarea>
+    <p><a href="index.html">Back to the game</a></p>
+  </div>
+</div>
+<script src="js/storage.js"></script>
+<script src="js/content.js"></script>
+<script src="js/audio-manifest.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/art.js"></script>
+<script src="js/device-check.js"></script>
+</body>
+</html>
