@@ -6,7 +6,7 @@
   // Which of the three recorded versions of a letter sound to use.
   // The parent's pick on this device wins, then the built-in default.
   function soundClip(letter) {
-    var picks = Store.get('soundPicks', null) || {};
+    var picks = Store.get('soundPicks2', null) || {};
     var d = Content.SOUND_DEFAULTS[letter];
     var n = typeof picks[letter] === 'number' ? picks[letter] : (typeof d === 'number' ? d : 1);
     return 'snd_' + letter + '_' + n;
@@ -33,7 +33,7 @@
 
   // Letters whose sound the parent marked "none": ask with the word instead.
   function wordMode(letter) {
-    var picks = Store.get('soundPicks', null) || {};
+    var picks = Store.get('soundPicks2', null) || {};
     return picks[letter] === 'x' || Content.SOUND_DEFAULTS[letter] === 'x';
   }
 

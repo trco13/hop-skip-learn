@@ -134,7 +134,7 @@
 
   // ---------- letter sound picks ----------
 
-  function soundPicks() { return Store.get('soundPicks', null) || {}; }
+  function soundPicks() { return Store.get('soundPicks2', null) || {}; }
 
   function currentPick(l) {
     var p = soundPicks()[l], d = Content.SOUND_DEFAULTS[l];
@@ -173,7 +173,7 @@
       picks[l] = parseInt(v, 10);
       Sound.play('snd_' + l + '_' + v);
     }
-    Store.set('soundPicks', picks);
+    Store.set('soundPicks2', picks);
     renderSoundPicks();
   }
 

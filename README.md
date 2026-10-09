@@ -8,8 +8,10 @@ older Amazon Fire tablets and hosted on GitHub Pages.
   - Letters: find capital and lowercase letters, and match capitals to lowercase.
   - Letter sounds: hear a sound ("buh"), tap the letter that makes it. Letters that make the
     same sound (c and k) are never offered together.
-  - Each letter sound was generated 3 ways; the parent picks the best one in
-    "Letter sounds check" and the pick is baked in as `SOUND_DEFAULTS` in `js/content.js`.
+  - Each letter sound comes 3 ways (a person's recording, cut from a word, eSpeak);
+    the parent picks the best one in "Letter sounds check" and the pick is baked in
+    as `SOUND_DEFAULTS` in `js/content.js`. "none" switches that letter to asking with
+    a word ("Which letter does ball start with?").
 - `device-check.html`: checks sound, fonts, touch and saving on a device.
 
 ## Privacy
@@ -59,4 +61,7 @@ rebuilds only clips whose text changed, and it writes `js/audio-manifest.js`.
 
 - Font: Lexend by The Lexend Project Authors, SIL Open Font License (`fonts/LEXEND-OFL.txt`). It draws the simple one-loop "a" and "g" by default.
 - Voice: Kokoro-82M (Apache 2.0).
+- Letter sound recordings (version 1): the "phonics" project by Neuromancer, MIT License
+  (`tools/recorded-sounds/LICENSE.txt`, also `audio/LICENSE-letter-sounds.txt`).
+- Version 3 letter sounds: eSpeak NG.
 - All artwork is original SVG in `js/art.js`.
