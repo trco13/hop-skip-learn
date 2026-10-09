@@ -274,6 +274,16 @@
   "key": "1cbe7a80b51b",
   "text": "Find capital Z."
  },
+ "game_letters": {
+  "ipa": "lˈɛɾɚz!",
+  "key": "5b34f6f39b0a",
+  "text": "Letters!"
+ },
+ "game_sounds": {
+  "ipa": "lˈɛɾɚ sˈaʊndz!",
+  "key": "583068691542",
+  "text": "Letter sounds!"
+ },
  "here": {
   "ipa": "hˈɪɹ ɪɾ ˈɪz! tˈæp ɪt.",
   "key": "407e4ea99e1c",
@@ -288,6 +298,141 @@
   "ipa": "lˈɛts fˈaɪnd lˈɛɾɚz! lˈɪsən, ðˈɛn tˈæp ðə lˈɛɾɚɹ aɪ sˈeɪ.",
   "key": "e618904ea9af",
   "text": "Let's find letters! Listen, then tap the letter I say."
+ },
+ "intro_sounds": {
+  "ipa": "lˈɛts plˈeɪ wɪð lˈɛɾɚ sˈaʊndz! lˈɪsən tə ðə sˈaʊnd, ðˈɛn tˈæp ðə lˈɛɾɚ ðæt mˈeɪks ɪt.",
+  "key": "c1c2acf4dc0f",
+  "text": "Let's play with letter sounds! Listen to the sound, then tap the letter that makes it."
+ },
+ "like_a": {
+  "ipa": "lˈaɪk ˈæpəl.",
+  "key": "476e20383a2d",
+  "text": "like apple."
+ },
+ "like_b": {
+  "ipa": "lˈaɪk bˈɔːl.",
+  "key": "5a16cb51e4bf",
+  "text": "like ball."
+ },
+ "like_c": {
+  "ipa": "lˈaɪk kˈæt.",
+  "key": "5d14f613d7ba",
+  "text": "like cat."
+ },
+ "like_d": {
+  "ipa": "lˈaɪk dˈɑːɡ.",
+  "key": "1670e07760c0",
+  "text": "like dog."
+ },
+ "like_e": {
+  "ipa": "lˈaɪk ˈɛɡ.",
+  "key": "cb472bf087dd",
+  "text": "like egg."
+ },
+ "like_f": {
+  "ipa": "lˈaɪk fˈɪʃ.",
+  "key": "ab758eacf5a3",
+  "text": "like fish."
+ },
+ "like_g": {
+  "ipa": "lˈaɪk ɡˈoʊt.",
+  "key": "d663c59c8ddd",
+  "text": "like goat."
+ },
+ "like_h": {
+  "ipa": "lˈaɪk hˈæt.",
+  "key": "fe3a432cd924",
+  "text": "like hat."
+ },
+ "like_i": {
+  "ipa": "lˈaɪk ˈɪtʃ.",
+  "key": "6c35f961060f",
+  "text": "like itch."
+ },
+ "like_j": {
+  "ipa": "lˈaɪk dʒˈæm.",
+  "key": "31321fc00327",
+  "text": "like jam."
+ },
+ "like_k": {
+  "ipa": "lˈaɪk kˈaɪt.",
+  "key": "801362c736d2",
+  "text": "like kite."
+ },
+ "like_l": {
+  "ipa": "lˈaɪk lˈaɪən.",
+  "key": "eaa7360e3ad2",
+  "text": "like lion."
+ },
+ "like_m": {
+  "ipa": "lˈaɪk mˈuːn.",
+  "key": "765680d7065f",
+  "text": "like moon."
+ },
+ "like_n": {
+  "ipa": "lˈaɪk nˈɛst.",
+  "key": "346df05eb58d",
+  "text": "like nest."
+ },
+ "like_o": {
+  "ipa": "lˈaɪk ˈɑːktəpəs.",
+  "key": "83c01a849bb3",
+  "text": "like octopus."
+ },
+ "like_p": {
+  "ipa": "lˈaɪk pˈɪɡ.",
+  "key": "a3bd38985c36",
+  "text": "like pig."
+ },
+ "like_q": {
+  "ipa": "lˈaɪk kwˈiːn.",
+  "key": "14ce1bf49b16",
+  "text": "like queen."
+ },
+ "like_r": {
+  "ipa": "lˈaɪk ɹˈeɪn.",
+  "key": "0957d7962c87",
+  "text": "like rain."
+ },
+ "like_s": {
+  "ipa": "lˈaɪk sˈʌn.",
+  "key": "d579cdee0a55",
+  "text": "like sun."
+ },
+ "like_t": {
+  "ipa": "lˈaɪk tˈɑːp.",
+  "key": "5ffde91abd65",
+  "text": "like top."
+ },
+ "like_u": {
+  "ipa": "lˈaɪk ˈʌp.",
+  "key": "4c799a065db2",
+  "text": "like up."
+ },
+ "like_v": {
+  "ipa": "lˈaɪk vˈæn.",
+  "key": "40cceef05d6f",
+  "text": "like van."
+ },
+ "like_w": {
+  "ipa": "lˈaɪk wˈɛb.",
+  "key": "28a99e635112",
+  "text": "like web."
+ },
+ "like_x": {
+  "ipa": "lˈaɪk bˈɑːks.",
+  "key": "4f36e2599cff",
+  "text": "like box."
+ },
+ "like_y": {
+  "ipa": "lˈaɪk jˈoʊjˈoʊ.",
+  "key": "03af3d447359",
+  "text": "like yo-yo."
+ },
+ "like_z": {
+  "ipa": "lˈaɪk zˈiːbɹə.",
+  "key": "aba45295be66",
+  "text": "like zebra."
  },
  "match_prompt": {
   "ipa": "fˈaɪnd ðə lˈoʊɚkˌeɪs lˈɛɾɚ ðæt ɡoʊz wɪð ðɪs kˈæpɪɾəl lˈɛɾɚ.",
@@ -424,6 +569,11 @@
   "key": "8141b2cdcc86",
   "text": "Capital Z, lowercase z!"
  },
+ "pick_game": {
+  "ipa": "pˈɪk ɐ ɡˈeɪm!",
+  "key": "50ef10cd911c",
+  "text": "Pick a game!"
+ },
  "praise_1": {
   "ipa": "jˈɛs!",
   "key": "62b4eb31a49a",
@@ -463,6 +613,531 @@
   "ipa": "ðæts ɹˈaɪt!",
   "key": "c86c106404cf",
   "text": "That's right!"
+ },
+ "says_A": {
+  "ipa": "ɐ sˈɛz",
+  "key": "d346311dc426",
+  "text": "A says"
+ },
+ "says_B": {
+  "ipa": "bˈiː sˈɛz",
+  "key": "e0887418fb71",
+  "text": "B says"
+ },
+ "says_C": {
+  "ipa": "sˈiː sˈɛz",
+  "key": "ff61200d8f6c",
+  "text": "C says"
+ },
+ "says_D": {
+  "ipa": "dˈiː sˈɛz",
+  "key": "6669ab52eb77",
+  "text": "D says"
+ },
+ "says_E": {
+  "ipa": "ˈiː sˈɛz",
+  "key": "6e574ccf1625",
+  "text": "E says"
+ },
+ "says_F": {
+  "ipa": "ˈɛf sˈɛz",
+  "key": "4807161ddc2a",
+  "text": "F says"
+ },
+ "says_G": {
+  "ipa": "dʒˈiː sˈɛz",
+  "key": "6af69cad610a",
+  "text": "G says"
+ },
+ "says_H": {
+  "ipa": "ˈeɪtʃ sˈɛz",
+  "key": "c8c0f149a616",
+  "text": "H says"
+ },
+ "says_I": {
+  "ipa": "aɪ sˈɛz",
+  "key": "605217281a0b",
+  "text": "I says"
+ },
+ "says_J": {
+  "ipa": "dʒˈeɪ sˈɛz",
+  "key": "2641b55c09e2",
+  "text": "J says"
+ },
+ "says_K": {
+  "ipa": "kˈeɪ sˈɛz",
+  "key": "e8ccc75e7ef7",
+  "text": "K says"
+ },
+ "says_L": {
+  "ipa": "ˈɛl sˈɛz",
+  "key": "da4f85ee3a19",
+  "text": "L says"
+ },
+ "says_M": {
+  "ipa": "ˈɛm sˈɛz",
+  "key": "d9c9835d00e8",
+  "text": "M says"
+ },
+ "says_N": {
+  "ipa": "ˈɛn sˈɛz",
+  "key": "2a9b234d4022",
+  "text": "N says"
+ },
+ "says_O": {
+  "ipa": "ˈoʊ sˈɛz",
+  "key": "46440228daf8",
+  "text": "O says"
+ },
+ "says_P": {
+  "ipa": "pˈiː sˈɛz",
+  "key": "a643765858ed",
+  "text": "P says"
+ },
+ "says_Q": {
+  "ipa": "kjˈuː sˈɛz",
+  "key": "b811cfec3602",
+  "text": "Q says"
+ },
+ "says_R": {
+  "ipa": "ˈɑːɹ sˈɛz",
+  "key": "51af17adb79a",
+  "text": "R says"
+ },
+ "says_S": {
+  "ipa": "ˈɛs sˈɛz",
+  "key": "52942b81ed13",
+  "text": "S says"
+ },
+ "says_T": {
+  "ipa": "tˈiː sˈɛz",
+  "key": "1d43b1dcd5b0",
+  "text": "T says"
+ },
+ "says_U": {
+  "ipa": "jˈuː sˈɛz",
+  "key": "1646378ac92b",
+  "text": "U says"
+ },
+ "says_V": {
+  "ipa": "vˈiː sˈɛz",
+  "key": "75bbeb9fe788",
+  "text": "V says"
+ },
+ "says_W": {
+  "ipa": "dˈʌbəljˌuː sˈɛz",
+  "key": "e7209b6d5261",
+  "text": "W says"
+ },
+ "says_X": {
+  "ipa": "ˈɛks sˈɛz",
+  "key": "bed90c0106df",
+  "text": "X says"
+ },
+ "says_Y": {
+  "ipa": "wˈaɪ sˈɛz",
+  "key": "ed7f3710323e",
+  "text": "Y says"
+ },
+ "says_Z": {
+  "ipa": "zˈiː sˈɛz",
+  "key": "a1732559bf19",
+  "text": "Z says"
+ },
+ "snd_a_1": {
+  "ipa": "ˈæ",
+  "key": "ee7e8dea26a9",
+  "text": "/ˈæ/"
+ },
+ "snd_a_2": {
+  "ipa": "ˈææ",
+  "key": "a4cf99ddd1a8",
+  "text": "/ˈææ/"
+ },
+ "snd_a_3": {
+  "ipa": "ˈæː",
+  "key": "6a329b71fb8a",
+  "text": "/ˈæː/"
+ },
+ "snd_b_1": {
+  "ipa": "ˈbʌ",
+  "key": "e7fa8b280fae",
+  "text": "/ˈbʌ/"
+ },
+ "snd_b_2": {
+  "ipa": "bə",
+  "key": "ac06cb84d8c2",
+  "text": "/bə/"
+ },
+ "snd_b_3": {
+  "ipa": "ˈbə",
+  "key": "8cc285c2324c",
+  "text": "/ˈbə/"
+ },
+ "snd_c_1": {
+  "ipa": "ˈkʌ",
+  "key": "5a5b1a8a0c12",
+  "text": "/ˈkʌ/"
+ },
+ "snd_c_2": {
+  "ipa": "kə",
+  "key": "0ed89c8d23c5",
+  "text": "/kə/"
+ },
+ "snd_c_3": {
+  "ipa": "ˈkə",
+  "key": "4b1dc00ee5c7",
+  "text": "/ˈkə/"
+ },
+ "snd_d_1": {
+  "ipa": "ˈdʌ",
+  "key": "43877ab49e12",
+  "text": "/ˈdʌ/"
+ },
+ "snd_d_2": {
+  "ipa": "də",
+  "key": "62f17bc435be",
+  "text": "/də/"
+ },
+ "snd_d_3": {
+  "ipa": "ˈdə",
+  "key": "b1b727a2bc94",
+  "text": "/ˈdə/"
+ },
+ "snd_e_1": {
+  "ipa": "ˈɛ",
+  "key": "2bc69fb69b30",
+  "text": "/ˈɛ/"
+ },
+ "snd_e_2": {
+  "ipa": "ˈɛɛ",
+  "key": "86c986d65798",
+  "text": "/ˈɛɛ/"
+ },
+ "snd_e_3": {
+  "ipa": "ˈɛː",
+  "key": "dab0bdaaeaf0",
+  "text": "/ˈɛː/"
+ },
+ "snd_f_1": {
+  "ipa": "ˈfff",
+  "key": "6a3b5d63f42a",
+  "text": "/ˈfff/"
+ },
+ "snd_f_2": {
+  "ipa": "fff",
+  "key": "0f6d1800bfed",
+  "text": "/fff/"
+ },
+ "snd_f_3": {
+  "ipa": "ˈfː",
+  "key": "40c82887955f",
+  "text": "/ˈfː/"
+ },
+ "snd_g_1": {
+  "ipa": "ˈɡʌ",
+  "key": "9267d4e0cfe9",
+  "text": "/ˈɡʌ/"
+ },
+ "snd_g_2": {
+  "ipa": "ɡə",
+  "key": "310e7ee996a9",
+  "text": "/ɡə/"
+ },
+ "snd_g_3": {
+  "ipa": "ˈɡə",
+  "key": "546815fb7aac",
+  "text": "/ˈɡə/"
+ },
+ "snd_h_1": {
+  "ipa": "ˈhʌ",
+  "key": "7366fe9a53ea",
+  "text": "/ˈhʌ/"
+ },
+ "snd_h_2": {
+  "ipa": "hə",
+  "key": "1ba0ee7e837f",
+  "text": "/hə/"
+ },
+ "snd_h_3": {
+  "ipa": "ˈhə",
+  "key": "020e211deb13",
+  "text": "/ˈhə/"
+ },
+ "snd_i_1": {
+  "ipa": "ˈɪ",
+  "key": "eed931b3aba5",
+  "text": "/ˈɪ/"
+ },
+ "snd_i_2": {
+  "ipa": "ˈɪɪ",
+  "key": "8cff51ef049b",
+  "text": "/ˈɪɪ/"
+ },
+ "snd_i_3": {
+  "ipa": "ˈɪː",
+  "key": "16b2bae44ad6",
+  "text": "/ˈɪː/"
+ },
+ "snd_j_1": {
+  "ipa": "ˈdʒʌ",
+  "key": "94114503d271",
+  "text": "/ˈdʒʌ/"
+ },
+ "snd_j_2": {
+  "ipa": "dʒə",
+  "key": "8e2c128bb3cf",
+  "text": "/dʒə/"
+ },
+ "snd_j_3": {
+  "ipa": "ˈdʒə",
+  "key": "51cf88d237ce",
+  "text": "/ˈdʒə/"
+ },
+ "snd_k_1": {
+  "ipa": "ˈkʌ",
+  "key": "5a5b1a8a0c12",
+  "text": "/ˈkʌ/"
+ },
+ "snd_k_2": {
+  "ipa": "kə",
+  "key": "0ed89c8d23c5",
+  "text": "/kə/"
+ },
+ "snd_k_3": {
+  "ipa": "ˈkə",
+  "key": "4b1dc00ee5c7",
+  "text": "/ˈkə/"
+ },
+ "snd_l_1": {
+  "ipa": "ˈlll",
+  "key": "6d5aa25bcee9",
+  "text": "/ˈlll/"
+ },
+ "snd_l_2": {
+  "ipa": "lll",
+  "key": "4951da6ddcb7",
+  "text": "/lll/"
+ },
+ "snd_l_3": {
+  "ipa": "ˈlː",
+  "key": "c6bda7d768e7",
+  "text": "/ˈlː/"
+ },
+ "snd_m_1": {
+  "ipa": "ˈmmm",
+  "key": "6ef88c384162",
+  "text": "/ˈmmm/"
+ },
+ "snd_m_2": {
+  "ipa": "mmm",
+  "key": "727f72586124",
+  "text": "/mmm/"
+ },
+ "snd_m_3": {
+  "ipa": "ˈmː",
+  "key": "6d438904686f",
+  "text": "/ˈmː/"
+ },
+ "snd_n_1": {
+  "ipa": "ˈnnn",
+  "key": "b75bc17c0bc8",
+  "text": "/ˈnnn/"
+ },
+ "snd_n_2": {
+  "ipa": "nnn",
+  "key": "f695bbb1c8ac",
+  "text": "/nnn/"
+ },
+ "snd_n_3": {
+  "ipa": "ˈnː",
+  "key": "24485e15bfce",
+  "text": "/ˈnː/"
+ },
+ "snd_o_1": {
+  "ipa": "ˈɑ",
+  "key": "2dcf7717945f",
+  "text": "/ˈɑ/"
+ },
+ "snd_o_2": {
+  "ipa": "ˈɑɑ",
+  "key": "cd3c9bf5dac6",
+  "text": "/ˈɑɑ/"
+ },
+ "snd_o_3": {
+  "ipa": "ˈɑː",
+  "key": "7cb639a4779a",
+  "text": "/ˈɑː/"
+ },
+ "snd_p_1": {
+  "ipa": "ˈpʌ",
+  "key": "2640b5c34081",
+  "text": "/ˈpʌ/"
+ },
+ "snd_p_2": {
+  "ipa": "pə",
+  "key": "9e1bf5766625",
+  "text": "/pə/"
+ },
+ "snd_p_3": {
+  "ipa": "ˈpə",
+  "key": "862b3888d89a",
+  "text": "/ˈpə/"
+ },
+ "snd_prompt": {
+  "ipa": "wˌɪtʃ lˈɛɾɚ sˈɛz",
+  "key": "7957825a2364",
+  "text": "Which letter says"
+ },
+ "snd_q_1": {
+  "ipa": "ˈkwʌ",
+  "key": "58335cd4729c",
+  "text": "/ˈkwʌ/"
+ },
+ "snd_q_2": {
+  "ipa": "kwə",
+  "key": "cbbca92b4f43",
+  "text": "/kwə/"
+ },
+ "snd_q_3": {
+  "ipa": "ˈkwə",
+  "key": "e25729dc0454",
+  "text": "/ˈkwə/"
+ },
+ "snd_r_1": {
+  "ipa": "ˈɹɹɹ",
+  "key": "00f4d2816307",
+  "text": "/ˈɹɹɹ/"
+ },
+ "snd_r_2": {
+  "ipa": "ɹɚ",
+  "key": "e2ddf3abd61b",
+  "text": "/ɹɚ/"
+ },
+ "snd_r_3": {
+  "ipa": "ˈɹʌ",
+  "key": "dea077787ba6",
+  "text": "/ˈɹʌ/"
+ },
+ "snd_s_1": {
+  "ipa": "ˈsss",
+  "key": "05b8a84bcc00",
+  "text": "/ˈsss/"
+ },
+ "snd_s_2": {
+  "ipa": "sss",
+  "key": "8ce594eb0129",
+  "text": "/sss/"
+ },
+ "snd_s_3": {
+  "ipa": "ˈsː",
+  "key": "7adcadc2987b",
+  "text": "/ˈsː/"
+ },
+ "snd_t_1": {
+  "ipa": "ˈtʌ",
+  "key": "f8fcdcc6621b",
+  "text": "/ˈtʌ/"
+ },
+ "snd_t_2": {
+  "ipa": "tə",
+  "key": "1cc90cfd5020",
+  "text": "/tə/"
+ },
+ "snd_t_3": {
+  "ipa": "ˈtə",
+  "key": "9991b9fd8275",
+  "text": "/ˈtə/"
+ },
+ "snd_u_1": {
+  "ipa": "ˈʌ",
+  "key": "60b0819d28bf",
+  "text": "/ˈʌ/"
+ },
+ "snd_u_2": {
+  "ipa": "ˈʌʌ",
+  "key": "bb9a5f947443",
+  "text": "/ˈʌʌ/"
+ },
+ "snd_u_3": {
+  "ipa": "ˈʌː",
+  "key": "6a12880c2351",
+  "text": "/ˈʌː/"
+ },
+ "snd_v_1": {
+  "ipa": "ˈvvv",
+  "key": "48e0e0577645",
+  "text": "/ˈvvv/"
+ },
+ "snd_v_2": {
+  "ipa": "vvv",
+  "key": "a221d8e55728",
+  "text": "/vvv/"
+ },
+ "snd_v_3": {
+  "ipa": "ˈvː",
+  "key": "8ce1a36b2350",
+  "text": "/ˈvː/"
+ },
+ "snd_w_1": {
+  "ipa": "ˈwʌ",
+  "key": "1c23ec45a88b",
+  "text": "/ˈwʌ/"
+ },
+ "snd_w_2": {
+  "ipa": "wə",
+  "key": "c78efedb4f78",
+  "text": "/wə/"
+ },
+ "snd_w_3": {
+  "ipa": "ˈwə",
+  "key": "249d80868c76",
+  "text": "/ˈwə/"
+ },
+ "snd_x_1": {
+  "ipa": "ks",
+  "key": "f81851cdb5bf",
+  "text": "/ks/"
+ },
+ "snd_x_2": {
+  "ipa": "ˈks",
+  "key": "1d280666e1e3",
+  "text": "/ˈks/"
+ },
+ "snd_x_3": {
+  "ipa": "kss",
+  "key": "8500fbbc8919",
+  "text": "/kss/"
+ },
+ "snd_y_1": {
+  "ipa": "ˈjʌ",
+  "key": "fc8871f0364a",
+  "text": "/ˈjʌ/"
+ },
+ "snd_y_2": {
+  "ipa": "jə",
+  "key": "a9e0ae7eed0d",
+  "text": "/jə/"
+ },
+ "snd_y_3": {
+  "ipa": "ˈjə",
+  "key": "b16db1d7653c",
+  "text": "/ˈjə/"
+ },
+ "snd_z_1": {
+  "ipa": "ˈzzz",
+  "key": "ec37478f1d71",
+  "text": "/ˈzzz/"
+ },
+ "snd_z_2": {
+  "ipa": "zzz",
+  "key": "42209ad7803f",
+  "text": "/zzz/"
+ },
+ "snd_z_3": {
+  "ipa": "ˈzː",
+  "key": "9bb1f5686b49",
+  "text": "/ˈzː/"
  },
  "sticker": {
   "ipa": "jˈeɪ! juː ˈɜːnd ɐ stˈɪkɚ!",

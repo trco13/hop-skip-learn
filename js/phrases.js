@@ -12,6 +12,11 @@
     crown: 'You earned a crown! Great playing today!',
     album: 'Here are your stickers and crowns!',
     check: 'Hello! If you can hear me, the sound is working.',
+    pick_game: 'Pick a game!',
+    game_letters: 'Letters!',
+    game_sounds: 'Letter sounds!',
+    intro_sounds: "Let's play with letter sounds! Listen to the sound, then tap the letter that makes it.",
+    snd_prompt: 'Which letter says',
     praise_1: 'Yes!',
     praise_2: 'Great job!',
     praise_3: 'You got it!',
@@ -33,6 +38,17 @@
     P['pair_' + L] = 'Capital ' + L + ', lowercase ' + l + '!';
   }
   if (Content) {
+    for (var l in Content.LETTER_SOUNDS) {
+      if (!Content.LETTER_SOUNDS.hasOwnProperty(l)) continue;
+      var L2 = l.toUpperCase();
+      // Text wrapped in slashes is read as phonemes, not words.
+      for (var v = 0; v < 3; v++) {
+        var spec = Content.LETTER_SOUNDS[l][v].split('@');
+        P['snd_' + l + '_' + (v + 1)] = '/' + spec[0] + '/' + (spec[1] ? '@' + spec[1] : '');
+      }
+      P['says_' + L2] = L2 + ' says';
+      P['like_' + l] = 'like ' + Content.KEYWORDS[l] + '.';
+    }
     for (i = 0; i < Content.WORD_BANK.length; i++) {
       P[Content.wordAudioId(Content.WORD_BANK[i])] = Content.WORD_BANK[i] + '.';
     }

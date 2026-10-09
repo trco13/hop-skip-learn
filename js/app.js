@@ -19,7 +19,7 @@
   var DEFAULT_SETTINGS = {
     sessionMinutes: 7,
     maxChoices: 4,
-    skills: { capitals: true, lowercase: true, matching: true }
+    skills: { capitals: true, lowercase: true, matching: true, sounds: true }
   };
 
   function settings() {
@@ -110,6 +110,17 @@
     $('homeCount').innerHTML = n ? Art.icon('album', 'icon tiny') + '<b>' + n + '</b>' : '';
   }
 
+  // ---------- game picker ----------
+
+  function showPicker() {
+    var skills = settings().skills;
+    $('tileSounds').className = 'game-tile sounds-tile' + (skills.sounds === false ? ' hidden' : '');
+    $('tileLetters').className = 'game-tile letters-tile' +
+      (skills.capitals === false && skills.lowercase === false && skills.matching === false ? ' hidden' : '');
+    show('pick');
+    Sound.play('pick_game');
+  }
+
   // ---------- album ----------
 
   function renderAlbum() {
@@ -167,8 +178,14 @@
     $('playBtn').innerHTML = Art.icon('play', 'icon');
     $('albumBtn').innerHTML = Art.icon('album', 'icon');
     $('albumHome').innerHTML = Art.icon('home', 'icon');
+    $('pickHome').innerHTML = Art.icon('home', 'icon');
+    $('tileLetters').innerHTML = '<span class="tile-glyph">Aa</span>' + Art.draw('crown', 0, 'art tile-art');
+    $('tileSounds').innerHTML = '<span class="tile-glyph">Ss</span>' + Art.icon('speaker', 'icon tile-art speaker-art');
 
-    tap($('playBtn'), function () { root.LettersGame.start(); });
+    tap($('playBtn'), showPicker);
+    tap($('pickHome'), goHome);
+    tap($('tileLetters'), function () { root.Game.start(root.Games.letters); });
+    tap($('tileSounds'), function () { root.Game.start(root.Games.sounds); });
     tap($('albumBtn'), function () { show('album'); renderAlbum(); Sound.play('album'); });
     tap($('albumHome'), goHome);
     on($('stickerGrid'), 'click', function (e) {

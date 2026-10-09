@@ -11,8 +11,14 @@
     });
   }
 
-  function engine() {
-    return new Engine({ items: Content.letterItems(), state: Store.get('letters', null), settings: App.settings() });
+  // One engine per game, read-only here.
+  var GAMES = [
+    { store: 'letters', name: 'Letters', items: Content.letterItems, skills: ['capitals', 'lowercase', 'matching'] },
+    { store: 'sounds', name: 'Letter sounds', items: Content.soundItems, skills: ['sounds'] }
+  ];
+
+  function engineFor(g) {
+    return new Engine({ items: g.items(), state: Store.get(g.store, null), settings: App.settings() });
   }
 
   function teacherWords() {
@@ -35,7 +41,8 @@
 
   // ---------- progress ----------
 
-  var SKILL_NAMES = { capitals: 'Capital letters', lowercase: 'Lowercase letters', matching: 'Capital to lowercase' };
+  var SKILL_NAMES = { capitals: 'Capital letters', lowercase: 'Lowercase letters',
+    matching: 'Capital to lowercase', sounds: 'Letter sounds' };
 
   function statusOf(e, id) {
     var st = e.peekState(id);
@@ -45,56 +52,75 @@
     return 'learning';
   }
 
+  function itemLabel(it) {
+    if (it.group === 'match') return it.cue + ' to ' + it.show;
+    if (it.group === 'uc') return 'capital ' + it.show;
+    if (it.group === 'lc') return 'lowercase ' + it.show;
+    return 'sound of ' + it.show;
+  }
+
+  function tileLabel(it) {
+    if (it.group === 'match') return it.cue + it.show;
+    return it.show;
+  }
+
   function renderProgress() {
-    var e = engine();
-    var sum = e.summary();
     var html = '';
-    var items = Content.letterItems();
-    ['capitals', 'lowercase', 'matching'].forEach(function (skill) {
-      var g = sum[skill];
-      html += '<h3>' + SKILL_NAMES[skill] + ' <small>' + g.mastered + ' of ' + g.total + ' mastered</small></h3>' +
-        '<div class="bar"><span class="m" style="width:' + (100 * g.mastered / g.total) + '%"></span>' +
-        '<span class="l" style="width:' + (100 * g.learning / g.total) + '%"></span></div><div class="tiles">';
-      items.forEach(function (it) {
-        if (it.skill !== skill) return;
-        var st = e.peekState(it.id);
-        var label = it.group === 'match' ? it.cue + it.show : it.show;
-        var tip = st && st.seen ? (st.right + ' right, ' + st.wrong + ' missed') : 'not tried yet';
-        html += '<span class="tile ' + statusOf(e, it.id) + '" title="' + esc(tip) + '">' + esc(label) + '</span>';
+    var tricky = [];
+    var sessions = [];
+    GAMES.forEach(function (g) {
+      var e = engineFor(g);
+      var sum = e.summary();
+      var items = g.items();
+      // Show sounds in alphabet order, not teaching order.
+      items.sort(function (a, b) { return a.show < b.show ? -1 : (a.show > b.show ? 1 : 0); });
+      g.skills.forEach(function (skill) {
+        var gs = sum[skill];
+        html += '<h3>' + SKILL_NAMES[skill] + ' <small>' + gs.mastered + ' of ' + gs.total + ' mastered</small></h3>' +
+          '<div class="bar"><span class="m" style="width:' + (100 * gs.mastered / gs.total) + '%"></span>' +
+          '<span class="l" style="width:' + (100 * gs.learning / gs.total) + '%"></span></div><div class="tiles">';
+        items.forEach(function (it) {
+          if (it.skill !== skill) return;
+          var st = e.peekState(it.id);
+          var tip = st && st.seen ? (st.right + ' right, ' + st.wrong + ' missed') : 'not tried yet';
+          html += '<span class="tile ' + statusOf(e, it.id) + '" title="' + esc(tip) + '">' + esc(tileLabel(it)) + '</span>';
+        });
+        html += '</div>';
       });
-      html += '</div>';
+      items.forEach(function (it) {
+        var st = e.peekState(it.id);
+        if (st && st.wrong > 0) tricky.push({ it: it, st: st, e: e });
+      });
+      (e.state.sessions || []).forEach(function (s) { sessions.push({ s: s, game: g.name }); });
     });
     html += '<p class="legend"><span class="tile new">a</span> not yet <span class="tile learning">a</span> learning ' +
       '<span class="tile known">a</span> knows it (needs more days) <span class="tile mastered">a</span> mastered (right on 3+ days)</p>';
 
-    // Tricky ones.
-    var tricky = items.map(function (it) { return { it: it, st: e.peekState(it.id) }; })
-      .filter(function (x) { return x.st && x.st.wrong > 0; })
-      .sort(function (a, b) { return (b.st.wrong / b.st.seen) - (a.st.wrong / a.st.seen); })
-      .slice(0, 8);
+    tricky.sort(function (a, b) { return (b.st.wrong / b.st.seen) - (a.st.wrong / a.st.seen); });
+    tricky = tricky.slice(0, 10);
     html += '<h3>Tricky ones</h3>';
     if (!tricky.length) html += '<p>None yet.</p>';
     else {
       html += '<ul class="tricky">';
       tricky.forEach(function (x) {
-        var mix = e.state.confusions[x.it.id] || {};
+        var mix = x.e.state.confusions[x.it.id] || {};
         var parts = [];
-        for (var k in mix) if (mix.hasOwnProperty(k) && e.byId[k]) parts.push(esc(e.byId[k].show) + ' (' + mix[k] + 'x)');
-        var label = x.it.group === 'match' ? x.it.cue + ' to ' + x.it.show : (x.it.group === 'uc' ? 'capital ' : 'lowercase ') + x.it.show;
-        html += '<li><b>' + esc(label) + '</b>: ' + x.st.right + ' right, ' + x.st.wrong + ' missed' +
+        for (var k in mix) if (mix.hasOwnProperty(k) && x.e.byId[k]) parts.push(esc(x.e.byId[k].show) + ' (' + mix[k] + 'x)');
+        html += '<li><b>' + esc(itemLabel(x.it)) + '</b>: ' + x.st.right + ' right, ' + x.st.wrong + ' missed' +
           (parts.length ? '. Picked instead: ' + parts.join(', ') : '') + '</li>';
       });
       html += '</ul>';
     }
 
-    // Sessions.
-    var sessions = (e.state.sessions || []).slice(-14).reverse();
+    sessions.sort(function (a, b) { return b.s.start - a.s.start; });
+    sessions = sessions.slice(0, 14);
     html += '<h3>Recent sessions</h3>';
     if (!sessions.length) html += '<p>None yet.</p>';
     else {
-      html += '<table><tr><th>Day</th><th>Minutes</th><th>Questions</th><th>Right first try</th><th>Newly mastered</th></tr>';
-      sessions.forEach(function (s) {
-        html += '<tr><td>' + dateOf(s.day) + '</td><td>' + s.minutes + '</td><td>' + s.trials + '</td><td>' +
+      html += '<table><tr><th>Day</th><th>Game</th><th>Minutes</th><th>Questions</th><th>Right first try</th><th>Newly mastered</th></tr>';
+      sessions.forEach(function (x) {
+        var s = x.s;
+        html += '<tr><td>' + dateOf(s.day) + '</td><td>' + x.game + '</td><td>' + s.minutes + '</td><td>' + s.trials + '</td><td>' +
           (s.trials ? Math.round(100 * s.firstTry / s.trials) : 0) + '%</td><td>' + s.mastered.length + '</td></tr>';
       });
       html += '</table>';
@@ -104,6 +130,49 @@
     for (var k in r.stickers) if (r.stickers.hasOwnProperty(k)) n++;
     html += '<p>Stickers collected: ' + n + ' kinds. Crowns: ' + r.crowns.length + '.</p>';
     App.$('pProgress').innerHTML = html;
+  }
+
+  // ---------- letter sound picks ----------
+
+  function soundPicks() { return Store.get('soundPicks', null) || {}; }
+
+  function currentPick(l) {
+    var p = soundPicks()[l];
+    return typeof p === 'number' ? p : (Content.SOUND_DEFAULTS[l] || 1);
+  }
+
+  function renderSoundPicks() {
+    var picks = soundPicks();
+    var letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    var html = '';
+    letters.forEach(function (l) {
+      html += '<div class="snd-row"><span class="snd-letter">' + l.toUpperCase() + l + '</span>' +
+        '<span class="snd-key">like ' + esc(Content.KEYWORDS[l]) + '</span>';
+      for (var v = 1; v <= 3; v++) {
+        html += '<button class="snd-btn' + (currentPick(l) === v && picks[l] !== 'x' ? ' on' : '') + '" data-l="' + l + '" data-v="' + v + '">' + v + '</button>';
+      }
+      html += '<button class="snd-btn bad' + (picks[l] === 'x' ? ' on' : '') + '" data-l="' + l + '" data-v="x">none</button></div>';
+    });
+    App.$('pSounds').innerHTML = html;
+    var code = letters.map(function (l) { return l + (picks[l] || '-'); }).join(' ');
+    App.$('pSoundCode').value = 'Sound picks: ' + code;
+  }
+
+  function onSoundPick(e) {
+    var t = e.target;
+    var l = t.getAttribute && t.getAttribute('data-l');
+    if (!l) return;
+    var v = t.getAttribute('data-v');
+    var picks = soundPicks();
+    Sound.unlock();
+    if (v === 'x') {
+      picks[l] = 'x';
+    } else {
+      picks[l] = parseInt(v, 10);
+      Sound.play('snd_' + l + '_' + v);
+    }
+    Store.set('soundPicks', picks);
+    renderSoundPicks();
   }
 
   // ---------- sight words ----------
@@ -148,6 +217,7 @@
     App.$('pCapitals').checked = s.skills.capitals !== false;
     App.$('pLowercase').checked = s.skills.lowercase !== false;
     App.$('pMatching').checked = s.skills.matching !== false;
+    App.$('pSoundsOn').checked = s.skills.sounds !== false;
   }
 
   function saveSettings() {
@@ -157,9 +227,10 @@
     s.skills = {
       capitals: App.$('pCapitals').checked,
       lowercase: App.$('pLowercase').checked,
-      matching: App.$('pMatching').checked
+      matching: App.$('pMatching').checked,
+      sounds: App.$('pSoundsOn').checked
     };
-    if (!s.skills.capitals && !s.skills.lowercase && !s.skills.matching) {
+    if (!s.skills.capitals && !s.skills.lowercase && !s.skills.matching && !s.skills.sounds) {
       s.skills.capitals = true;
       App.$('pCapitals').checked = true;
     }
@@ -193,7 +264,7 @@
 
   function resetData() {
     if (!window.confirm('Erase all progress, stickers and crowns on this device?')) return;
-    ['letters', 'rewards'].forEach(function (k) { Store.remove(k); });
+    ['letters', 'sounds', 'rewards'].forEach(function (k) { Store.remove(k); });
     flash('Progress erased.');
     renderAll();
   }
@@ -211,6 +282,7 @@
     renderProgress();
     renderWords();
     renderSettings();
+    renderSoundPicks();
   }
 
   function open() {
@@ -233,7 +305,8 @@
         Sound.play(Content.wordAudioId(w));
       }
     });
-    ['pMinutes', 'pChoices', 'pCapitals', 'pLowercase', 'pMatching'].forEach(function (id) {
+    App.on(App.$('pSounds'), 'click', onSoundPick);
+    ['pMinutes', 'pChoices', 'pCapitals', 'pLowercase', 'pMatching', 'pSoundsOn'].forEach(function (id) {
       App.on(App.$(id), 'change', saveSettings);
     });
     App.on(App.$('pMinutes'), 'input', function () { App.$('pMinutesOut').innerHTML = App.$('pMinutes').value + ' minutes'; });
