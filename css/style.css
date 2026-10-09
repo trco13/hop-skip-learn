@@ -400,6 +400,9 @@ button {
   .snd-btn.bad { width: 54px; }
 }
 
+/* Picture of the key word in the sounds game. */
+.cue-card .cue-pic { display: block; width: 22vmin; height: 22vmin; margin: 1.5vmin 0; }
+
 /* Cards with two letters (Bb). */
 .card.pair { width: 34vmin; }
 .card.pair .glyph { font-size: 18vmin; }
@@ -409,6 +412,8 @@ button {
   .card { width: 38vmin; height: 40vmin; }
   .card .glyph { font-size: 28vmin; line-height: 36vmin; }
   .card.pair { width: 38vmin; }
+  .cue { height: auto; min-height: 26vmin; }
+  .cue-card .cue-pic { width: 36vmin; height: 36vmin; }
   .card.pair .glyph { font-size: 20vmin; }
   .hero { width: 70vmin; height: 70vmin; margin-top: 16vmin; }
   .play-btn { width: 40vmin; height: 40vmin; }

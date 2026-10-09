@@ -44,14 +44,15 @@
       for (var v = 1; v <= 3; v++) P['snd_' + s + '_' + v] = '#sound:' + s + ':' + v;
       P['says_' + S] = S + ' says';
       P['like_' + s] = 'like ' + Content.KEYWORDS[s] + '.';
-      // Word version, for letters whose sound the parent marked "none".
-      var kw = Content.KEYWORDS[s], Kw = kw.charAt(0).toUpperCase() + kw.slice(1);
+      // Word version (the default): the key word gets its own pauses and
+      // is said slower and louder, then once more at the end.
+      var kw = Content.KEYWORDS[s];
       if (s === 'x') {
-        P['startq_' + s] = 'Which letter makes the sound at the end of ' + kw + '?';
-        P['starta_' + s] = Kw + ' ends with ' + S + '!';
+        P['startq_' + s] = '#seq:Which letter makes the sound at the end of|~0.35|!w:' + kw + '|~0.6|!w:' + kw;
+        P['starta_' + s] = '#seq:!w:' + kw + '|~0.3|ends with ' + S + '!';
       } else {
-        P['startq_' + s] = 'Which letter does ' + kw + ' start with?';
-        P['starta_' + s] = Kw + ' starts with ' + S + '!';
+        P['startq_' + s] = '#seq:Which letter does|~0.35|!w:' + kw + '|~0.35|start with?|~0.6|!w:' + kw;
+        P['starta_' + s] = '#seq:!w:' + kw + '|~0.3|starts with ' + S + '!';
       }
     }
     for (i = 0; i < Content.WORD_BANK.length; i++) {

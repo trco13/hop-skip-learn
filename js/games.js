@@ -43,6 +43,11 @@
     intro: 'intro_sounds',
     items: Content.soundItems,
     cardClass: 'pair',
+    // The key word's picture, in word mode (tap it to hear the question again).
+    cue: function (item) {
+      if (!wordMode(item.letter) || !root.Pictures) return null;
+      return root.Pictures.picture(Content.KEYWORDS[item.letter], 'art cue-pic');
+    },
     prompt: function (item) {
       if (wordMode(item.letter)) return ['startq_' + item.letter];
       return ['snd_prompt', soundClip(item.letter)];

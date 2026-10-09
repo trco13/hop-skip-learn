@@ -83,6 +83,33 @@ def to_mp3(samples, path, tempo=1.0, normalize=True):
         os.unlink(wav)
 
 
+def trim_silence(samples):
+    a = np.abs(samples)
+    on = np.where(a > 0.01 * a.max())[0]
+    return samples[on[0]:on[-1] + 1] if len(on) else samples
+
+
+def build_sequence(kokoro, spec):
+    out = []
+    for part in spec.split('|'):
+        if part.startswith('~'):
+            out.append(np.zeros(int(float(part[1:]) * SR), dtype=np.float32))
+            continue
+        if part.startswith('!w:'):
+            word = part[3:]
+            samples, _ = kokoro.create(word[0].upper() + word[1:] + '!', voice=VOICE, speed=0.78, lang='en-us')
+            samples = trim_silence(samples)
+            # Level the word to the loudest part of the sentence, then a bit more.
+            samples = samples * 1.25
+        else:
+            samples, _ = kokoro.create(part, voice=VOICE, speed=SPEED, lang='en-us')
+            samples = trim_silence(samples)
+        out.append(samples.astype(np.float32))
+    a = np.concatenate(out)
+    peak = np.abs(a).max()
+    return a * (0.95 / peak) if peak > 0.95 else a
+
+
 def duration(path):
     out = subprocess.check_output([
         'ffprobe', '-v', 'error', '-show_entries', 'format=duration',
@@ -139,6 +166,17 @@ def main():
 
     for pid, text in sorted(todo.items()):
         path = os.path.join(AUDIO, pid + '.mp3')
+        if text.startswith('#seq:'):
+            # Pieces joined with set pauses. "~0.3" = pause in seconds,
+            # "!w:sun" = a key word said on its own, slower and louder.
+            key = hashlib.sha1((VOICE + str(SPEED) + text).encode('utf-8')).hexdigest()[:12]
+            fresh = os.path.exists(path) and sources.get(pid, {}).get('key') == key
+            if args.force or (only and pid in only) or not fresh:
+                to_mp3(build_sequence(kokoro, text[5:]), path)
+                print('made', pid, '|', text)
+            sources[pid] = {'text': text, 'key': key}
+            durations[pid] = duration(path)
+            continue
         if text.startswith('#sound:'):
             _, letter, version = text.split(':')
             key = hashlib.sha1((LETTER_SOUNDS_VERSION + text).encode('utf-8')).hexdigest()[:12]
