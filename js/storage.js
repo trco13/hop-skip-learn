@@ -2,7 +2,9 @@
    Falls back to memory if storage is blocked, so the game still runs. */
 (function (root) {
   'use strict';
-  var PREFIX = 'hsl.';
+  // The /preview/ copy of the site keeps its own progress, so trying out a
+  // change never touches her real progress on the same device.
+  var PREFIX = /\/preview\//.test(window.location.pathname) ? 'hsl-preview.' : 'hsl.';
   var memory = {};
   var ok = false;
   try {

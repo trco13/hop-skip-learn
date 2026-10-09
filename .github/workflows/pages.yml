@@ -1,0 +1,72 @@
+# Publishes the site to GitHub Pages:
+#   /          the main branch (what she plays)
+#   /preview/  the newest other branch (for the parent to try changes
+#              before merging; progress there is kept separately)
+# Needs Settings -> Pages -> Source: "GitHub Actions".
+name: Publish site
+
+on:
+  push:
+    branches: ['**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # Only main may publish to Pages, so a push to any other branch asks
+  # main to republish (which picks up the new preview).
+  ask-main:
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - run: gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Get all branches
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build the site folder
+        run: |
+          set -e
+          mkdir -p _site/preview
+          # Only the files the site needs: no tools, tests or sources.
+          copy() {
+            git archive "$1" index.html device-check.html robots.txt css js fonts audio | tar -x -C "$2"
+          }
+          copy origin/main _site
+          # Newest branch other than main, by last commit time.
+          preview=$(git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/remotes/origin \
+            | grep -v -E '^origin/(main|HEAD)$' | head -n 1)
+          if [ -n "$preview" ]; then
+            copy "$preview" _site/preview
+            echo "Preview: $preview"
+          else
+            copy origin/main _site/preview
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
