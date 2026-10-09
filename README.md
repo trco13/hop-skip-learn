@@ -4,7 +4,12 @@ Learning games for a pre-K child: letters, sounds, sight words and numbers.
 A plain static site (HTML, CSS, ES5 JavaScript) with no build step, made for
 older Amazon Fire tablets and hosted on GitHub Pages.
 
-- `index.html`: the game. Hold the crown in the top corner for 3 seconds to open the parent area.
+- `index.html`: the games. Hold the crown in the top corner for 3 seconds to open the parent area.
+  - Letters: find capital and lowercase letters, and match capitals to lowercase.
+  - Letter sounds: hear a sound ("buh"), tap the letter that makes it. Letters that make the
+    same sound (c and k) are never offered together.
+  - Each letter sound was generated 3 ways; the parent picks the best one in
+    "Letter sounds check" and the pick is baked in as `SOUND_DEFAULTS` in `js/content.js`.
 - `device-check.html`: checks sound, fonts, touch and saving on a device.
 
 ## Privacy

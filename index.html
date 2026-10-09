@@ -25,6 +25,16 @@
   <div id="storageWarn" class="storage-warn hidden">This browser is not saving progress.</div>
 </section>
 
+<section id="pick" class="screen hidden">
+  <div class="topbar">
+    <button id="pickHome" class="round-btn small" aria-label="Home"></button>
+  </div>
+  <div class="tiles-row">
+    <button id="tileLetters" class="game-tile letters-tile" aria-label="Letters"></button>
+    <button id="tileSounds" class="game-tile sounds-tile" aria-label="Letter sounds"></button>
+  </div>
+</section>
+
 <section id="game" class="screen hidden">
   <div class="topbar">
     <button id="homeBtn" class="round-btn small" aria-label="Home"></button>
@@ -68,6 +78,14 @@
     </details>
 
     <details>
+      <summary>Letter sounds check</summary>
+      <p>Each letter sound was made 3 ways. Tap 1, 2 and 3 to hear them. The one you tap last is used on this device. If none sound right, tap "none".</p>
+      <p>When you're done, copy the line below and send it to Claude, so your picks become the default on every device.</p>
+      <textarea id="pSoundCode" rows="2" readonly></textarea>
+      <div id="pSounds"></div>
+    </details>
+
+    <details>
       <summary>Settings</summary>
       <label class="setting">Session length: <b id="pMinutesOut"></b>
         <input id="pMinutes" type="range" min="5" max="10" step="1">
@@ -84,6 +102,7 @@
         <label><input id="pCapitals" type="checkbox"> capital letters</label>
         <label><input id="pLowercase" type="checkbox"> lowercase letters</label>
         <label><input id="pMatching" type="checkbox"> capital to lowercase</label>
+        <label><input id="pSoundsOn" type="checkbox"> letter sounds game</label>
       </div>
     </details>
 
@@ -112,7 +131,8 @@
 <script src="js/art.js"></script>
 <script src="js/rewards.js"></script>
 <script src="js/app.js"></script>
-<script src="js/letters-game.js"></script>
+<script src="js/games.js"></script>
+<script src="js/game.js"></script>
 <script src="js/parent.js"></script>
 </body>
 </html>

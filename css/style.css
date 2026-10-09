@@ -136,6 +136,32 @@ button {
 
 .storage-warn { position: absolute; bottom: 1vmin; font-size: 14px; background: #fff; padding: 4px 10px; border-radius: 8px; }
 
+/* ---------- game picker ---------- */
+
+.tiles-row {
+  -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-wrap: wrap; flex-wrap: wrap;
+  -webkit-justify-content: center; justify-content: center;
+  -webkit-align-items: center; align-items: center;
+  -webkit-align-content: center; align-content: center;
+  padding-bottom: 6vmin;
+}
+.game-tile {
+  position: relative;
+  width: 40vmin; height: 46vmin;
+  margin: 3vmin;
+  border-radius: 6vmin;
+  background: #fff;
+  border: 1.4vmin solid #ffd34d;
+  box-shadow: 0 1.6vmin 0 rgba(91, 58, 110, 0.25);
+}
+.game-tile:active { -webkit-transform: translateY(1vmin); transform: translateY(1vmin); }
+.sounds-tile { border-color: #ff7eb6; }
+.tile-glyph { display: block; font-weight: bold; font-size: 19vmin; line-height: 26vmin; }
+.tile-art { display: block; width: 15vmin; height: 15vmin; margin: 0 auto; }
+.speaker-art { background: #ff7eb6; border-radius: 50%; padding: 2vmin; }
+
 /* ---------- game ---------- */
 
 .topbar {
@@ -360,11 +386,30 @@ button {
 .note { color: #6b5778; font-size: 15px; }
 .flash { position: fixed; left: 50%; top: 12px; margin-left: -150px; width: 300px; text-align: center; background: #3d2a4a; color: #fff; padding: 10px; border-radius: 8px; z-index: 20; }
 .links a { color: #7a4fd0; }
+.snd-row { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; border-bottom: 1px solid #f0eaf6; padding: 4px 0; }
+.snd-letter { width: 64px; font-size: 26px; font-weight: bold; }
+.snd-key { width: 130px; color: #6b5778; font-size: 15px; }
+.snd-btn { width: 52px; height: 44px; margin: 0 4px; border-radius: 8px; background: #efe7fb; font-size: 18px; font-weight: bold; }
+.snd-btn.on { background: #a98bf0; color: #fff; }
+.snd-btn.bad { width: 64px; font-size: 15px; }
+.snd-btn.bad.on { background: #d9486f; }
+@media (max-width: 480px) {
+  .snd-letter { width: 54px; }
+  .snd-key { width: 82px; font-size: 13px; }
+  .snd-btn { width: 42px; margin: 0 2px; }
+  .snd-btn.bad { width: 54px; }
+}
+
+/* Cards with two letters (Bb). */
+.card.pair { width: 34vmin; }
+.card.pair .glyph { font-size: 18vmin; }
 
 /* Portrait phones: smaller cards so four fit as two rows. */
 @media (orientation: portrait) {
   .card { width: 38vmin; height: 40vmin; }
   .card .glyph { font-size: 28vmin; line-height: 36vmin; }
+  .card.pair { width: 38vmin; }
+  .card.pair .glyph { font-size: 20vmin; }
   .hero { width: 70vmin; height: 70vmin; margin-top: 16vmin; }
   .play-btn { width: 40vmin; height: 40vmin; }
 }

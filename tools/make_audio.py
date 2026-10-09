@@ -58,14 +58,15 @@ def stressed(ipa):
     return ipa
 
 
-def to_mp3(samples, path):
+def to_mp3(samples, path, tempo=1.0):
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
         sf.write(tmp.name, samples, SR)
         wav = tmp.name
     try:
         subprocess.check_call([
             'ffmpeg', '-y', '-loglevel', 'error', '-i', wav,
-            '-af', 'silenceremove=start_periods=1:start_threshold=-50dB,'
+            '-af', ('atempo=%s,' % tempo if tempo != 1.0 else '') +
+                   'silenceremove=start_periods=1:start_threshold=-50dB,'
                    'areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse,'
                    'adelay=40,apad=pad_dur=0.08,loudnorm=I=-16:TP=-1.5:LRA=11',
             '-ar', str(SR), '-ac', '1', '-b:a', '48k', path])
@@ -125,17 +126,25 @@ def main():
 
     for pid, text in sorted(todo.items()):
         path = os.path.join(AUDIO, pid + '.mp3')
-        if pid.startswith('word_'):
+        tempo = 1.0
+        if text.startswith('/') and '@' in text:
+            # "/ipa/@0.6" = phonemes, slowed down without changing pitch.
+            text_ipa, tempo = text.rsplit('@', 1)
+            tempo = float(tempo)
+            ipa = text_ipa[1:-1]
+        elif text.startswith('/') and text.endswith('/'):
+            ipa = text[1:-1]
+        elif pid.startswith('word_'):
             word = text.rstrip('.').lower()
             ipa = WORD_OVERRIDES.get(word) or stressed(kokoro.tokenizer.phonemize(word, 'en-us').strip(' .'))
         else:
             ipa = kokoro.tokenizer.phonemize(text, 'en-us')
-        key = hashlib.sha1((VOICE + str(SPEED) + ipa).encode('utf-8')).hexdigest()[:12]
+        key = hashlib.sha1((VOICE + str(SPEED) + ipa + str(tempo)).encode('utf-8')).hexdigest()[:12]
         fresh = os.path.exists(path) and sources.get(pid, {}).get('key') == key
         if args.force or (only and pid in only) or not fresh:
             samples, sr = kokoro.create(ipa, voice=VOICE, speed=SPEED, is_phonemes=True)
             assert sr == SR
-            to_mp3(samples, path)
+            to_mp3(samples, path, tempo)
             print('made', pid, '|', text, '|', ipa)
         sources[pid] = {'text': text, 'ipa': ipa, 'key': key}
         durations[pid] = duration(path)

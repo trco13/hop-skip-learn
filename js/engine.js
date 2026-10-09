@@ -223,17 +223,20 @@
     var avoid = {};
     var drill = [];
     var i, c;
+    // Items that would also be a right answer (c and k both say /k/).
+    var never = item.exclude || [];
+    for (i = 0; i < never.length; i++) avoid[never[i]] = 1;
     var conf = item.confusables || [];
     for (i = 0; i < conf.length; i++) {
       c = conf[i];
-      if (!this.byId[c]) continue;
+      if (!this.byId[c] || never.indexOf(c) >= 0) continue;
       if (this.pairReady(item.id, c)) drill.push(c);
       else avoid[c] = 1;
     }
     // Letters she has actually mixed up with this one, once ready.
     var mix = this.state.confusions[item.id] || {};
     for (c in mix) {
-      if (mix.hasOwnProperty(c) && this.byId[c] && drill.indexOf(c) < 0) {
+      if (mix.hasOwnProperty(c) && this.byId[c] && drill.indexOf(c) < 0 && !avoid[c]) {
         if (this.pairReady(item.id, c)) drill.push(c);
       }
     }

@@ -34,7 +34,7 @@ test('every phrase has an audio file and a manifest entry', function () {
   });
 });
 
-test('every clip the letter game can ask for exists', function () {
+test('every clip the games can ask for exists', function () {
   var m = manifest();
   var need = ['intro_letters', 'match_prompt', 'here', 'sticker', 'crown', 'album', 'home', 'check',
     'sfx_chime', 'sfx_sparkle', 'sfx_soft', 'silence'];
@@ -45,6 +45,11 @@ test('every clip the letter game can ask for exists', function () {
     need.push('thats_' + L, 'pair_' + L);
     if (it.group === 'uc') need.push('find_uc_' + it.show);
     if (it.group === 'lc') need.push('find_lc_' + it.show);
+  });
+  need.push('pick_game', 'intro_sounds', 'snd_prompt');
+  Content.soundItems().forEach(function (it) {
+    for (var v = 1; v <= 3; v++) need.push('snd_' + it.letter + '_' + v);
+    need.push('says_' + it.letter.toUpperCase(), 'like_' + it.letter);
   });
   need.forEach(function (id) { assert.ok(m[id], 'missing ' + id); });
 });

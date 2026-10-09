@@ -1,27 +1,20 @@
-/* "Find the letter": hear a letter, tap it. Also capital-to-lowercase
-   matching. The learning engine decides what to ask. */
+/* Shared game screen: hear something, tap the right card. Each game
+   (js/games.js) says what to ask and what to say back; the learning
+   engine decides what comes next. */
 (function (root) {
   'use strict';
   var App = root.App, Art = root.Art, Sound = root.Sound, Store = root.Store,
-    Rewards = root.Rewards, Engine = root.Engine, Content = root.Content;
+    Rewards = root.Rewards, Engine = root.Engine;
 
-  var KEY = 'letters';
+  var def = null;
   var engine = null;
   var trial = null;
   var wrong = [];
   var busy = false;
-  var introPlayed = false;
+  var introPlayed = {};
   var CARD_COLORS = ['c1', 'c2', 'c3', 'c4'];
 
-  function letterName(item) { return item.show.toUpperCase(); }
-
-  function promptIds(item) {
-    if (item.group === 'uc') return ['find_uc_' + item.show];
-    if (item.group === 'lc') return ['find_lc_' + item.show];
-    return ['match_prompt'];
-  }
-
-  function save() { Store.set(KEY, engine.state); }
+  function save() { Store.set(def.store, engine.state); }
 
   function renderStars() {
     var n = Rewards.progress();
@@ -33,36 +26,36 @@
     App.$('stars').innerHTML = html;
   }
 
-  function start() {
-    var s = App.settings();
+  function start(gameDef) {
+    def = gameDef;
     engine = new Engine({
-      items: Content.letterItems(),
-      state: Store.get(KEY, null),
-      settings: s
+      items: def.items(),
+      state: Store.get(def.store, null),
+      settings: App.settings()
     });
     engine.startSession(Date.now());
     App.show('game');
     App.$('choices').innerHTML = '';
     App.$('cue').innerHTML = '';
+    App.$('cue').className = 'cue empty';
     renderStars();
     busy = false;
-    if (!introPlayed) {
-      introPlayed = true;
-      Sound.playSeq(['intro_letters'], nextTrial);
-    } else {
-      nextTrial();
-    }
+    // The first time per visit, explain the game before the first question.
+    var intro = introPlayed[def.key] ? null : def.intro;
+    introPlayed[def.key] = true;
+    nextTrial(intro);
   }
 
-  function nextTrial() {
+  function nextTrial(intro) {
     trial = engine.next(Date.now());
     if (!trial) { finish(); return; }
     wrong = [];
     busy = false;
     var item = trial.item;
     var cue = App.$('cue');
-    if (item.group === 'match') {
-      cue.innerHTML = '<div class="cue-card pop">' + item.cue + '</div>';
+    var cueHtml = def.cue ? def.cue(item) : null;
+    if (cueHtml) {
+      cue.innerHTML = '<div class="cue-card pop">' + cueHtml + '</div>';
       cue.className = 'cue';
     } else {
       cue.innerHTML = '';
@@ -71,23 +64,17 @@
     var html = '';
     for (var i = 0; i < trial.choices.length; i++) {
       var c = trial.choices[i];
-      html += '<button class="card ' + CARD_COLORS[i % 4] + ' n' + trial.choices.length + ' pop" data-id="' + c.id +
-        '" style="animation-delay:' + (i * 0.06) + 's"><span class="glyph">' + c.show + '</span></button>';
+      html += '<button class="card ' + CARD_COLORS[i % 4] + (def.cardClass ? ' ' + def.cardClass : '') +
+        ' pop" data-id="' + c.id + '" style="animation-delay:' + (i * 0.06) + 's"><span class="glyph">' +
+        c.show + '</span></button>';
     }
     var box = App.$('choices');
     box.className = 'choices n' + trial.choices.length;
     box.innerHTML = html;
-    Sound.playSeq(promptIds(item));
-    // Warm up the clips this question might need.
+    Sound.playSeq((intro ? [intro] : []).concat(def.prompt(item)));
     var pre = [];
-    for (i = 0; i < trial.choices.length; i++) pre.push('thats_' + letterName(trial.choices[i]));
-    Sound.preload(pre);
-  }
-
-  function praise(item, firstTry) {
-    if (item.group === 'match') return ['sfx_chime', 'pair_' + item.cue];
-    if (!firstTry) return ['sfx_chime', 'praise_1'];
-    return ['sfx_chime', 'praise_' + (1 + Math.floor(Math.random() * 8))];
+    for (i = 0; i < trial.choices.length; i++) pre = pre.concat(def.wrongSay(trial.choices[i]));
+    Sound.preload(pre.concat(def.rightSay(item, true)));
   }
 
   function sparkleBurst(card) {
@@ -111,13 +98,12 @@
       t.className += ' right';
       sparkleBurst(t);
       var firstTry = wrong.length === 0;
-      Sound.playSeq(praise(item, firstTry), function () { done(firstTry); });
+      Sound.playSeq(def.rightSay(item, firstTry), function () { done(firstTry); });
     } else {
       wrong.push(id);
       t.className += ' wrong gone';
       t.disabled = true;
-      var picked = engine.byId[id];
-      var say = ['sfx_soft', 'thats_' + letterName(picked)];
+      var say = ['sfx_soft'].concat(def.wrongSay(engine.byId[id]));
       var left = trial.choices.length - wrong.length;
       if (wrong.length >= 2 || left <= 1) {
         // Show the answer so she always finishes on a right tap.
@@ -129,7 +115,7 @@
         say.push('here');
       } else {
         say.push('try_' + (1 + Math.floor(Math.random() * 3)));
-        say = say.concat(promptIds(item));
+        say = say.concat(def.prompt(item));
       }
       Sound.playSeq(say);
     }
@@ -142,7 +128,7 @@
     renderStars();
     var after = function () {
       if (engine.session && engine.session.done) finish();
-      else nextTrial();
+      else nextTrial(null);
     };
     if (got) setTimeout(function () { App.stickerPopup(got, function () { renderStars(); after(); }); }, 250);
     else setTimeout(after, 350);
@@ -163,16 +149,18 @@
     App.goHome();
   }
 
+  function sayAgain() { if (trial) Sound.playSeq(def.prompt(trial.item)); }
+
   function init() {
     App.$('homeBtn').innerHTML = Art.icon('home', 'icon');
     App.$('sayBtn').innerHTML = Art.icon('speaker', 'icon');
     App.tap(App.$('homeBtn'), quit);
-    App.tap(App.$('sayBtn'), function () { if (trial) Sound.playSeq(promptIds(trial.item)); });
+    App.tap(App.$('sayBtn'), sayAgain);
     App.on(App.$('choices'), 'click', onTap);
-    App.tap(App.$('cue'), function () { if (trial) Sound.playSeq(promptIds(trial.item)); });
+    App.tap(App.$('cue'), sayAgain);
   }
 
-  root.LettersGame = { start: start, KEY: KEY };
+  root.Game = { start: start };
   if (document.readyState === 'loading') App.on(document, 'DOMContentLoaded', init);
   else init();
 })(window.HSL = window.HSL || {});

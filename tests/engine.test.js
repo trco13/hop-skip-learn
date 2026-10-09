@@ -266,3 +266,49 @@ test('progress survives saving and loading', function () {
   var t = (e2.startSession(START + 3 * DAY), e2.next(START + 3 * DAY));
   assert.ok(t && t.item);
 });
+
+// ---------- letter sounds game ----------
+
+function soundEngine(seed) {
+  return new Engine({
+    items: Content.soundItems(),
+    settings: { sessionMinutes: 7, maxChoices: 4 },
+    random: sim.rng(seed),
+    dayOf: function (ms) { return Math.floor(ms / DAY); }
+  });
+}
+
+test('sounds: the answer is never shown with a letter that makes the same sound', function () {
+  var e = soundEngine(101);
+  var logs = runDays(e, strongKid(102), 20);
+  var same = [['c', 'k'], ['c', 'q'], ['k', 'q'], ['x', 'k'], ['x', 'c']];
+  logs.forEach(function (log) {
+    log.forEach(function (t) {
+      same.forEach(function (p) {
+        var a = 'snd:' + p[0], b = 'snd:' + p[1];
+        // The answer never sits next to another letter with its sound.
+        if (t.id === a) assert.ok(t.choices.indexOf(b) < 0, t.id + ': ' + t.choices.join(','));
+        if (t.id === b) assert.ok(t.choices.indexOf(a) < 0, t.id + ': ' + t.choices.join(','));
+      });
+    });
+  });
+});
+
+test('sounds: struggling child keeps winning and makes progress', function () {
+  var e = soundEngine(103);
+  var easy = { 'snd:s': 1, 'snd:m': 1 };
+  var kid = new sim.Child({ rand: sim.rng(104), learnRate: 0.1, forget: 0.03, lookAlikePull: 0.6,
+    initial: function (it) { return easy[it.id] ? 0.8 : 0.03; } });
+  var logs = runDays(e, kid, 30);
+  var all = [].concat.apply([], logs);
+  assert.ok(rate(all) >= 0.6, 'success ' + rate(all).toFixed(2));
+  var known = Content.soundItems().filter(function (it) { return e.isKnown(it.id); }).length;
+  assert.ok(known >= 8, 'known ' + known);
+});
+
+test('sounds: strong child masters nearly all sounds', function () {
+  var e = soundEngine(105);
+  runDays(e, strongKid(106), 30);
+  var m = Content.soundItems().filter(function (it) { return e.isMastered(it.id); }).length;
+  assert.ok(m >= 23, 'mastered ' + m);
+});
