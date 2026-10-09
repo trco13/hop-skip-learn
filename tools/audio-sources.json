@@ -345,9 +345,9 @@
   "text": "like hat."
  },
  "like_i": {
-  "ipa": "lˈaɪk ˈɪtʃ.",
-  "key": "40913d1b0912",
-  "text": "like itch."
+  "ipa": "lˈaɪk ˈɪɡluː.",
+  "key": "a9f2d6f00f80",
+  "text": "like igloo."
  },
  "like_j": {
   "ipa": "lˈaɪk dʒˈæm.",
@@ -1062,264 +1062,212 @@
   "text": "#sound:z:3"
  },
  "starta_a": {
-  "ipa": "ˈæpəl stˈɑːɹts wɪð ˈeɪ!",
-  "key": "f7718dc0c105",
-  "text": "Apple starts with A!"
+  "key": "cd916e224487",
+  "text": "#seq:!w:apple|~0.3|starts with A!"
  },
  "starta_b": {
-  "ipa": "bˈɔːl stˈɑːɹts wɪð bˈiː!",
-  "key": "62d12335b96a",
-  "text": "Ball starts with B!"
+  "key": "9c060188ae80",
+  "text": "#seq:!w:ball|~0.3|starts with B!"
  },
  "starta_c": {
-  "ipa": "kˈæt stˈɑːɹts wɪð sˈiː!",
-  "key": "4b49a965a00c",
-  "text": "Cat starts with C!"
+  "key": "a71821f8e4f3",
+  "text": "#seq:!w:cat|~0.3|starts with C!"
  },
  "starta_d": {
-  "ipa": "dˈɑːɡ stˈɑːɹts wɪð dˈiː!",
-  "key": "dab220384c63",
-  "text": "Dog starts with D!"
+  "key": "7858964b96f3",
+  "text": "#seq:!w:dog|~0.3|starts with D!"
  },
  "starta_e": {
-  "ipa": "ˈɛɡ stˈɑːɹts wɪð ˈiː!",
-  "key": "bd7ab8ea9f99",
-  "text": "Egg starts with E!"
+  "key": "292dd770df1f",
+  "text": "#seq:!w:egg|~0.3|starts with E!"
  },
  "starta_f": {
-  "ipa": "fˈɪʃ stˈɑːɹts wɪð ˈɛf!",
-  "key": "16ea657a441a",
-  "text": "Fish starts with F!"
+  "key": "927bb99abbf1",
+  "text": "#seq:!w:fish|~0.3|starts with F!"
  },
  "starta_g": {
-  "ipa": "ɡˈoʊt stˈɑːɹts wɪð dʒˈiː!",
-  "key": "a6e8ea2cf0ad",
-  "text": "Goat starts with G!"
+  "key": "1a4ad9b1eed8",
+  "text": "#seq:!w:goat|~0.3|starts with G!"
  },
  "starta_h": {
-  "ipa": "hˈæt stˈɑːɹts wɪð ˈeɪtʃ!",
-  "key": "f9626189e3fc",
-  "text": "Hat starts with H!"
+  "key": "77f47536d897",
+  "text": "#seq:!w:hat|~0.3|starts with H!"
  },
  "starta_i": {
-  "ipa": "ˈɪtʃ stˈɑːɹts wɪð ˈaɪ!",
-  "key": "52175d7a1d1e",
-  "text": "Itch starts with I!"
+  "key": "170c6486ac9f",
+  "text": "#seq:!w:igloo|~0.3|starts with I!"
  },
  "starta_j": {
-  "ipa": "dʒˈæm stˈɑːɹts wɪð dʒˈeɪ!",
-  "key": "5e897bf01034",
-  "text": "Jam starts with J!"
+  "key": "d21d31f47d7f",
+  "text": "#seq:!w:jam|~0.3|starts with J!"
  },
  "starta_k": {
-  "ipa": "kˈaɪt stˈɑːɹts wɪð kˈeɪ!",
-  "key": "93e1d84dfb9b",
-  "text": "Kite starts with K!"
+  "key": "69324a290cc1",
+  "text": "#seq:!w:kite|~0.3|starts with K!"
  },
  "starta_l": {
-  "ipa": "lˈaɪən stˈɑːɹts wɪð ˈɛl!",
-  "key": "abb561ab18b6",
-  "text": "Lion starts with L!"
+  "key": "e11379910c5a",
+  "text": "#seq:!w:lion|~0.3|starts with L!"
  },
  "starta_m": {
-  "ipa": "mˈuːn stˈɑːɹts wɪð ˈɛm!",
-  "key": "977f113bb831",
-  "text": "Moon starts with M!"
+  "key": "e473e8319326",
+  "text": "#seq:!w:moon|~0.3|starts with M!"
  },
  "starta_n": {
-  "ipa": "nˈɛst stˈɑːɹts wɪð ˈɛn!",
-  "key": "394e0b0b0a4e",
-  "text": "Nest starts with N!"
+  "key": "f80ff5cb07d3",
+  "text": "#seq:!w:nest|~0.3|starts with N!"
  },
  "starta_o": {
-  "ipa": "ˈɑːktəpəs stˈɑːɹts wɪð ˈoʊ!",
-  "key": "fda9120a6407",
-  "text": "Octopus starts with O!"
+  "key": "682bf4748679",
+  "text": "#seq:!w:octopus|~0.3|starts with O!"
  },
  "starta_p": {
-  "ipa": "pˈɪɡ stˈɑːɹts wɪð pˈiː!",
-  "key": "8f474a5e8593",
-  "text": "Pig starts with P!"
+  "key": "7a293bcc15a7",
+  "text": "#seq:!w:pig|~0.3|starts with P!"
  },
  "starta_q": {
-  "ipa": "kwˈiːn stˈɑːɹts wɪð kjˈuː!",
-  "key": "c66593eae384",
-  "text": "Queen starts with Q!"
+  "key": "0fe1a8ba4394",
+  "text": "#seq:!w:queen|~0.3|starts with Q!"
  },
  "starta_r": {
-  "ipa": "ɹˈeɪn stˈɑːɹts wɪð ˈɑːɹ!",
-  "key": "bead953cfce3",
-  "text": "Rain starts with R!"
+  "key": "eeb365e65c8d",
+  "text": "#seq:!w:rain|~0.3|starts with R!"
  },
  "starta_s": {
-  "ipa": "sˈʌn stˈɑːɹts wɪð ˈɛs!",
-  "key": "691d0f4d36c1",
-  "text": "Sun starts with S!"
+  "key": "0b341372bf9b",
+  "text": "#seq:!w:sun|~0.3|starts with S!"
  },
  "starta_t": {
-  "ipa": "tˈɑːp stˈɑːɹts wɪð tˈiː!",
-  "key": "9735e80a900e",
-  "text": "Top starts with T!"
+  "key": "29f5017d4605",
+  "text": "#seq:!w:top|~0.3|starts with T!"
  },
  "starta_u": {
-  "ipa": "ʌmbɹˈɛlə stˈɑːɹts wɪð jˈuː!",
-  "key": "3565cf79f383",
-  "text": "Umbrella starts with U!"
+  "key": "b430ddb710c8",
+  "text": "#seq:!w:umbrella|~0.3|starts with U!"
  },
  "starta_v": {
-  "ipa": "vˈæn stˈɑːɹts wɪð vˈiː!",
-  "key": "036aaa6de7a6",
-  "text": "Van starts with V!"
+  "key": "9afed0039b26",
+  "text": "#seq:!w:van|~0.3|starts with V!"
  },
  "starta_w": {
-  "ipa": "wˈɛb stˈɑːɹts wɪð dˈʌbəljˌuː!",
-  "key": "6616ca172609",
-  "text": "Web starts with W!"
+  "key": "77cb6914955f",
+  "text": "#seq:!w:web|~0.3|starts with W!"
  },
  "starta_x": {
-  "ipa": "bˈɑːks ˈɛndz wɪð ˈɛks!",
-  "key": "1e2d56fed009",
-  "text": "Box ends with X!"
+  "key": "8bcf34ab11e6",
+  "text": "#seq:!w:box|~0.3|ends with X!"
  },
  "starta_y": {
-  "ipa": "jˈoʊjˈoʊ stˈɑːɹts wɪð wˈaɪ!",
-  "key": "b62a3a0e2fc2",
-  "text": "Yo-yo starts with Y!"
+  "key": "e2014ba65054",
+  "text": "#seq:!w:yo-yo|~0.3|starts with Y!"
  },
  "starta_z": {
-  "ipa": "zˈiːbɹə stˈɑːɹts wɪð zˈiː!",
-  "key": "6fd9003081f8",
-  "text": "Zebra starts with Z!"
+  "key": "5bcb46f19a14",
+  "text": "#seq:!w:zebra|~0.3|starts with Z!"
  },
  "startq_a": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz ˈæpəl stˈɑːɹt wɪð?",
-  "key": "0523d721855a",
-  "text": "Which letter does apple start with?"
+  "key": "7e71a6dbcb55",
+  "text": "#seq:Which letter does|~0.35|!w:apple|~0.35|start with?|~0.6|!w:apple"
  },
  "startq_b": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz bˈɔːl stˈɑːɹt wɪð?",
-  "key": "e0e12fbe845a",
-  "text": "Which letter does ball start with?"
+  "key": "69f46f85431a",
+  "text": "#seq:Which letter does|~0.35|!w:ball|~0.35|start with?|~0.6|!w:ball"
  },
  "startq_c": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz kˈæt stˈɑːɹt wɪð?",
-  "key": "b1c25b6e0af4",
-  "text": "Which letter does cat start with?"
+  "key": "91e8b8cc0570",
+  "text": "#seq:Which letter does|~0.35|!w:cat|~0.35|start with?|~0.6|!w:cat"
  },
  "startq_d": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz dˈɑːɡ stˈɑːɹt wɪð?",
-  "key": "2c5bb9ec4dd8",
-  "text": "Which letter does dog start with?"
+  "key": "54130d4fd357",
+  "text": "#seq:Which letter does|~0.35|!w:dog|~0.35|start with?|~0.6|!w:dog"
  },
  "startq_e": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz ˈɛɡ stˈɑːɹt wɪð?",
-  "key": "f2be26a850b4",
-  "text": "Which letter does egg start with?"
+  "key": "5bd377e53eff",
+  "text": "#seq:Which letter does|~0.35|!w:egg|~0.35|start with?|~0.6|!w:egg"
  },
  "startq_f": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz fˈɪʃ stˈɑːɹt wɪð?",
-  "key": "4a987a1d0f0f",
-  "text": "Which letter does fish start with?"
+  "key": "a062a0bb5749",
+  "text": "#seq:Which letter does|~0.35|!w:fish|~0.35|start with?|~0.6|!w:fish"
  },
  "startq_g": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz ɡˈoʊt stˈɑːɹt wɪð?",
-  "key": "87888c5018a0",
-  "text": "Which letter does goat start with?"
+  "key": "96d6abe60d3c",
+  "text": "#seq:Which letter does|~0.35|!w:goat|~0.35|start with?|~0.6|!w:goat"
  },
  "startq_h": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz hˈæt stˈɑːɹt wɪð?",
-  "key": "96951f94a0ca",
-  "text": "Which letter does hat start with?"
+  "key": "16c2d1a36390",
+  "text": "#seq:Which letter does|~0.35|!w:hat|~0.35|start with?|~0.6|!w:hat"
  },
  "startq_i": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz ˈɪtʃ stˈɑːɹt wɪð?",
-  "key": "0308b80d4fa6",
-  "text": "Which letter does itch start with?"
+  "key": "4e238881e98a",
+  "text": "#seq:Which letter does|~0.35|!w:igloo|~0.35|start with?|~0.6|!w:igloo"
  },
  "startq_j": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz dʒˈæm stˈɑːɹt wɪð?",
-  "key": "9443366b3ba0",
-  "text": "Which letter does jam start with?"
+  "key": "21bdefbcdad3",
+  "text": "#seq:Which letter does|~0.35|!w:jam|~0.35|start with?|~0.6|!w:jam"
  },
  "startq_k": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz kˈaɪt stˈɑːɹt wɪð?",
-  "key": "138fb8f436da",
-  "text": "Which letter does kite start with?"
+  "key": "b7eb411db219",
+  "text": "#seq:Which letter does|~0.35|!w:kite|~0.35|start with?|~0.6|!w:kite"
  },
  "startq_l": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz lˈaɪən stˈɑːɹt wɪð?",
-  "key": "1ba7b2e4c630",
-  "text": "Which letter does lion start with?"
+  "key": "5b8f43a24c4c",
+  "text": "#seq:Which letter does|~0.35|!w:lion|~0.35|start with?|~0.6|!w:lion"
  },
  "startq_m": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz mˈuːn stˈɑːɹt wɪð?",
-  "key": "e32a0f15c9c1",
-  "text": "Which letter does moon start with?"
+  "key": "3b70fecc4ee9",
+  "text": "#seq:Which letter does|~0.35|!w:moon|~0.35|start with?|~0.6|!w:moon"
  },
  "startq_n": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz nˈɛst stˈɑːɹt wɪð?",
-  "key": "cf9086845fc6",
-  "text": "Which letter does nest start with?"
+  "key": "99e3a4fca59e",
+  "text": "#seq:Which letter does|~0.35|!w:nest|~0.35|start with?|~0.6|!w:nest"
  },
  "startq_o": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz ˈɑːktəpəs stˈɑːɹt wɪð?",
-  "key": "fdbf87d4267e",
-  "text": "Which letter does octopus start with?"
+  "key": "5d658613c7a0",
+  "text": "#seq:Which letter does|~0.35|!w:octopus|~0.35|start with?|~0.6|!w:octopus"
  },
  "startq_p": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz pˈɪɡ stˈɑːɹt wɪð?",
-  "key": "004a0f3373f5",
-  "text": "Which letter does pig start with?"
+  "key": "fc94164529f8",
+  "text": "#seq:Which letter does|~0.35|!w:pig|~0.35|start with?|~0.6|!w:pig"
  },
  "startq_q": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz kwˈiːn stˈɑːɹt wɪð?",
-  "key": "900d4fae10b9",
-  "text": "Which letter does queen start with?"
+  "key": "32110b7595a3",
+  "text": "#seq:Which letter does|~0.35|!w:queen|~0.35|start with?|~0.6|!w:queen"
  },
  "startq_r": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz ɹˈeɪn stˈɑːɹt wɪð?",
-  "key": "ca3975bbb65e",
-  "text": "Which letter does rain start with?"
+  "key": "b873f9dab593",
+  "text": "#seq:Which letter does|~0.35|!w:rain|~0.35|start with?|~0.6|!w:rain"
  },
  "startq_s": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz sˈʌn stˈɑːɹt wɪð?",
-  "key": "6673057248d2",
-  "text": "Which letter does sun start with?"
+  "key": "2ec75a28b77b",
+  "text": "#seq:Which letter does|~0.35|!w:sun|~0.35|start with?|~0.6|!w:sun"
  },
  "startq_t": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz tˈɑːp stˈɑːɹt wɪð?",
-  "key": "1e1296f423cf",
-  "text": "Which letter does top start with?"
+  "key": "9e4889bf314b",
+  "text": "#seq:Which letter does|~0.35|!w:top|~0.35|start with?|~0.6|!w:top"
  },
  "startq_u": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz ʌmbɹˈɛlə stˈɑːɹt wɪð?",
-  "key": "7e5fb8024f66",
-  "text": "Which letter does umbrella start with?"
+  "key": "aa1b44aceb98",
+  "text": "#seq:Which letter does|~0.35|!w:umbrella|~0.35|start with?|~0.6|!w:umbrella"
  },
  "startq_v": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz vˈæn stˈɑːɹt wɪð?",
-  "key": "5a34cdc72c85",
-  "text": "Which letter does van start with?"
+  "key": "88fbb33bc6db",
+  "text": "#seq:Which letter does|~0.35|!w:van|~0.35|start with?|~0.6|!w:van"
  },
  "startq_w": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz wˈɛb stˈɑːɹt wɪð?",
-  "key": "3436721060d4",
-  "text": "Which letter does web start with?"
+  "key": "a56df9e839c9",
+  "text": "#seq:Which letter does|~0.35|!w:web|~0.35|start with?|~0.6|!w:web"
  },
  "startq_x": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ mˌeɪks ðə sˈaʊnd æt ðɪ ˈɛnd ʌv bˈɑːks?",
-  "key": "5bb62afb1c23",
-  "text": "Which letter makes the sound at the end of box?"
+  "key": "61caba7feb5a",
+  "text": "#seq:Which letter makes the sound at the end of|~0.35|!w:box|~0.6|!w:box"
  },
  "startq_y": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz jˈoʊjˈoʊ stˈɑːɹt wɪð?",
-  "key": "971114237732",
-  "text": "Which letter does yo-yo start with?"
+  "key": "eedf83aee561",
+  "text": "#seq:Which letter does|~0.35|!w:yo-yo|~0.35|start with?|~0.6|!w:yo-yo"
  },
  "startq_z": {
-  "ipa": "wˌɪtʃ lˈɛɾɚ dˈʌz zˈiːbɹə stˈɑːɹt wɪð?",
-  "key": "146596290306",
-  "text": "Which letter does zebra start with?"
+  "key": "900de4d2544d",
+  "text": "#seq:Which letter does|~0.35|!w:zebra|~0.35|start with?|~0.6|!w:zebra"
  },
  "sticker": {
   "ipa": "jˈeɪ! juː ˈɜːnd ɐ stˈɪkɚ!",

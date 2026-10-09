@@ -62,11 +62,13 @@
   // (1 and 2 cut from real words, 3 a plainer synthesizer). The parent
   // picks the best one in the parent area.
   var SOUND_LETTERS = 'abcdefghijklmnopqrstuvwxyz'.split('');
-  // Picks baked in as defaults (1-3). Update after the parent listens.
+  // Default for every letter: ask with the word ("x"), since no version
+  // of the isolated sounds came out right. 1-3 would pick a sound clip.
   var SOUND_DEFAULTS = {};
+  for (var si = 0; si < 26; si++) SOUND_DEFAULTS['abcdefghijklmnopqrstuvwxyz'.charAt(si)] = 'x';
   var KEYWORDS = {
     a: 'apple', b: 'ball', c: 'cat', d: 'dog', e: 'egg', f: 'fish', g: 'goat',
-    h: 'hat', i: 'itch', j: 'jam', k: 'kite', l: 'lion', m: 'moon', n: 'nest',
+    h: 'hat', i: 'igloo', j: 'jam', k: 'kite', l: 'lion', m: 'moon', n: 'nest',
     o: 'octopus', p: 'pig', q: 'queen', r: 'rain', s: 'sun', t: 'top', u: 'umbrella',
     v: 'van', w: 'web', x: 'box', y: 'yo-yo', z: 'zebra'
   };
