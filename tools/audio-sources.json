@@ -1062,212 +1062,316 @@
   "text": "#sound:z:3"
  },
  "starta_a": {
-  "key": "cd916e224487",
-  "text": "#seq:!w:apple|~0.3|starts with A!"
+  "key": "97dfc7e77621",
+  "text": "#say:Yes!|*Apple|starts with A!"
  },
  "starta_b": {
-  "key": "9c060188ae80",
-  "text": "#seq:!w:ball|~0.3|starts with B!"
+  "key": "b763087dabc6",
+  "text": "#say:Yes!|*Ball|starts with B!"
  },
  "starta_c": {
-  "key": "a71821f8e4f3",
-  "text": "#seq:!w:cat|~0.3|starts with C!"
+  "key": "6e9b8f771e78",
+  "text": "#say:Yes!|*Cat|starts with C!"
  },
  "starta_d": {
-  "key": "7858964b96f3",
-  "text": "#seq:!w:dog|~0.3|starts with D!"
+  "key": "743adaae1941",
+  "text": "#say:Yes!|*Dog|starts with D!"
  },
  "starta_e": {
-  "key": "292dd770df1f",
-  "text": "#seq:!w:egg|~0.3|starts with E!"
+  "key": "08a08a7ba178",
+  "text": "#say:Yes!|*Egg|starts with E!"
  },
  "starta_f": {
-  "key": "927bb99abbf1",
-  "text": "#seq:!w:fish|~0.3|starts with F!"
+  "key": "1163cb3d31ea",
+  "text": "#say:Yes!|*Fish|starts with F!"
  },
  "starta_g": {
-  "key": "1a4ad9b1eed8",
-  "text": "#seq:!w:goat|~0.3|starts with G!"
+  "key": "3b57d56e3cbe",
+  "text": "#say:Yes!|*Goat|starts with G!"
  },
  "starta_h": {
-  "key": "77f47536d897",
-  "text": "#seq:!w:hat|~0.3|starts with H!"
+  "key": "3a1a9ebcfb69",
+  "text": "#say:Yes!|*Hat|starts with H!"
  },
  "starta_i": {
-  "key": "170c6486ac9f",
-  "text": "#seq:!w:igloo|~0.3|starts with I!"
+  "key": "75cc536f685b",
+  "text": "#say:Yes!|*Igloo|starts with I!"
  },
  "starta_j": {
-  "key": "d21d31f47d7f",
-  "text": "#seq:!w:jam|~0.3|starts with J!"
+  "key": "fc90ff717a70",
+  "text": "#say:Yes!|*Jam|starts with J!"
  },
  "starta_k": {
-  "key": "69324a290cc1",
-  "text": "#seq:!w:kite|~0.3|starts with K!"
+  "key": "8d518986ff4b",
+  "text": "#say:Yes!|*Kite|starts with K!"
  },
  "starta_l": {
-  "key": "e11379910c5a",
-  "text": "#seq:!w:lion|~0.3|starts with L!"
+  "key": "4765b1cf8c36",
+  "text": "#say:Yes!|*Lion|starts with L!"
  },
  "starta_m": {
-  "key": "e473e8319326",
-  "text": "#seq:!w:moon|~0.3|starts with M!"
+  "key": "6f062858c6b5",
+  "text": "#say:Yes!|*Moon|starts with M!"
  },
  "starta_n": {
-  "key": "f80ff5cb07d3",
-  "text": "#seq:!w:nest|~0.3|starts with N!"
+  "key": "2b253207e461",
+  "text": "#say:Yes!|*Nest|starts with N!"
  },
  "starta_o": {
-  "key": "682bf4748679",
-  "text": "#seq:!w:octopus|~0.3|starts with O!"
+  "key": "d1677dce9cd9",
+  "text": "#say:Yes!|*Octopus|starts with O!"
  },
  "starta_p": {
-  "key": "7a293bcc15a7",
-  "text": "#seq:!w:pig|~0.3|starts with P!"
+  "key": "a6bf4f75d7b3",
+  "text": "#say:Yes!|*Pig|starts with P!"
  },
  "starta_q": {
-  "key": "0fe1a8ba4394",
-  "text": "#seq:!w:queen|~0.3|starts with Q!"
+  "key": "3f6558d9aa67",
+  "text": "#say:Yes!|*Queen|starts with Q!"
  },
  "starta_r": {
-  "key": "eeb365e65c8d",
-  "text": "#seq:!w:rain|~0.3|starts with R!"
+  "key": "651745f571b6",
+  "text": "#say:Yes!|*Rain|starts with R!"
  },
  "starta_s": {
-  "key": "0b341372bf9b",
-  "text": "#seq:!w:sun|~0.3|starts with S!"
+  "key": "ef853c5f0919",
+  "text": "#say:Yes!|*Sun|starts with S!"
  },
  "starta_t": {
-  "key": "29f5017d4605",
-  "text": "#seq:!w:top|~0.3|starts with T!"
+  "key": "d20bfa8dc897",
+  "text": "#say:Yes!|*Top|starts with T!"
  },
  "starta_u": {
-  "key": "b430ddb710c8",
-  "text": "#seq:!w:umbrella|~0.3|starts with U!"
+  "key": "a0a4bb38e081",
+  "text": "#say:Yes!|*Umbrella|starts with U!"
  },
  "starta_v": {
-  "key": "9afed0039b26",
-  "text": "#seq:!w:van|~0.3|starts with V!"
+  "key": "a55dc50fb18e",
+  "text": "#say:Yes!|*Van|starts with V!"
  },
  "starta_w": {
-  "key": "77cb6914955f",
-  "text": "#seq:!w:web|~0.3|starts with W!"
+  "key": "b9a171756cf2",
+  "text": "#say:Yes!|*Web|starts with W!"
  },
  "starta_x": {
-  "key": "8bcf34ab11e6",
-  "text": "#seq:!w:box|~0.3|ends with X!"
+  "key": "6757cc42873a",
+  "text": "#say:Yes!|*Box|ends with X!"
  },
  "starta_y": {
-  "key": "e2014ba65054",
-  "text": "#seq:!w:yo-yo|~0.3|starts with Y!"
+  "key": "38feb546a508",
+  "text": "#say:Yes!|*Yo-yo|starts with Y!"
  },
  "starta_z": {
-  "key": "5bcb46f19a14",
-  "text": "#seq:!w:zebra|~0.3|starts with Z!"
+  "key": "41f3eb71268d",
+  "text": "#say:Yes!|*Zebra|starts with Z!"
  },
  "startq_a": {
-  "key": "7e71a6dbcb55",
-  "text": "#seq:Which letter does|~0.35|!w:apple|~0.35|start with?|~0.6|!w:apple"
+  "key": "a14042adbada",
+  "text": "#say:Which letter does|*apple|start with?|*Apple."
  },
  "startq_b": {
-  "key": "69f46f85431a",
-  "text": "#seq:Which letter does|~0.35|!w:ball|~0.35|start with?|~0.6|!w:ball"
+  "key": "cbc99e749b2e",
+  "text": "#say:Which letter does|*ball|start with?|*Ball."
  },
  "startq_c": {
-  "key": "91e8b8cc0570",
-  "text": "#seq:Which letter does|~0.35|!w:cat|~0.35|start with?|~0.6|!w:cat"
+  "key": "9c2733ab7140",
+  "text": "#say:Which letter does|*cat|start with?|*Cat."
  },
  "startq_d": {
-  "key": "54130d4fd357",
-  "text": "#seq:Which letter does|~0.35|!w:dog|~0.35|start with?|~0.6|!w:dog"
+  "key": "b16d29ec793c",
+  "text": "#say:Which letter does|*dog|start with?|*Dog."
  },
  "startq_e": {
-  "key": "5bd377e53eff",
-  "text": "#seq:Which letter does|~0.35|!w:egg|~0.35|start with?|~0.6|!w:egg"
+  "key": "f0a036e1b8d7",
+  "text": "#say:Which letter does|*egg|start with?|*Egg."
  },
  "startq_f": {
-  "key": "a062a0bb5749",
-  "text": "#seq:Which letter does|~0.35|!w:fish|~0.35|start with?|~0.6|!w:fish"
+  "key": "592e47dc7cff",
+  "text": "#say:Which letter does|*fish|start with?|*Fish."
  },
  "startq_g": {
-  "key": "96d6abe60d3c",
-  "text": "#seq:Which letter does|~0.35|!w:goat|~0.35|start with?|~0.6|!w:goat"
+  "key": "680e7442e043",
+  "text": "#say:Which letter does|*goat|start with?|*Goat."
  },
  "startq_h": {
-  "key": "16c2d1a36390",
-  "text": "#seq:Which letter does|~0.35|!w:hat|~0.35|start with?|~0.6|!w:hat"
+  "key": "13d9fd3db3f0",
+  "text": "#say:Which letter does|*hat|start with?|*Hat."
  },
  "startq_i": {
-  "key": "4e238881e98a",
-  "text": "#seq:Which letter does|~0.35|!w:igloo|~0.35|start with?|~0.6|!w:igloo"
+  "key": "554133100581",
+  "text": "#say:Which letter does|*igloo|start with?|*Igloo."
  },
  "startq_j": {
-  "key": "21bdefbcdad3",
-  "text": "#seq:Which letter does|~0.35|!w:jam|~0.35|start with?|~0.6|!w:jam"
+  "key": "c861ca99c672",
+  "text": "#say:Which letter does|*jam|start with?|*Jam."
  },
  "startq_k": {
-  "key": "b7eb411db219",
-  "text": "#seq:Which letter does|~0.35|!w:kite|~0.35|start with?|~0.6|!w:kite"
+  "key": "697210403fe9",
+  "text": "#say:Which letter does|*kite|start with?|*Kite."
  },
  "startq_l": {
-  "key": "5b8f43a24c4c",
-  "text": "#seq:Which letter does|~0.35|!w:lion|~0.35|start with?|~0.6|!w:lion"
+  "key": "09fdcc74aca2",
+  "text": "#say:Which letter does|*lion|start with?|*Lion."
  },
  "startq_m": {
-  "key": "3b70fecc4ee9",
-  "text": "#seq:Which letter does|~0.35|!w:moon|~0.35|start with?|~0.6|!w:moon"
+  "key": "3d7ffa2a2723",
+  "text": "#say:Which letter does|*moon|start with?|*Moon."
  },
  "startq_n": {
-  "key": "99e3a4fca59e",
-  "text": "#seq:Which letter does|~0.35|!w:nest|~0.35|start with?|~0.6|!w:nest"
+  "key": "2c8abb45e941",
+  "text": "#say:Which letter does|*nest|start with?|*Nest."
  },
  "startq_o": {
-  "key": "5d658613c7a0",
-  "text": "#seq:Which letter does|~0.35|!w:octopus|~0.35|start with?|~0.6|!w:octopus"
+  "key": "425007a9b3d7",
+  "text": "#say:Which letter does|*octopus|start with?|*Octopus."
  },
  "startq_p": {
-  "key": "fc94164529f8",
-  "text": "#seq:Which letter does|~0.35|!w:pig|~0.35|start with?|~0.6|!w:pig"
+  "key": "dcf2408952e3",
+  "text": "#say:Which letter does|*pig|start with?|*Pig."
  },
  "startq_q": {
-  "key": "32110b7595a3",
-  "text": "#seq:Which letter does|~0.35|!w:queen|~0.35|start with?|~0.6|!w:queen"
+  "key": "d5eda1890586",
+  "text": "#say:Which letter does|*queen|start with?|*Queen."
  },
  "startq_r": {
-  "key": "b873f9dab593",
-  "text": "#seq:Which letter does|~0.35|!w:rain|~0.35|start with?|~0.6|!w:rain"
+  "key": "493d24ff4d63",
+  "text": "#say:Which letter does|*rain|start with?|*Rain."
  },
  "startq_s": {
-  "key": "2ec75a28b77b",
-  "text": "#seq:Which letter does|~0.35|!w:sun|~0.35|start with?|~0.6|!w:sun"
+  "key": "248e9eae1ad8",
+  "text": "#say:Which letter does|*sun|start with?|*Sun."
  },
  "startq_t": {
-  "key": "9e4889bf314b",
-  "text": "#seq:Which letter does|~0.35|!w:top|~0.35|start with?|~0.6|!w:top"
+  "key": "04f70d64f98d",
+  "text": "#say:Which letter does|*top|start with?|*Top."
  },
  "startq_u": {
-  "key": "aa1b44aceb98",
-  "text": "#seq:Which letter does|~0.35|!w:umbrella|~0.35|start with?|~0.6|!w:umbrella"
+  "key": "ec4608162226",
+  "text": "#say:Which letter does|*umbrella|start with?|*Umbrella."
  },
  "startq_v": {
-  "key": "88fbb33bc6db",
-  "text": "#seq:Which letter does|~0.35|!w:van|~0.35|start with?|~0.6|!w:van"
+  "key": "01d9303cb305",
+  "text": "#say:Which letter does|*van|start with?|*Van."
  },
  "startq_w": {
-  "key": "a56df9e839c9",
-  "text": "#seq:Which letter does|~0.35|!w:web|~0.35|start with?|~0.6|!w:web"
+  "key": "69194b428bbb",
+  "text": "#say:Which letter does|*web|start with?|*Web."
  },
  "startq_x": {
-  "key": "61caba7feb5a",
-  "text": "#seq:Which letter makes the sound at the end of|~0.35|!w:box|~0.6|!w:box"
+  "key": "b1f5731cc2ce",
+  "text": "#say:Which letter makes the sound at the end of|*box|*Box."
  },
  "startq_y": {
-  "key": "eedf83aee561",
-  "text": "#seq:Which letter does|~0.35|!w:yo-yo|~0.35|start with?|~0.6|!w:yo-yo"
+  "key": "b0a70741b2d9",
+  "text": "#say:Which letter does|*yo-yo|start with?|*Yo-yo."
  },
  "startq_z": {
-  "key": "900de4d2544d",
-  "text": "#seq:Which letter does|~0.35|!w:zebra|~0.35|start with?|~0.6|!w:zebra"
+  "key": "f1f5716e968a",
+  "text": "#say:Which letter does|*zebra|start with?|*Zebra."
+ },
+ "startw_a": {
+  "key": "51c1ba6bb2a5",
+  "text": "#say:That one is|*apple|Apple starts with A."
+ },
+ "startw_b": {
+  "key": "061376032855",
+  "text": "#say:That one is|*ball|Ball starts with B."
+ },
+ "startw_c": {
+  "key": "4e0f386ddd57",
+  "text": "#say:That one is|*cat|Cat starts with C."
+ },
+ "startw_d": {
+  "key": "f11340a092a5",
+  "text": "#say:That one is|*dog|Dog starts with D."
+ },
+ "startw_e": {
+  "key": "a655de61fb0a",
+  "text": "#say:That one is|*egg|Egg starts with E."
+ },
+ "startw_f": {
+  "key": "f3e8cac067c5",
+  "text": "#say:That one is|*fish|Fish starts with F."
+ },
+ "startw_g": {
+  "key": "17e2066005a4",
+  "text": "#say:That one is|*goat|Goat starts with G."
+ },
+ "startw_h": {
+  "key": "fc8870b886c6",
+  "text": "#say:That one is|*hat|Hat starts with H."
+ },
+ "startw_i": {
+  "key": "9cc0deeda44e",
+  "text": "#say:That one is|*igloo|Igloo starts with I."
+ },
+ "startw_j": {
+  "key": "f8e5109a9f08",
+  "text": "#say:That one is|*jam|Jam starts with J."
+ },
+ "startw_k": {
+  "key": "d58e4328e0e5",
+  "text": "#say:That one is|*kite|Kite starts with K."
+ },
+ "startw_l": {
+  "key": "3cb562a73ef7",
+  "text": "#say:That one is|*lion|Lion starts with L."
+ },
+ "startw_m": {
+  "key": "02aa42d7fc2f",
+  "text": "#say:That one is|*moon|Moon starts with M."
+ },
+ "startw_n": {
+  "key": "5ddde97f7d9c",
+  "text": "#say:That one is|*nest|Nest starts with N."
+ },
+ "startw_o": {
+  "key": "54672e0a2583",
+  "text": "#say:That one is|*octopus|Octopus starts with O."
+ },
+ "startw_p": {
+  "key": "0fbe014c8b7b",
+  "text": "#say:That one is|*pig|Pig starts with P."
+ },
+ "startw_q": {
+  "key": "a22045d4fe20",
+  "text": "#say:That one is|*queen|Queen starts with Q."
+ },
+ "startw_r": {
+  "key": "a8e1e9c2d93e",
+  "text": "#say:That one is|*rain|Rain starts with R."
+ },
+ "startw_s": {
+  "key": "e99fb3634a4d",
+  "text": "#say:That one is|*sun|Sun starts with S."
+ },
+ "startw_t": {
+  "key": "0e38b1c4f029",
+  "text": "#say:That one is|*top|Top starts with T."
+ },
+ "startw_u": {
+  "key": "642483289354",
+  "text": "#say:That one is|*umbrella|Umbrella starts with U."
+ },
+ "startw_v": {
+  "key": "2daf0a9bf548",
+  "text": "#say:That one is|*van|Van starts with V."
+ },
+ "startw_w": {
+  "key": "40b84ad3e9ed",
+  "text": "#say:That one is|*web|Web starts with W."
+ },
+ "startw_x": {
+  "key": "4e51a0819e80",
+  "text": "#say:That one is|*box|Box ends with X."
+ },
+ "startw_y": {
+  "key": "56098050c806",
+  "text": "#say:That one is|*yo-yo|Yo-yo starts with Y."
+ },
+ "startw_z": {
+  "key": "6f0199c3f3df",
+  "text": "#say:That one is|*zebra|Zebra starts with Z."
  },
  "sticker": {
   "ipa": "jˈeɪ! juː ˈɜːnd ɐ stˈɪkɚ!",

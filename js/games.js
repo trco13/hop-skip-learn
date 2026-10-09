@@ -57,7 +57,7 @@
       return ['sfx_chime', 'says_' + item.letter.toUpperCase(), soundClip(item.letter), 'like_' + item.letter];
     },
     wrongSay: function (picked) {
-      if (wordMode(picked.letter)) return ['starta_' + picked.letter];
+      if (wordMode(picked.letter)) return ['startw_' + picked.letter];
       return ['says_' + picked.letter.toUpperCase(), soundClip(picked.letter)];
     }
   };

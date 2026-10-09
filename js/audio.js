@@ -20,7 +20,10 @@
     return el;
   }
 
-  function url(id) { return 'audio/' + id + '.mp3'; }
+  function url(id) {
+    var v = root.AudioVersions && root.AudioVersions[id];
+    return 'audio/' + id + '.mp3' + (v ? '?v=' + v : '');
+  }
 
   // Call from inside a tap handler.
   function unlock() {

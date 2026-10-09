@@ -49,7 +49,7 @@ test('every clip the games can ask for exists', function () {
   need.push('pick_game', 'intro_sounds', 'snd_prompt');
   Content.soundItems().forEach(function (it) {
     for (var v = 1; v <= 3; v++) need.push('snd_' + it.letter + '_' + v);
-    need.push('says_' + it.letter.toUpperCase(), 'like_' + it.letter, 'startq_' + it.letter, 'starta_' + it.letter);
+    need.push('says_' + it.letter.toUpperCase(), 'like_' + it.letter, 'startq_' + it.letter, 'starta_' + it.letter, 'startw_' + it.letter);
   });
   need.forEach(function (id) { assert.ok(m[id], 'missing ' + id); });
 });
@@ -87,5 +87,20 @@ test('no emoji in shipped files', function () {
   walk(ROOT, []).filter(function (f) { return /\.(js|css|html)$/.test(f); }).forEach(function (f) {
     var text = fs.readFileSync(f, 'utf8');
     assert.ok(!/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(text), 'emoji in ' + f);
+  });
+});
+
+test('script and style addresses carry up-to-date content stamps', function () {
+  var crypto = require('crypto');
+  ['index.html', 'device-check.html'].forEach(function (page) {
+    var html = fs.readFileSync(path.join(ROOT, page), 'utf8');
+    var re = /(?:src|href)="((?:js|css)\/[^"?]+)(?:\?v=([0-9a-f]+))?"/g;
+    var m, n = 0;
+    while ((m = re.exec(html))) {
+      n++;
+      var want = crypto.createHash('md5').update(fs.readFileSync(path.join(ROOT, m[1]))).digest('hex').slice(0, 8);
+      assert.equal(m[2], want, page + ': ' + m[1] + ' stamp is stale, run tools/stamp.py');
+    }
+    assert.ok(n > 3, page);
   });
 });

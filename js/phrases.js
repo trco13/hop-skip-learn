@@ -44,15 +44,17 @@
       for (var v = 1; v <= 3; v++) P['snd_' + s + '_' + v] = '#sound:' + s + ':' + v;
       P['says_' + S] = S + ' says';
       P['like_' + s] = 'like ' + Content.KEYWORDS[s] + '.';
-      // Word version (the default): the key word gets its own pauses and
-      // is said slower and louder, then once more at the end.
-      var kw = Content.KEYWORDS[s];
+      // Word version (the default): pauses around the key word, which is
+      // said louder and repeated. Built by make_audio.py from "#say:".
+      var kw = Content.KEYWORDS[s], Kw = kw.charAt(0).toUpperCase() + kw.slice(1);
       if (s === 'x') {
-        P['startq_' + s] = '#seq:Which letter makes the sound at the end of|~0.35|!w:' + kw + '|~0.6|!w:' + kw;
-        P['starta_' + s] = '#seq:!w:' + kw + '|~0.3|ends with ' + S + '!';
+        P['startq_' + s] = '#say:Which letter makes the sound at the end of|*' + kw + '|*' + Kw + '.';
+        P['starta_' + s] = '#say:Yes!|*' + Kw + '|ends with ' + S + '!';
+        P['startw_' + s] = '#say:That one is|*' + kw + '|' + Kw + ' ends with ' + S + '.';
       } else {
-        P['startq_' + s] = '#seq:Which letter does|~0.35|!w:' + kw + '|~0.35|start with?|~0.6|!w:' + kw;
-        P['starta_' + s] = '#seq:!w:' + kw + '|~0.3|starts with ' + S + '!';
+        P['startq_' + s] = '#say:Which letter does|*' + kw + '|start with?|*' + Kw + '.';
+        P['starta_' + s] = '#say:Yes!|*' + Kw + '|starts with ' + S + '!';
+        P['startw_' + s] = '#say:That one is|*' + kw + '|' + Kw + ' starts with ' + S + '.';
       }
     }
     for (i = 0; i < Content.WORD_BANK.length; i++) {
