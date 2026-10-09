@@ -38,16 +38,21 @@
     P['pair_' + L] = 'Capital ' + L + ', lowercase ' + l + '!';
   }
   if (Content) {
-    for (var l in Content.LETTER_SOUNDS) {
-      if (!Content.LETTER_SOUNDS.hasOwnProperty(l)) continue;
-      var L2 = l.toUpperCase();
-      // Text wrapped in slashes is read as phonemes, not words.
-      for (var v = 0; v < 3; v++) {
-        var spec = Content.LETTER_SOUNDS[l][v].split('@');
-        P['snd_' + l + '_' + (v + 1)] = '/' + spec[0] + '/' + (spec[1] ? '@' + spec[1] : '');
+    for (i = 0; i < Content.SOUND_LETTERS.length; i++) {
+      var s = Content.SOUND_LETTERS[i], S = s.toUpperCase();
+      // "#sound:" clips are built by tools/letter_sounds.py, not read aloud.
+      for (var v = 1; v <= 3; v++) P['snd_' + s + '_' + v] = '#sound:' + s + ':' + v;
+      P['says_' + S] = S + ' says';
+      P['like_' + s] = 'like ' + Content.KEYWORDS[s] + '.';
+      // Word version, for letters whose sound the parent marked "none".
+      var kw = Content.KEYWORDS[s], Kw = kw.charAt(0).toUpperCase() + kw.slice(1);
+      if (s === 'x') {
+        P['startq_' + s] = 'Which letter makes the sound at the end of ' + kw + '?';
+        P['starta_' + s] = Kw + ' ends with ' + S + '!';
+      } else {
+        P['startq_' + s] = 'Which letter does ' + kw + ' start with?';
+        P['starta_' + s] = Kw + ' starts with ' + S + '!';
       }
-      P['says_' + L2] = L2 + ' says';
-      P['like_' + l] = 'like ' + Content.KEYWORDS[l] + '.';
     }
     for (i = 0; i < Content.WORD_BANK.length; i++) {
       P[Content.wordAudioId(Content.WORD_BANK[i])] = Content.WORD_BANK[i] + '.';

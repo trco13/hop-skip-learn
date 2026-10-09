@@ -137,8 +137,9 @@
   function soundPicks() { return Store.get('soundPicks', null) || {}; }
 
   function currentPick(l) {
-    var p = soundPicks()[l];
-    return typeof p === 'number' ? p : (Content.SOUND_DEFAULTS[l] || 1);
+    var p = soundPicks()[l], d = Content.SOUND_DEFAULTS[l];
+    if (p !== undefined) return p;
+    return d !== undefined ? d : 1;
   }
 
   function renderSoundPicks() {
@@ -149,9 +150,9 @@
       html += '<div class="snd-row"><span class="snd-letter">' + l.toUpperCase() + l + '</span>' +
         '<span class="snd-key">like ' + esc(Content.KEYWORDS[l]) + '</span>';
       for (var v = 1; v <= 3; v++) {
-        html += '<button class="snd-btn' + (currentPick(l) === v && picks[l] !== 'x' ? ' on' : '') + '" data-l="' + l + '" data-v="' + v + '">' + v + '</button>';
+        html += '<button class="snd-btn' + (currentPick(l) === v ? ' on' : '') + '" data-l="' + l + '" data-v="' + v + '">' + v + '</button>';
       }
-      html += '<button class="snd-btn bad' + (picks[l] === 'x' ? ' on' : '') + '" data-l="' + l + '" data-v="x">none</button></div>';
+      html += '<button class="snd-btn bad' + (currentPick(l) === 'x' ? ' on' : '') + '" data-l="' + l + '" data-v="x">none</button></div>';
     });
     App.$('pSounds').innerHTML = html;
     var code = letters.map(function (l) { return l + (picks[l] || '-'); }).join(' ');
@@ -167,6 +168,7 @@
     Sound.unlock();
     if (v === 'x') {
       picks[l] = 'x';
+      Sound.play('startq_' + l);
     } else {
       picks[l] = parseInt(v, 10);
       Sound.play('snd_' + l + '_' + v);
