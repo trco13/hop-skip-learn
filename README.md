@@ -48,6 +48,7 @@ The tests run a simulated struggling child and a simulated strong child over
 
 ```
 npm test                 # engine + site checks (Node 18+)
+python3 tools/stamp.py   # after changing js/ or css/: refresh the ?v= stamps in the pages
 npx http-server .        # then open http://localhost:8080
 ```
 
