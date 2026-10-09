@@ -1,7 +1,8 @@
 """Letter sounds ("buh", "mmm", "sss") for the sounds game.
 
-Text-to-speech voices say isolated sounds badly, so versions 1 and 2 are cut
-out of real words said by the Kokoro voice: the part of the audio that is the
+Version 1 is a person's recording (tools/recorded-sounds, MIT license).
+Text-to-speech voices say isolated sounds badly, so version 2 is cut out of
+a real word said by the Kokoro voice: the part of the audio that is the
 sound is found from the signal itself (hiss, burst, quiet hum), not from
 timings. Version 3 is the eSpeak NG synthesizer saying the sound directly:
 more robotic, but literal.
@@ -9,6 +10,7 @@ more robotic, but literal.
 Used by make_audio.py for ids "snd_<letter>_<1|2|3>".
 """
 import ctypes
+import os
 import subprocess
 
 import numpy as np
@@ -239,10 +241,30 @@ class Espeak:
 _espeak = None
 
 
+RECORDED = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'recorded-sounds')
+
+
+def recorded(letter):
+    """A person saying the sound (see recorded-sounds/LICENSE.txt)."""
+    raw = subprocess.run(
+        ['ffmpeg', '-loglevel', 'error', '-i', os.path.join(RECORDED, 'phonics_%s.ogg' % letter),
+         # Cut microphone rumble (the f recording is mostly rumble).
+         '-af', 'highpass=f=%d' % (250 if letter == 'f' else 70),
+         '-ac', '1', '-ar', str(SR), '-f', 'f32le', 'pipe:1'],
+        capture_output=True, check=True).stdout
+    a = np.frombuffer(raw, dtype=np.float32).copy()
+    rms, _, _ = frames(a)
+    on = np.where(rms > 0.02 * rms.max())[0]
+    return a[on[0] * HOP:(on[-1] + 2) * HOP]
+
+
 def make(letter, version, kokoro_synth):
-    """Return samples at 24 kHz for one letter sound version (1-3).
-    kokoro_synth(ipa) -> samples."""
+    """Return samples at 24 kHz for one letter sound version.
+    1: a person's recording. 2: cut from a word said by the game's voice.
+    3: eSpeak NG. kokoro_synth(ipa) -> samples."""
     global _espeak
+    if version == 1:
+        return finish(recorded(letter))
     if version == 3:
         if _espeak is None:
             _espeak = Espeak()
@@ -251,27 +273,24 @@ def make(letter, version, kokoro_synth):
             a = stretch(a, 0.6)
         return finish(a)
     if letter in STOP:
-        a = cut_stop(kokoro_synth(STOP[letter]), letter, 80 if version == 1 else 140)
+        a = cut_stop(kokoro_synth(STOP[letter]), letter, 80 if version == 2 else 140)
     elif letter in GLIDE:
-        a = cut_glide(kokoro_synth(GLIDE[letter]), 170 if version == 1 else 230)
+        a = cut_glide(kokoro_synth(GLIDE[letter]), 170 if version == 2 else 230)
     elif letter == 'h':
-        a = cut_after_schwa(kokoro_synth('əhˈʌt'), 80 if version == 1 else 140)
+        a = cut_after_schwa(kokoro_synth('əhˈʌt'), 80 if version == 2 else 140)
     elif letter == 'q':
-        a = cut_after_schwa(kokoro_synth('əkwˈʌk'), 90 if version == 1 else 150)
+        a = cut_after_schwa(kokoro_synth('əkwˈʌk'), 90 if version == 2 else 150)
     elif letter in 'zv':
         hiss = cut_final(kokoro_synth('bˈʌs' if letter == 'z' else 'lˈiːf'), 's' if letter == 'z' else 'f')
         hum = cut_final(kokoro_synth('hˈʌm' if letter == 'z' else 'hˈʌm'), 'm')
-        length = 0.55 if version == 1 else 0.85
-        a = buzz(stretch(hiss, length), stretch(hum, length), 0.5 if version == 1 else 0.65)
+        length = 0.55 if version == 2 else 0.85
+        a = buzz(stretch(hiss, length), stretch(hum, length), 0.5 if version == 2 else 0.65)
     elif letter in FINAL:
-        carrier = 'fˈɑks' if letter == 'x' and version == 2 else FINAL[letter]
-        a = cut_final(kokoro_synth(carrier), letter)
+        a = cut_final(kokoro_synth(FINAL[letter]), letter)
         if letter != 'x':
-            a = stretch(a, 0.55 if version == 1 else 0.85)
+            a = stretch(a, 0.55 if version == 2 else 0.85)
     else:
         a = cut_vowel(kokoro_synth(VOWEL[letter]))
-        if version == 2:
-            a = stretch(a, 0.45)
     return finish(a)
 
 

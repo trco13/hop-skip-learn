@@ -27,7 +27,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import letter_sounds  # noqa: E402
 
 # Bump to rebuild every letter sound after changing letter_sounds.py.
-LETTER_SOUNDS_VERSION = 'cut-3'
+LETTER_SOUNDS_VERSION = 'recorded-3'
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIO = os.path.join(ROOT, 'audio')
