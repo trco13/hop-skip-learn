@@ -7,8 +7,8 @@
   // The parent's pick on this device wins, then the built-in default.
   function soundClip(letter) {
     var picks = Store.get('soundPicks', null) || {};
-    // "x" means the parent heard no good version yet: use the default.
-    var n = typeof picks[letter] === 'number' ? picks[letter] : (Content.SOUND_DEFAULTS[letter] || 1);
+    var d = Content.SOUND_DEFAULTS[letter];
+    var n = typeof picks[letter] === 'number' ? picks[letter] : (typeof d === 'number' ? d : 1);
     return 'snd_' + letter + '_' + n;
   }
 
@@ -31,20 +31,31 @@
     wrongSay: function (picked) { return ['thats_' + picked.show.toUpperCase()]; }
   };
 
+  // Letters whose sound the parent marked "none": ask with the word instead.
+  function wordMode(letter) {
+    var picks = Store.get('soundPicks', null) || {};
+    return picks[letter] === 'x' || Content.SOUND_DEFAULTS[letter] === 'x';
+  }
+
   var Sounds = {
     key: 'sounds',
     store: 'sounds',
     intro: 'intro_sounds',
     items: Content.soundItems,
     cardClass: 'pair',
-    prompt: function (item) { return ['snd_prompt', soundClip(item.letter)]; },
+    prompt: function (item) {
+      if (wordMode(item.letter)) return ['startq_' + item.letter];
+      return ['snd_prompt', soundClip(item.letter)];
+    },
     rightSay: function (item) {
+      if (wordMode(item.letter)) return ['sfx_chime', 'starta_' + item.letter];
       return ['sfx_chime', 'says_' + item.letter.toUpperCase(), soundClip(item.letter), 'like_' + item.letter];
     },
     wrongSay: function (picked) {
+      if (wordMode(picked.letter)) return ['starta_' + picked.letter];
       return ['says_' + picked.letter.toUpperCase(), soundClip(picked.letter)];
     }
   };
 
-  root.Games = { letters: Letters, sounds: Sounds, soundClip: soundClip };
+  root.Games = { letters: Letters, sounds: Sounds, soundClip: soundClip, wordMode: wordMode };
 })(window.HSL = window.HSL || {});

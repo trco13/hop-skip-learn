@@ -58,44 +58,16 @@
     return items;
   }
 
-  // Letter sounds. Three ways of saying each sound (IPA for the voice;
-  // "@0.6" means slowed down); the parent picks the best one in the
-  // parent area.
-  // Short vowels, hard c and g. Stop sounds get a light "uh".
-  var LETTER_SOUNDS = {
-    a: ['ˈæ', 'ˈææ', 'ˈæ@0.65'],
-    b: ['ˈbʌ', 'bə', 'ˈbə'],
-    c: ['ˈkʌ', 'kə', 'ˈkə'],
-    d: ['ˈdʌ', 'də', 'ˈdə'],
-    e: ['ˈɛ', 'ˈɛɛ', 'ˈɛ@0.65'],
-    f: ['ˈfff', 'fff', 'ˈfff@0.6'],
-    g: ['ˈɡʌ', 'ɡə', 'ˈɡə'],
-    h: ['ˈhʌ', 'hə', 'ˈhə'],
-    i: ['ˈɪ', 'ˈɪɪ', 'ˈɪ@0.65'],
-    j: ['ˈdʒʌ', 'dʒə', 'ˈdʒə'],
-    k: ['ˈkʌ', 'kə', 'ˈkə'],
-    l: ['ˈlll', 'lll', 'ˈlll@0.6'],
-    m: ['ˈmmm', 'mmm', 'ˈmmm@0.6'],
-    n: ['ˈnnn', 'nnn', 'ˈnnn@0.6'],
-    o: ['ˈɑ', 'ˈɑɑ', 'ˈɑ@0.65'],
-    p: ['ˈpʌ', 'pə', 'ˈpə'],
-    q: ['ˈkwʌ', 'kwə', 'ˈkwə'],
-    r: ['ˈɹɹɹ', 'ɹɚ', 'ˈɹɹɹ@0.6'],
-    s: ['ˈsss', 'sss', 'ˈsss@0.6'],
-    t: ['ˈtʌ', 'tə', 'ˈtə'],
-    u: ['ˈʌ', 'ˈʌʌ', 'ˈʌ@0.65'],
-    v: ['ˈvvv', 'vvv', 'ˈvvv@0.6'],
-    w: ['ˈwʌ', 'wə', 'ˈwə'],
-    x: ['ks', 'ˈks', 'kss'],
-    y: ['ˈjʌ', 'jə', 'ˈjə'],
-    z: ['ˈzzz', 'zzz', 'ˈzzz@0.6']
-  };
+  // Letter sounds: each is made 3 ways by tools/letter_sounds.py
+  // (1 and 2 cut from real words, 3 a plainer synthesizer). The parent
+  // picks the best one in the parent area.
+  var SOUND_LETTERS = 'abcdefghijklmnopqrstuvwxyz'.split('');
   // Picks baked in as defaults (1-3). Update after the parent listens.
   var SOUND_DEFAULTS = {};
   var KEYWORDS = {
     a: 'apple', b: 'ball', c: 'cat', d: 'dog', e: 'egg', f: 'fish', g: 'goat',
     h: 'hat', i: 'itch', j: 'jam', k: 'kite', l: 'lion', m: 'moon', n: 'nest',
-    o: 'octopus', p: 'pig', q: 'queen', r: 'rain', s: 'sun', t: 'top', u: 'up',
+    o: 'octopus', p: 'pig', q: 'queen', r: 'rain', s: 'sun', t: 'top', u: 'umbrella',
     v: 'van', w: 'web', x: 'box', y: 'yo-yo', z: 'zebra'
   };
   // Most common sounds first (the usual s-a-t-p-i-n start).
@@ -172,7 +144,7 @@
     UPPER: UPPER,
     letterItems: letterItems,
     soundItems: soundItems,
-    LETTER_SOUNDS: LETTER_SOUNDS,
+    SOUND_LETTERS: SOUND_LETTERS,
     SOUND_DEFAULTS: SOUND_DEFAULTS,
     KEYWORDS: KEYWORDS,
     TEACHER_DEFAULT: TEACHER_DEFAULT,

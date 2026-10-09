@@ -49,7 +49,7 @@ test('every clip the games can ask for exists', function () {
   need.push('pick_game', 'intro_sounds', 'snd_prompt');
   Content.soundItems().forEach(function (it) {
     for (var v = 1; v <= 3; v++) need.push('snd_' + it.letter + '_' + v);
-    need.push('says_' + it.letter.toUpperCase(), 'like_' + it.letter);
+    need.push('says_' + it.letter.toUpperCase(), 'like_' + it.letter, 'startq_' + it.letter, 'starta_' + it.letter);
   });
   need.forEach(function (id) { assert.ok(m[id], 'missing ' + id); });
 });

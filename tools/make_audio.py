@@ -23,6 +23,12 @@ import tempfile
 import numpy as np
 import soundfile as sf
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import letter_sounds  # noqa: E402
+
+# Bump to rebuild every letter sound after changing letter_sounds.py.
+LETTER_SOUNDS_VERSION = 'cut-3'
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIO = os.path.join(ROOT, 'audio')
 SOURCES = os.path.join(ROOT, 'tools', 'audio-sources.json')
@@ -58,7 +64,7 @@ def stressed(ipa):
     return ipa
 
 
-def to_mp3(samples, path, tempo=1.0):
+def to_mp3(samples, path, tempo=1.0, normalize=True):
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
         sf.write(tmp.name, samples, SR)
         wav = tmp.name
@@ -66,9 +72,12 @@ def to_mp3(samples, path, tempo=1.0):
         subprocess.check_call([
             'ffmpeg', '-y', '-loglevel', 'error', '-i', wav,
             '-af', ('atempo=%s,' % tempo if tempo != 1.0 else '') +
-                   'silenceremove=start_periods=1:start_threshold=-50dB,'
-                   'areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse,'
-                   'adelay=40,apad=pad_dur=0.08,loudnorm=I=-16:TP=-1.5:LRA=11',
+                   ('silenceremove=start_periods=1:start_threshold=-50dB,'
+                    'areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse,'
+                    'adelay=40,apad=pad_dur=0.08,loudnorm=I=-16:TP=-1.5:LRA=11'
+                    if normalize else
+                    # Letter sounds are already trimmed and leveled.
+                    'adelay=40,apad=pad_dur=0.08'),
             '-ar', str(SR), '-ac', '1', '-b:a', '48k', path])
     finally:
         os.unlink(wav)
@@ -118,6 +127,10 @@ def main():
         voices = os.path.join(args.models, 'voices.bin')
     kokoro = Kokoro(onnx, voices)
 
+    def kokoro_ipa(ipa):
+        samples, _ = kokoro.create(ipa, voice=VOICE, speed=SPEED, is_phonemes=True)
+        return samples
+
     os.makedirs(AUDIO, exist_ok=True)
     sources = json.load(open(SOURCES)) if os.path.exists(SOURCES) else {}
     only = set(args.only.split(',')) if args.only else None
@@ -126,6 +139,17 @@ def main():
 
     for pid, text in sorted(todo.items()):
         path = os.path.join(AUDIO, pid + '.mp3')
+        if text.startswith('#sound:'):
+            _, letter, version = text.split(':')
+            key = hashlib.sha1((LETTER_SOUNDS_VERSION + text).encode('utf-8')).hexdigest()[:12]
+            fresh = os.path.exists(path) and sources.get(pid, {}).get('key') == key
+            if args.force or (only and pid in only) or not fresh:
+                samples = letter_sounds.make(letter, int(version), kokoro_ipa)
+                to_mp3(samples, path, normalize=False)
+                print('made', pid, '|', letter_sounds.describe(samples))
+            sources[pid] = {'text': text, 'key': key}
+            durations[pid] = duration(path)
+            continue
         tempo = 1.0
         if text.startswith('/') and '@' in text:
             # "/ipa/@0.6" = phonemes, slowed down without changing pitch.
