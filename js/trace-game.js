@@ -185,8 +185,8 @@
   }
 
   function onMove(evt) {
-    if (evt.preventDefault) evt.preventDefault();
     if (!drawing || busy || current >= trackers.length) return;
+    if (evt.preventDefault) evt.preventDefault();
     var p = toSvg(evt);
     if (!p) return;
     var t = trackers[current];
@@ -278,12 +278,15 @@
       busy = true;
       demo(current, function () { busy = false; });
     });
+    // A touch keeps reporting to the element it started on. The start dot
+    // under the finger is redrawn as she moves, so moves and lifts are
+    // followed on the whole page, not on the drawing.
     App.on(svg, 'touchstart', onDown);
-    App.on(svg, 'touchmove', onMove);
-    App.on(svg, 'touchend', onUp);
-    App.on(svg, 'touchcancel', onUp);
+    App.on(document, 'touchmove', onMove);
+    App.on(document, 'touchend', onUp);
+    App.on(document, 'touchcancel', onUp);
     App.on(svg, 'mousedown', onDown);
-    App.on(svg, 'mousemove', onMove);
+    App.on(document, 'mousemove', onMove);
     App.on(document, 'mouseup', onUp);
   }
 

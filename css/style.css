@@ -179,6 +179,8 @@ button {
 }
 .trace-box { position: relative; }
 .trace-box svg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+/* Touches land on the drawing area itself, never on the parts redrawn under the finger. */
+.trace-box svg * { pointer-events: none; }
 .trace-box.traced { -webkit-animation: glow 1s ease-in-out 2; animation: glow 1s ease-in-out 2; }
 .tr-guide { fill: none; stroke: #ece2ff; stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; }
 .tr-center { fill: none; stroke: #c9b3f0; stroke-width: 1.4; stroke-dasharray: 3 4; stroke-linecap: round; }
