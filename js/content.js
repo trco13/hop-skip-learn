@@ -142,6 +142,75 @@
     return 'word_' + word.toLowerCase().replace(/[^a-z]/g, '');
   }
 
+  // ---------- sight words game ----------
+
+  // Words that start with the same letter, or use the same letters (was,
+  // saw), look alike to a new reader.
+  function wordsLookAlike(a, b) {
+    if (a.charAt(0).toLowerCase() === b.charAt(0).toLowerCase()) return true;
+    return a.length > 1 && a.split('').sort().join('') === b.split('').sort().join('');
+  }
+
+  // teacherWords: [{w, added}] from the parent area (newest week first).
+  // hasVoice(word): whether the word has a voice clip; others are skipped.
+  function wordItems(teacherWords, hasVoice) {
+    var teacher = (teacherWords || []).slice().sort(function (a, b) { return (b.added || 0) - (a.added || 0); })
+      .map(function (x) { return x.w; });
+    // The teacher's words first, then colors and numbers one to ten (also
+    // on the teacher's list), then other common words.
+    var list = uniq(teacher.concat(COLOR_WORDS, NUMBER_WORDS.slice(0, 10), EXTRA_WORDS))
+      .filter(function (w) { return !hasVoice || hasVoice(w); });
+    var items = [];
+    for (var i = 0; i < list.length; i++) {
+      items.push({ id: 'w:' + list[i], group: 'w', skill: 'words', show: list[i], word: list[i], order: i });
+    }
+    for (i = 0; i < items.length; i++) {
+      var c = [];
+      for (var j = 0; j < items.length; j++) {
+        if (i !== j && wordsLookAlike(items[i].word, items[j].word)) c.push(items[j].id);
+      }
+      items[i].confusables = c;
+    }
+    return items;
+  }
+
+  // ---------- numbers game ----------
+
+  var NUMBER_LOOKALIKE = [[6, 9], [16, 19], [12, 20], [13, 18], [1, 7], [11, 17], [10, 20], [3, 8]];
+
+  // num:N   hear "Find the number fourteen", tap 14 (1-20)
+  // n2w:N   see 3, tap the word "three" (1-10)
+  // w2n:N   see "three", tap 3 (1-10)
+  function numberItems() {
+    var items = [], n, i;
+    function look(prefix, num, max) {
+      var out = [];
+      for (var k = 0; k < NUMBER_LOOKALIKE.length; k++) {
+        var p = NUMBER_LOOKALIKE[k];
+        var other = p[0] === num ? p[1] : (p[1] === num ? p[0] : 0);
+        if (other && other <= max) out.push(prefix + other);
+      }
+      return out;
+    }
+    for (n = 1; n <= 20; n++) {
+      // 1-10 first, then 11-20 (the current focus) once those are going well.
+      items.push({ id: 'num:' + n, group: 'num', skill: 'numerals', show: String(n), n: n,
+        order: n, confusables: look('num:', n, 20) });
+    }
+    for (n = 1; n <= 10; n++) {
+      var wordLook = [];
+      for (i = 1; i <= 10; i++) {
+        if (i !== n && wordsLookAlike(NUMBER_WORDS[n - 1], NUMBER_WORDS[i - 1])) wordLook.push(i);
+      }
+      items.push({ id: 'n2w:' + n, group: 'n2w', skill: 'numberwords', show: NUMBER_WORDS[n - 1], cue: String(n),
+        n: n, order: 20 + n, prereq: ['num:' + n],
+        confusables: wordLook.map(function (x) { return 'n2w:' + x; }) });
+      items.push({ id: 'w2n:' + n, group: 'w2n', skill: 'numberwords', show: String(n), cue: NUMBER_WORDS[n - 1],
+        n: n, order: 30 + n, prereq: ['n2w:' + n], confusables: look('w2n:', n, 10) });
+    }
+    return items;
+  }
+
   var Content = {
     UPPER: UPPER,
     letterItems: letterItems,
@@ -154,7 +223,10 @@
     NUMBER_WORDS: NUMBER_WORDS,
     EXTRA_WORDS: uniq(EXTRA_WORDS),
     WORD_BANK: WORD_BANK,
-    wordAudioId: wordAudioId
+    wordAudioId: wordAudioId,
+    wordItems: wordItems,
+    numberItems: numberItems,
+    wordsLookAlike: wordsLookAlike
   };
 
   root.Content = Content;

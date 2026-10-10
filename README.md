@@ -8,6 +8,11 @@ older Amazon Fire tablets and hosted on GitHub Pages.
   - Letters: find capital and lowercase letters, and match capitals to lowercase.
   - Letter sounds: hear a sound ("buh"), tap the letter that makes it. Letters that make the
     same sound (c and k) are never offered together.
+  - Words: hear "Find the word... look", tap it. The teacher's words (parent area, newest
+    first), then color words, number words one to ten, then other common words a few at a
+    time. Distractors are about the same length, and words starting with the same letter
+    are kept apart until both are known.
+  - Numbers: find the numbers 1-20 (1-10 first), then match 1-10 to their words both ways.
   - Each letter sound comes 3 ways (a person's recording, cut from a word, eSpeak);
     the parent picks the best one in "Letter sounds check" and the pick is baked in
     as `SOUND_DEFAULTS` in `js/content.js`. "none" switches that letter to asking with

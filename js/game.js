@@ -64,7 +64,10 @@
     var html = '';
     for (var i = 0; i < trial.choices.length; i++) {
       var c = trial.choices[i];
-      html += '<button class="card ' + CARD_COLORS[i % 4] + (def.cardClass ? ' ' + def.cardClass : '') +
+      var cc = typeof def.cardClass === 'function' ? def.cardClass(item) : def.cardClass;
+      // Longer words get a smaller font so they fit the card.
+      var len = c.show.length <= 3 ? 's' : (c.show.length <= 5 ? 'm' : 'l');
+      html += '<button class="card ' + CARD_COLORS[i % 4] + (cc ? ' ' + cc + ' len-' + len : '') +
         ' pop" data-id="' + c.id + '" style="animation-delay:' + (i * 0.06) + 's"><span class="glyph">' +
         c.show + '</span></button>';
     }

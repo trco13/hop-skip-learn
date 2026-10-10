@@ -19,7 +19,8 @@
   var DEFAULT_SETTINGS = {
     sessionMinutes: 7,
     maxChoices: 4,
-    skills: { capitals: true, lowercase: true, matching: true, sounds: true }
+    skills: { capitals: true, lowercase: true, matching: true, sounds: true,
+      words: true, numerals: true, numberwords: true }
   };
 
   function settings() {
@@ -115,6 +116,9 @@
   function showPicker() {
     var skills = settings().skills;
     $('tileSounds').className = 'game-tile sounds-tile' + (skills.sounds === false ? ' hidden' : '');
+    $('tileWords').className = 'game-tile words-tile' + (skills.words === false ? ' hidden' : '');
+    $('tileNumbers').className = 'game-tile numbers-tile' +
+      (skills.numerals === false && skills.numberwords === false ? ' hidden' : '');
     $('tileLetters').className = 'game-tile letters-tile' +
       (skills.capitals === false && skills.lowercase === false && skills.matching === false ? ' hidden' : '');
     show('pick');
@@ -181,11 +185,15 @@
     $('pickHome').innerHTML = Art.icon('home', 'icon');
     $('tileLetters').innerHTML = '<span class="tile-glyph">Aa</span>' + Art.draw('crown', 0, 'art tile-art');
     $('tileSounds').innerHTML = '<span class="tile-glyph">Ss</span>' + Art.icon('speaker', 'icon tile-art speaker-art');
+    $('tileWords').innerHTML = '<span class="tile-glyph tile-word">look</span>' + Art.draw('star', 0, 'art tile-art');
+    $('tileNumbers').innerHTML = '<span class="tile-glyph">123</span>' + Art.draw('heart', 1, 'art tile-art');
 
     tap($('playBtn'), showPicker);
     tap($('pickHome'), goHome);
     tap($('tileLetters'), function () { root.Game.start(root.Games.letters); });
     tap($('tileSounds'), function () { root.Game.start(root.Games.sounds); });
+    tap($('tileWords'), function () { root.Game.start(root.Games.words); });
+    tap($('tileNumbers'), function () { root.Game.start(root.Games.numbers); });
     tap($('albumBtn'), function () { show('album'); renderAlbum(); Sound.play('album'); });
     tap($('albumHome'), goHome);
     on($('stickerGrid'), 'click', function (e) {
