@@ -16,7 +16,8 @@
     { store: 'letters', name: 'Letters', items: Content.letterItems, skills: ['capitals', 'lowercase', 'matching'] },
     { store: 'sounds', name: 'Letter sounds', items: Content.soundItems, skills: ['sounds'] },
     { store: 'words', name: 'Words', items: function () { return root.Games.words.items(); }, skills: ['words'], keepOrder: true },
-    { store: 'numbers', name: 'Numbers', items: Content.numberItems, skills: ['numerals', 'numberwords'], keepOrder: true }
+    { store: 'numbers', name: 'Numbers', items: Content.numberItems, skills: ['numerals', 'numberwords'], keepOrder: true },
+    { store: 'tracing', name: 'Tracing', items: Content.traceItems, skills: ['tracing'], byNumber: true }
   ];
 
   function engineFor(g) {
@@ -45,7 +46,7 @@
 
   var SKILL_NAMES = { capitals: 'Capital letters', lowercase: 'Lowercase letters',
     matching: 'Capital to lowercase', sounds: 'Letter sounds', words: 'Sight words',
-    numerals: 'Numbers 1-20', numberwords: 'Numbers and number words' };
+    numerals: 'Numbers 1-20', numberwords: 'Numbers and number words', tracing: 'Writing (tracing) numbers' };
 
   function statusOf(e, id) {
     var st = e.peekState(id);
@@ -61,6 +62,7 @@
     if (it.group === 'lc') return 'lowercase ' + it.show;
     if (it.group === 'w') return 'the word "' + it.show + '"';
     if (it.group === 'num') return 'the number ' + it.show;
+    if (it.group === 'tr') return 'writing ' + it.show;
     if (it.group === 'n2w' || it.group === 'w2n') return it.cue + ' to ' + it.show;
     return 'sound of ' + it.show;
   }
@@ -80,7 +82,8 @@
       var sum = e.summary();
       var items = g.items();
       // Show sounds in alphabet order, not teaching order.
-      if (!g.keepOrder) items.sort(function (a, b) { return a.show < b.show ? -1 : (a.show > b.show ? 1 : 0); });
+      if (g.byNumber) items.sort(function (a, b) { return a.n - b.n; });
+      else if (!g.keepOrder) items.sort(function (a, b) { return a.show < b.show ? -1 : (a.show > b.show ? 1 : 0); });
       var hidden = 0;
       g.skills.forEach(function (skill) {
         var gs = sum[skill];
@@ -235,6 +238,7 @@
     App.$('pWordsOn').checked = s.skills.words !== false;
     App.$('pNumerals').checked = s.skills.numerals !== false;
     App.$('pNumberWords').checked = s.skills.numberwords !== false;
+    App.$('pTracing').checked = s.skills.tracing !== false;
   }
 
   function saveSettings() {
@@ -248,10 +252,11 @@
       sounds: App.$('pSoundsOn').checked,
       words: App.$('pWordsOn').checked,
       numerals: App.$('pNumerals').checked,
-      numberwords: App.$('pNumberWords').checked
+      numberwords: App.$('pNumberWords').checked,
+      tracing: App.$('pTracing').checked
     };
     if (!s.skills.capitals && !s.skills.lowercase && !s.skills.matching && !s.skills.sounds &&
-        !s.skills.words && !s.skills.numerals && !s.skills.numberwords) {
+        !s.skills.words && !s.skills.numerals && !s.skills.numberwords && !s.skills.tracing) {
       s.skills.capitals = true;
       App.$('pCapitals').checked = true;
     }
@@ -285,7 +290,7 @@
 
   function resetData() {
     if (!window.confirm('Erase all progress, stickers and crowns on this device?')) return;
-    ['letters', 'sounds', 'words', 'numbers', 'rewards'].forEach(function (k) { Store.remove(k); });
+    ['letters', 'sounds', 'words', 'numbers', 'tracing', 'rewards'].forEach(function (k) { Store.remove(k); });
     flash('Progress erased.');
     renderAll();
   }
@@ -328,7 +333,7 @@
     });
     App.on(App.$('pSounds'), 'click', onSoundPick);
     ['pMinutes', 'pChoices', 'pCapitals', 'pLowercase', 'pMatching', 'pSoundsOn', 'pWordsOn',
-      'pNumerals', 'pNumberWords'].forEach(function (id) {
+      'pNumerals', 'pNumberWords', 'pTracing'].forEach(function (id) {
       App.on(App.$(id), 'change', saveSettings);
     });
     App.on(App.$('pMinutes'), 'input', function () { App.$('pMinutesOut').innerHTML = App.$('pMinutes').value + ' minutes'; });

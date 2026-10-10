@@ -13,6 +13,9 @@ older Amazon Fire tablets and hosted on GitHub Pages.
     time. Distractors are about the same length, and words starting with the same letter
     are kept apart until both are known.
   - Numbers: find the numbers 1-20 (1-10 first), then match 1-10 to their words both ways.
+  - Tracing: trace 11-20 (the current focus), then 1-10, stroke by stroke in school order
+    (`js/strokes.js`). New numbers start with a star drawing it first; known ones get only a
+    thin dotted path. Progress only moves along the path in order, so scribbling doesn't count.
   - Each letter sound comes 3 ways (a person's recording, cut from a word, eSpeak);
     the parent picks the best one in "Letter sounds check" and the pick is baked in
     as `SOUND_DEFAULTS` in `js/content.js`. "none" switches that letter to asking with

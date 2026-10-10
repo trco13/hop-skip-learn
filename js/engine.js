@@ -330,7 +330,8 @@
     seenList.sort(function (a, b) {
       var la = s.asked[a.id] === undefined ? -1 : s.asked[a.id];
       var lb = s.asked[b.id] === undefined ? -1 : s.asked[b.id];
-      return la - lb;
+      // Ties (neither asked yet): teaching order.
+      return la - lb || a.order - b.order;
     });
     var st0 = self.peekState(seenList[0].id);
     return { item: seenList[0], mode: st0 && st0.seen ? 'learn' : 'new' };
