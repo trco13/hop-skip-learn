@@ -20,7 +20,7 @@
     sessionMinutes: 7,
     maxChoices: 4,
     skills: { capitals: true, lowercase: true, matching: true, sounds: true,
-      words: true, numerals: true, numberwords: true }
+      words: true, numerals: true, numberwords: true, tracing: true }
   };
 
   function settings() {
@@ -117,6 +117,7 @@
     var skills = settings().skills;
     $('tileSounds').className = 'game-tile sounds-tile' + (skills.sounds === false ? ' hidden' : '');
     $('tileWords').className = 'game-tile words-tile' + (skills.words === false ? ' hidden' : '');
+    $('tileTrace').className = 'game-tile trace-tile' + (skills.tracing === false ? ' hidden' : '');
     $('tileNumbers').className = 'game-tile numbers-tile' +
       (skills.numerals === false && skills.numberwords === false ? ' hidden' : '');
     $('tileLetters').className = 'game-tile letters-tile' +
@@ -187,6 +188,7 @@
     $('tileSounds').innerHTML = '<span class="tile-glyph">Ss</span>' + Art.icon('speaker', 'icon tile-art speaker-art');
     $('tileWords').innerHTML = '<span class="tile-glyph tile-word">look</span>' + Art.draw('star', 0, 'art tile-art');
     $('tileNumbers').innerHTML = '<span class="tile-glyph">123</span>' + Art.draw('heart', 1, 'art tile-art');
+    $('tileTrace').innerHTML = '<span class="tile-glyph tile-trace">14</span>' + Art.draw('wand', 2, 'art tile-art');
 
     tap($('playBtn'), showPicker);
     tap($('pickHome'), goHome);
@@ -194,6 +196,7 @@
     tap($('tileSounds'), function () { root.Game.start(root.Games.sounds); });
     tap($('tileWords'), function () { root.Game.start(root.Games.words); });
     tap($('tileNumbers'), function () { root.Game.start(root.Games.numbers); });
+    tap($('tileTrace'), function () { root.TraceGame.start(); });
     tap($('albumBtn'), function () { show('album'); renderAlbum(); Sound.play('album'); });
     tap($('albumHome'), goHome);
     on($('stickerGrid'), 'click', function (e) {

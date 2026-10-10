@@ -19,6 +19,10 @@
     snd_prompt: 'Which letter says',
     intro_words: "Let's read words! Listen, then tap the word I say.",
     intro_numbers: "Let's play with numbers! Listen, then tap the right one.",
+    intro_trace: "Let's write numbers! Trace them with your finger.",
+    trace_watch: 'Watch me first!',
+    trace_start: 'Now you! Start at the green dot.',
+    trace_follow: 'Follow the path.',
     n2w_prompt: 'Which word says this number?',
     w2n_prompt: 'Which number does this word say?',
     praise_1: 'Yes!',
@@ -72,6 +76,7 @@
     for (i = 1; i <= 20; i++) {
       P['findn_' + i] = '#say:Find the number|*' + Content.NUMBER_WORDS[i - 1];
       P['thatn_' + i] = '#say:That one is|*' + Content.NUMBER_WORDS[i - 1];
+      P['tracen_' + i] = '#say:Trace the number|*' + Content.NUMBER_WORDS[i - 1];
     }
   }
   root.Phrases = P;

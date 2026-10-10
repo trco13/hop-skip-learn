@@ -9,7 +9,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <title>Hop Skip Learn</title>
 <link rel="preload" href="fonts/lexend-700.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="css/style.css?v=60266b68">
+<link rel="stylesheet" href="css/style.css?v=970a220d">
 </head>
 <body>
 <div id="twinkles" class="twinkles"></div>
@@ -34,6 +34,7 @@
     <button id="tileSounds" class="game-tile sounds-tile" aria-label="Letter sounds"></button>
     <button id="tileWords" class="game-tile words-tile" aria-label="Words"></button>
     <button id="tileNumbers" class="game-tile numbers-tile" aria-label="Numbers"></button>
+    <button id="tileTrace" class="game-tile trace-tile" aria-label="Write numbers"></button>
   </div>
 </section>
 
@@ -45,6 +46,15 @@
   </div>
   <div id="cue" class="cue empty"></div>
   <div id="choices" class="choices"></div>
+</section>
+
+<section id="trace" class="screen hidden">
+  <div class="topbar">
+    <button id="traceHome" class="round-btn small" aria-label="Home"></button>
+    <div id="traceStars" class="stars"></div>
+    <button id="traceSay" class="round-btn small say-btn" aria-label="Say it again"></button>
+  </div>
+  <div id="traceBox" class="trace-box"><svg id="traceSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"></svg></div>
 </section>
 
 <section id="album" class="screen hidden">
@@ -109,6 +119,7 @@
         <label><input id="pWordsOn" type="checkbox"> sight words game</label>
         <label><input id="pNumerals" type="checkbox"> numbers 1-20</label>
         <label><input id="pNumberWords" type="checkbox"> numbers to number words (1-10)</label>
+        <label><input id="pTracing" type="checkbox"> tracing numbers (11-20 first, then 1-10)</label>
       </div>
     </details>
 
@@ -130,16 +141,18 @@
 <div id="overlay" class="overlay hidden"></div>
 
 <script src="js/storage.js?v=0fb26ce6"></script>
-<script src="js/content.js?v=f70b0dbf"></script>
-<script src="js/engine.js?v=66f6ccb4"></script>
-<script src="js/audio-manifest.js?v=f82c5ebc"></script>
+<script src="js/content.js?v=6f3ce752"></script>
+<script src="js/engine.js?v=27dbb6bd"></script>
+<script src="js/audio-manifest.js?v=7513b3f0"></script>
 <script src="js/audio.js?v=9e42ac8a"></script>
 <script src="js/art.js?v=96848007"></script>
 <script src="js/pictures.js?v=70a85917"></script>
 <script src="js/rewards.js?v=f25bd621"></script>
-<script src="js/app.js?v=8a7e78a4"></script>
+<script src="js/app.js?v=a43f3aee"></script>
 <script src="js/games.js?v=9f37b90a"></script>
+<script src="js/strokes.js?v=07398ed7"></script>
+<script src="js/trace-game.js?v=fbc8ee93"></script>
 <script src="js/game.js?v=7c995068"></script>
-<script src="js/parent.js?v=36f1166e"></script>
+<script src="js/parent.js?v=20eface4"></script>
 </body>
 </html>
