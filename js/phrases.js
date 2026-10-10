@@ -17,6 +17,10 @@
     game_sounds: 'Letter sounds!',
     intro_sounds: "Let's play with letter sounds! Listen to the sound, then tap the letter that makes it.",
     snd_prompt: 'Which letter says',
+    intro_words: "Let's read words! Listen, then tap the word I say.",
+    intro_numbers: "Let's play with numbers! Listen, then tap the right one.",
+    n2w_prompt: 'Which word says this number?',
+    w2n_prompt: 'Which number does this word say?',
     praise_1: 'Yes!',
     praise_2: 'Great job!',
     praise_3: 'You got it!',
@@ -58,7 +62,16 @@
       }
     }
     for (i = 0; i < Content.WORD_BANK.length; i++) {
-      P[Content.wordAudioId(Content.WORD_BANK[i])] = Content.WORD_BANK[i] + '.';
+      var w = Content.WORD_BANK[i], wid = Content.wordAudioId(w).slice(5);
+      P['word_' + wid] = w + '.';
+      // Sight words game: "Find the word... look." / "That one says... big."
+      P['findw_' + wid] = '#say:Find the word|*' + w;
+      P['thatw_' + wid] = '#say:That one says|*' + w;
+    }
+    // Numbers game.
+    for (i = 1; i <= 20; i++) {
+      P['findn_' + i] = '#say:Find the number|*' + Content.NUMBER_WORDS[i - 1];
+      P['thatn_' + i] = '#say:That one is|*' + Content.NUMBER_WORDS[i - 1];
     }
   }
   root.Phrases = P;

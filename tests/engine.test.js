@@ -312,3 +312,75 @@ test('sounds: strong child masters nearly all sounds', function () {
   var m = Content.soundItems().filter(function (it) { return e.isMastered(it.id); }).length;
   assert.ok(m >= 23, 'mastered ' + m);
 });
+
+// ---------- words and numbers games ----------
+
+function engineFor(items, seed, settings) {
+  return new Engine({
+    items: items,
+    settings: settings || { sessionMinutes: 7, maxChoices: 4 },
+    random: sim.rng(seed),
+    dayOf: function (ms) { return Math.floor(ms / DAY); }
+  });
+}
+
+test('words: the teacher\'s newest words are taught first', function () {
+  var teacher = [{ w: 'so', added: 1 }, { w: 'do', added: 1 }, { w: 'look', added: 2 }];
+  var items = Content.wordItems(teacher);
+  assert.equal(items[0].word, 'look');
+  var e = engineFor(items, 111);
+  var log = sim.playSession(e, struggler(112), START, 9);
+  var firstNew = log.filter(function (t) { return t.mode === 'new'; }).slice(0, 3).map(function (t) { return t.id; });
+  assert.deepEqual(firstNew, ['w:look', 'w:so', 'w:do']);
+});
+
+test('words: a struggling reader learns the teacher\'s words in 30 days', function () {
+  var teacher = [{ w: 'so', added: 1 }, { w: 'do', added: 1 }, { w: 'big', added: 1 }, { w: 'and', added: 1 }, { w: 'look', added: 1 }];
+  var items = Content.wordItems(teacher);
+  var e = engineFor(items, 113);
+  var kid = new sim.Child({ rand: sim.rng(114), learnRate: 0.1, forget: 0.03, lookAlikePull: 0.6,
+    initial: function () { return 0.02; } });
+  var logs = runDays(e, kid, 30);
+  ['so', 'do', 'big', 'and', 'look'].forEach(function (w) { assert.ok(e.isKnown('w:' + w), w + ' known'); });
+  var all = [].concat.apply([], logs);
+  assert.ok(rate(all) >= 0.6, 'success ' + rate(all).toFixed(2));
+});
+
+test('words: look-alike words (same first letter) are kept apart at first', function () {
+  var items = Content.wordItems([{ w: 'so', added: 1 }, { w: 'see', added: 1 }]);
+  var e = engineFor(items, 115);
+  e.startSession(START);
+  for (var i = 0; i < 20; i++) {
+    var t = e.next(START + i * 9000);
+    var ids = t.choices.map(function (c) { return c.id; });
+    t.item.confusables.forEach(function (c) {
+      if (ids.indexOf(c) >= 0) assert.ok(e.isKnown(t.item.id) && e.isKnown(c), t.item.id + ' with ' + c);
+    });
+    e.answer({ firstTry: true, wrongPicks: [] }, START + i * 9000 + 5000);
+    if (e.session.done) break;
+  }
+});
+
+test('numbers: 1-10 before 11-20, and word matching waits for the numeral', function () {
+  var e = engineFor(Content.numberItems(), 117);
+  var logs = runDays(e, strongKid(118), 6);
+  var all = [].concat.apply([], logs);
+  var firstTeen = all.findIndex(function (t) { return /^num:(1[1-9]|20)$/.test(t.id); });
+  var lastLow = all.findIndex(function (t) { return t.id === 'num:10'; });
+  assert.ok(lastLow >= 0 && firstTeen > lastLow, 'teens after 10');
+  all.forEach(function (t, i) {
+    if (t.id.indexOf('n2w:') === 0 && t.mode === 'new') {
+      // its numeral must have been known by then: it was seen earlier
+      var n = t.id.split(':')[1];
+      assert.ok(all.slice(0, i).some(function (x) { return x.id === 'num:' + n; }), t.id);
+    }
+  });
+  assert.ok(all.some(function (t) { return t.id.indexOf('w2n:') === 0; }), 'reaches word to number');
+});
+
+test('numbers: strong child masters numbers 1-20 within 30 days', function () {
+  var e = engineFor(Content.numberItems(), 119);
+  runDays(e, strongKid(120), 30);
+  var m = Content.numberItems().filter(function (it) { return it.group === 'num' && e.isMastered(it.id); }).length;
+  assert.ok(m >= 18, 'mastered ' + m);
+});

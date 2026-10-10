@@ -56,7 +56,17 @@ test('every clip the games can ask for exists', function () {
 
 test('teacher words and the word bank have voices', function () {
   var m = manifest();
-  Content.WORD_BANK.forEach(function (w) { assert.ok(m[Content.wordAudioId(w)], w); });
+  Content.WORD_BANK.forEach(function (w) {
+    var id = Content.wordAudioId(w).slice(5);
+    ['word_', 'findw_', 'thatw_'].forEach(function (p) { assert.ok(m[p + id], p + id); });
+  });
+});
+
+test('every clip the numbers game can ask for exists', function () {
+  var m = manifest();
+  var need = ['intro_words', 'intro_numbers', 'n2w_prompt', 'w2n_prompt'];
+  for (var n = 1; n <= 20; n++) need.push('findn_' + n, 'thatn_' + n, 'word_' + Content.NUMBER_WORDS[n - 1]);
+  need.forEach(function (id) { assert.ok(m[id], 'missing ' + id); });
 });
 
 test('pages are unlisted and make no outside requests', function () {

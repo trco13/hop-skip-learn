@@ -274,6 +274,902 @@
   "key": "7bb8b9fcbe6e",
   "text": "Find capital Z."
  },
+ "findn_1": {
+  "key": "28b14b25fff6",
+  "text": "#say:Find the number|*one"
+ },
+ "findn_10": {
+  "key": "e907f8c1a0b4",
+  "text": "#say:Find the number|*ten"
+ },
+ "findn_11": {
+  "key": "294b8047aeff",
+  "text": "#say:Find the number|*eleven"
+ },
+ "findn_12": {
+  "key": "9cee942b6e7b",
+  "text": "#say:Find the number|*twelve"
+ },
+ "findn_13": {
+  "key": "89add1bf9410",
+  "text": "#say:Find the number|*thirteen"
+ },
+ "findn_14": {
+  "key": "1251d04ef624",
+  "text": "#say:Find the number|*fourteen"
+ },
+ "findn_15": {
+  "key": "eeac1c4f1dd0",
+  "text": "#say:Find the number|*fifteen"
+ },
+ "findn_16": {
+  "key": "206efd291359",
+  "text": "#say:Find the number|*sixteen"
+ },
+ "findn_17": {
+  "key": "f364570de394",
+  "text": "#say:Find the number|*seventeen"
+ },
+ "findn_18": {
+  "key": "03c98954a51e",
+  "text": "#say:Find the number|*eighteen"
+ },
+ "findn_19": {
+  "key": "1ec5f4039aaa",
+  "text": "#say:Find the number|*nineteen"
+ },
+ "findn_2": {
+  "key": "1dbe44b047d5",
+  "text": "#say:Find the number|*two"
+ },
+ "findn_20": {
+  "key": "cb5689eee2c8",
+  "text": "#say:Find the number|*twenty"
+ },
+ "findn_3": {
+  "key": "78fc535323a8",
+  "text": "#say:Find the number|*three"
+ },
+ "findn_4": {
+  "key": "4bb4f811f32c",
+  "text": "#say:Find the number|*four"
+ },
+ "findn_5": {
+  "key": "3f96cd6a4e8f",
+  "text": "#say:Find the number|*five"
+ },
+ "findn_6": {
+  "key": "019f0e41dc99",
+  "text": "#say:Find the number|*six"
+ },
+ "findn_7": {
+  "key": "86c894ba886f",
+  "text": "#say:Find the number|*seven"
+ },
+ "findn_8": {
+  "key": "e2b9d6b51fe1",
+  "text": "#say:Find the number|*eight"
+ },
+ "findn_9": {
+  "key": "a8fd0e4c5a77",
+  "text": "#say:Find the number|*nine"
+ },
+ "findw_a": {
+  "key": "9e5b452a9ff1",
+  "text": "#say:Find the word|*a"
+ },
+ "findw_after": {
+  "key": "296b4c163f17",
+  "text": "#say:Find the word|*after"
+ },
+ "findw_again": {
+  "key": "0e4b639ea3fc",
+  "text": "#say:Find the word|*again"
+ },
+ "findw_all": {
+  "key": "e0dbfd3d0757",
+  "text": "#say:Find the word|*all"
+ },
+ "findw_am": {
+  "key": "7c2d15911223",
+  "text": "#say:Find the word|*am"
+ },
+ "findw_an": {
+  "key": "43d7ca865f12",
+  "text": "#say:Find the word|*an"
+ },
+ "findw_and": {
+  "key": "63afc788f377",
+  "text": "#say:Find the word|*and"
+ },
+ "findw_any": {
+  "key": "bf570fe78f8b",
+  "text": "#say:Find the word|*any"
+ },
+ "findw_are": {
+  "key": "79daff8d2e83",
+  "text": "#say:Find the word|*are"
+ },
+ "findw_as": {
+  "key": "33e7844aca27",
+  "text": "#say:Find the word|*as"
+ },
+ "findw_ask": {
+  "key": "05f3de3c4bfb",
+  "text": "#say:Find the word|*ask"
+ },
+ "findw_at": {
+  "key": "9d6e0f8163ba",
+  "text": "#say:Find the word|*at"
+ },
+ "findw_away": {
+  "key": "3c25b8dfd7ce",
+  "text": "#say:Find the word|*away"
+ },
+ "findw_be": {
+  "key": "94c0ad7c4e55",
+  "text": "#say:Find the word|*be"
+ },
+ "findw_big": {
+  "key": "f096cf695e3b",
+  "text": "#say:Find the word|*big"
+ },
+ "findw_black": {
+  "key": "5003ccd2d044",
+  "text": "#say:Find the word|*black"
+ },
+ "findw_blue": {
+  "key": "195f6df77514",
+  "text": "#say:Find the word|*blue"
+ },
+ "findw_book": {
+  "key": "cb4dda6cce80",
+  "text": "#say:Find the word|*book"
+ },
+ "findw_boy": {
+  "key": "1c3f8bf2eb00",
+  "text": "#say:Find the word|*boy"
+ },
+ "findw_brown": {
+  "key": "79aae33622ab",
+  "text": "#say:Find the word|*brown"
+ },
+ "findw_but": {
+  "key": "7215433e426e",
+  "text": "#say:Find the word|*but"
+ },
+ "findw_butterfly": {
+  "key": "04a37bb86dbb",
+  "text": "#say:Find the word|*butterfly"
+ },
+ "findw_by": {
+  "key": "74a81359d17f",
+  "text": "#say:Find the word|*by"
+ },
+ "findw_cake": {
+  "key": "f8bf1718b001",
+  "text": "#say:Find the word|*cake"
+ },
+ "findw_came": {
+  "key": "8b781ea17033",
+  "text": "#say:Find the word|*came"
+ },
+ "findw_can": {
+  "key": "fea3f902bcfa",
+  "text": "#say:Find the word|*can"
+ },
+ "findw_cat": {
+  "key": "6219f12eef00",
+  "text": "#say:Find the word|*cat"
+ },
+ "findw_come": {
+  "key": "5bd32ac5b311",
+  "text": "#say:Find the word|*come"
+ },
+ "findw_could": {
+  "key": "fe16d47d2bc1",
+  "text": "#say:Find the word|*could"
+ },
+ "findw_crown": {
+  "key": "4b27f79adc0f",
+  "text": "#say:Find the word|*crown"
+ },
+ "findw_cupcake": {
+  "key": "df17712729f9",
+  "text": "#say:Find the word|*cupcake"
+ },
+ "findw_dad": {
+  "key": "919f78a10b89",
+  "text": "#say:Find the word|*dad"
+ },
+ "findw_day": {
+  "key": "437050ac6081",
+  "text": "#say:Find the word|*day"
+ },
+ "findw_did": {
+  "key": "6d2759775f13",
+  "text": "#say:Find the word|*did"
+ },
+ "findw_do": {
+  "key": "adc0451f927b",
+  "text": "#say:Find the word|*do"
+ },
+ "findw_dog": {
+  "key": "d8e859bf6912",
+  "text": "#say:Find the word|*dog"
+ },
+ "findw_down": {
+  "key": "5a25eab068fb",
+  "text": "#say:Find the word|*down"
+ },
+ "findw_eat": {
+  "key": "0094fdc95286",
+  "text": "#say:Find the word|*eat"
+ },
+ "findw_eight": {
+  "key": "7d0e71ae448f",
+  "text": "#say:Find the word|*eight"
+ },
+ "findw_eighteen": {
+  "key": "67291bab066f",
+  "text": "#say:Find the word|*eighteen"
+ },
+ "findw_eleven": {
+  "key": "6681fcfc6ac0",
+  "text": "#say:Find the word|*eleven"
+ },
+ "findw_every": {
+  "key": "5851e43cde78",
+  "text": "#say:Find the word|*every"
+ },
+ "findw_fifteen": {
+  "key": "39a33f25ad78",
+  "text": "#say:Find the word|*fifteen"
+ },
+ "findw_find": {
+  "key": "57adb198e2cc",
+  "text": "#say:Find the word|*find"
+ },
+ "findw_fish": {
+  "key": "107a90b78a5c",
+  "text": "#say:Find the word|*fish"
+ },
+ "findw_five": {
+  "key": "0fe069aafa34",
+  "text": "#say:Find the word|*five"
+ },
+ "findw_fly": {
+  "key": "57f1a6ef6350",
+  "text": "#say:Find the word|*fly"
+ },
+ "findw_for": {
+  "key": "8a734b270c14",
+  "text": "#say:Find the word|*for"
+ },
+ "findw_four": {
+  "key": "e0ccc05f397e",
+  "text": "#say:Find the word|*four"
+ },
+ "findw_fourteen": {
+  "key": "6f3e7b3a3d4d",
+  "text": "#say:Find the word|*fourteen"
+ },
+ "findw_friend": {
+  "key": "4c01ec3d76bf",
+  "text": "#say:Find the word|*friend"
+ },
+ "findw_from": {
+  "key": "2965e4a52f15",
+  "text": "#say:Find the word|*from"
+ },
+ "findw_funny": {
+  "key": "47d1cb95f810",
+  "text": "#say:Find the word|*funny"
+ },
+ "findw_get": {
+  "key": "f0bfac86eddb",
+  "text": "#say:Find the word|*get"
+ },
+ "findw_girl": {
+  "key": "c7403537b920",
+  "text": "#say:Find the word|*girl"
+ },
+ "findw_give": {
+  "key": "8e434613cc86",
+  "text": "#say:Find the word|*give"
+ },
+ "findw_go": {
+  "key": "b1218d7e2e8a",
+  "text": "#say:Find the word|*go"
+ },
+ "findw_going": {
+  "key": "57d0a750cf17",
+  "text": "#say:Find the word|*going"
+ },
+ "findw_good": {
+  "key": "b164d981a956",
+  "text": "#say:Find the word|*good"
+ },
+ "findw_gray": {
+  "key": "774cce5dda33",
+  "text": "#say:Find the word|*gray"
+ },
+ "findw_green": {
+  "key": "ba39ce057b02",
+  "text": "#say:Find the word|*green"
+ },
+ "findw_had": {
+  "key": "dafaa8c3cdb8",
+  "text": "#say:Find the word|*had"
+ },
+ "findw_happy": {
+  "key": "2aedf0a8d3e9",
+  "text": "#say:Find the word|*happy"
+ },
+ "findw_has": {
+  "key": "27ba5aebf53d",
+  "text": "#say:Find the word|*has"
+ },
+ "findw_have": {
+  "key": "a049051fd6f3",
+  "text": "#say:Find the word|*have"
+ },
+ "findw_he": {
+  "key": "af765f605276",
+  "text": "#say:Find the word|*he"
+ },
+ "findw_help": {
+  "key": "10b037e70b76",
+  "text": "#say:Find the word|*help"
+ },
+ "findw_her": {
+  "key": "79d7ae97be7b",
+  "text": "#say:Find the word|*her"
+ },
+ "findw_here": {
+  "key": "9760939d3d35",
+  "text": "#say:Find the word|*here"
+ },
+ "findw_him": {
+  "key": "064d65819578",
+  "text": "#say:Find the word|*him"
+ },
+ "findw_his": {
+  "key": "fc02c67daae1",
+  "text": "#say:Find the word|*his"
+ },
+ "findw_home": {
+  "key": "9627214de562",
+  "text": "#say:Find the word|*home"
+ },
+ "findw_how": {
+  "key": "11579ea26fe4",
+  "text": "#say:Find the word|*how"
+ },
+ "findw_i": {
+  "key": "406d1fddc1ab",
+  "text": "#say:Find the word|*I"
+ },
+ "findw_if": {
+  "key": "e33e0a36f341",
+  "text": "#say:Find the word|*if"
+ },
+ "findw_in": {
+  "key": "81766566df40",
+  "text": "#say:Find the word|*in"
+ },
+ "findw_into": {
+  "key": "1a6599c0045e",
+  "text": "#say:Find the word|*into"
+ },
+ "findw_is": {
+  "key": "f623afd426ad",
+  "text": "#say:Find the word|*is"
+ },
+ "findw_it": {
+  "key": "38c9d4d6f4be",
+  "text": "#say:Find the word|*it"
+ },
+ "findw_its": {
+  "key": "77f5e5dcbe70",
+  "text": "#say:Find the word|*its"
+ },
+ "findw_jump": {
+  "key": "f60000052cb6",
+  "text": "#say:Find the word|*jump"
+ },
+ "findw_just": {
+  "key": "e6a9708c219d",
+  "text": "#say:Find the word|*just"
+ },
+ "findw_king": {
+  "key": "d9b66e429eeb",
+  "text": "#say:Find the word|*king"
+ },
+ "findw_know": {
+  "key": "62807c68b1ce",
+  "text": "#say:Find the word|*know"
+ },
+ "findw_let": {
+  "key": "e3212978c03d",
+  "text": "#say:Find the word|*let"
+ },
+ "findw_like": {
+  "key": "554520ba74be",
+  "text": "#say:Find the word|*like"
+ },
+ "findw_little": {
+  "key": "b8d889d9303e",
+  "text": "#say:Find the word|*little"
+ },
+ "findw_long": {
+  "key": "3f1c43981a4b",
+  "text": "#say:Find the word|*long"
+ },
+ "findw_look": {
+  "key": "7eff9c038e4f",
+  "text": "#say:Find the word|*look"
+ },
+ "findw_love": {
+  "key": "e753deae2f75",
+  "text": "#say:Find the word|*love"
+ },
+ "findw_made": {
+  "key": "5fbe20f1c5c9",
+  "text": "#say:Find the word|*made"
+ },
+ "findw_make": {
+  "key": "69253973d65a",
+  "text": "#say:Find the word|*make"
+ },
+ "findw_many": {
+  "key": "d731e756d3a9",
+  "text": "#say:Find the word|*many"
+ },
+ "findw_may": {
+  "key": "9d4deb148109",
+  "text": "#say:Find the word|*may"
+ },
+ "findw_me": {
+  "key": "fb63e80c73a7",
+  "text": "#say:Find the word|*me"
+ },
+ "findw_mermaid": {
+  "key": "c249dc2908be",
+  "text": "#say:Find the word|*mermaid"
+ },
+ "findw_mom": {
+  "key": "071339a8d84a",
+  "text": "#say:Find the word|*mom"
+ },
+ "findw_moon": {
+  "key": "ef8a952962e5",
+  "text": "#say:Find the word|*moon"
+ },
+ "findw_more": {
+  "key": "602ef7a33556",
+  "text": "#say:Find the word|*more"
+ },
+ "findw_must": {
+  "key": "4088b70e06e6",
+  "text": "#say:Find the word|*must"
+ },
+ "findw_my": {
+  "key": "8dd7d81bcd68",
+  "text": "#say:Find the word|*my"
+ },
+ "findw_myself": {
+  "key": "dbe7f913af5f",
+  "text": "#say:Find the word|*myself"
+ },
+ "findw_new": {
+  "key": "9e694849bcca",
+  "text": "#say:Find the word|*new"
+ },
+ "findw_nine": {
+  "key": "389a48f74934",
+  "text": "#say:Find the word|*nine"
+ },
+ "findw_nineteen": {
+  "key": "1e818855085e",
+  "text": "#say:Find the word|*nineteen"
+ },
+ "findw_no": {
+  "key": "2b46c8d44606",
+  "text": "#say:Find the word|*no"
+ },
+ "findw_not": {
+  "key": "c5a40d68a3cd",
+  "text": "#say:Find the word|*not"
+ },
+ "findw_now": {
+  "key": "a5e49dc82d6b",
+  "text": "#say:Find the word|*now"
+ },
+ "findw_of": {
+  "key": "2ac09dddbcae",
+  "text": "#say:Find the word|*of"
+ },
+ "findw_off": {
+  "key": "813f5dd79158",
+  "text": "#say:Find the word|*off"
+ },
+ "findw_old": {
+  "key": "7430a8008b0a",
+  "text": "#say:Find the word|*old"
+ },
+ "findw_on": {
+  "key": "c3b21ada2cd4",
+  "text": "#say:Find the word|*on"
+ },
+ "findw_once": {
+  "key": "ed1d484d9e18",
+  "text": "#say:Find the word|*once"
+ },
+ "findw_one": {
+  "key": "576d30a7ac55",
+  "text": "#say:Find the word|*one"
+ },
+ "findw_only": {
+  "key": "0c4f5e6c6073",
+  "text": "#say:Find the word|*only"
+ },
+ "findw_open": {
+  "key": "56718cf91f76",
+  "text": "#say:Find the word|*open"
+ },
+ "findw_or": {
+  "key": "13304af9c324",
+  "text": "#say:Find the word|*or"
+ },
+ "findw_orange": {
+  "key": "c52d0b8410a0",
+  "text": "#say:Find the word|*orange"
+ },
+ "findw_our": {
+  "key": "2f693d778008",
+  "text": "#say:Find the word|*our"
+ },
+ "findw_out": {
+  "key": "945ac3bd42a8",
+  "text": "#say:Find the word|*out"
+ },
+ "findw_over": {
+  "key": "6467184af7e2",
+  "text": "#say:Find the word|*over"
+ },
+ "findw_own": {
+  "key": "0dc2bfae0092",
+  "text": "#say:Find the word|*own"
+ },
+ "findw_pick": {
+  "key": "f194c71fdbc2",
+  "text": "#say:Find the word|*pick"
+ },
+ "findw_pink": {
+  "key": "6334d2ef1b49",
+  "text": "#say:Find the word|*pink"
+ },
+ "findw_play": {
+  "key": "8c03cafc7373",
+  "text": "#say:Find the word|*play"
+ },
+ "findw_please": {
+  "key": "a7f15ca60f86",
+  "text": "#say:Find the word|*please"
+ },
+ "findw_pretty": {
+  "key": "d9e57809f90e",
+  "text": "#say:Find the word|*pretty"
+ },
+ "findw_princess": {
+  "key": "b69667ce48b7",
+  "text": "#say:Find the word|*princess"
+ },
+ "findw_purple": {
+  "key": "931965c3342a",
+  "text": "#say:Find the word|*purple"
+ },
+ "findw_put": {
+  "key": "13a8d0d3e5f6",
+  "text": "#say:Find the word|*put"
+ },
+ "findw_queen": {
+  "key": "8444fe272297",
+  "text": "#say:Find the word|*queen"
+ },
+ "findw_ran": {
+  "key": "316a28b3482a",
+  "text": "#say:Find the word|*ran"
+ },
+ "findw_red": {
+  "key": "d12a67ead5bd",
+  "text": "#say:Find the word|*red"
+ },
+ "findw_ride": {
+  "key": "0645f3fbcbed",
+  "text": "#say:Find the word|*ride"
+ },
+ "findw_round": {
+  "key": "3bc80928d7a2",
+  "text": "#say:Find the word|*round"
+ },
+ "findw_run": {
+  "key": "6da836f860ce",
+  "text": "#say:Find the word|*run"
+ },
+ "findw_said": {
+  "key": "e1bded6debc8",
+  "text": "#say:Find the word|*said"
+ },
+ "findw_saw": {
+  "key": "bc4a5a76e151",
+  "text": "#say:Find the word|*saw"
+ },
+ "findw_say": {
+  "key": "f7974fd99e6b",
+  "text": "#say:Find the word|*say"
+ },
+ "findw_school": {
+  "key": "dd0266755ac8",
+  "text": "#say:Find the word|*school"
+ },
+ "findw_see": {
+  "key": "cb72515df885",
+  "text": "#say:Find the word|*see"
+ },
+ "findw_seven": {
+  "key": "2b435c934f3b",
+  "text": "#say:Find the word|*seven"
+ },
+ "findw_seventeen": {
+  "key": "e8fcd7b7d862",
+  "text": "#say:Find the word|*seventeen"
+ },
+ "findw_she": {
+  "key": "01c1c8aee626",
+  "text": "#say:Find the word|*she"
+ },
+ "findw_show": {
+  "key": "08dc56907c35",
+  "text": "#say:Find the word|*show"
+ },
+ "findw_sing": {
+  "key": "8f6ad0ce61bb",
+  "text": "#say:Find the word|*sing"
+ },
+ "findw_sit": {
+  "key": "90eade18e68f",
+  "text": "#say:Find the word|*sit"
+ },
+ "findw_six": {
+  "key": "492aff6f2379",
+  "text": "#say:Find the word|*six"
+ },
+ "findw_sixteen": {
+  "key": "593c7c888b88",
+  "text": "#say:Find the word|*sixteen"
+ },
+ "findw_sleep": {
+  "key": "d2aedd938f29",
+  "text": "#say:Find the word|*sleep"
+ },
+ "findw_so": {
+  "key": "e103bb63f6df",
+  "text": "#say:Find the word|*so"
+ },
+ "findw_some": {
+  "key": "25f86320f473",
+  "text": "#say:Find the word|*some"
+ },
+ "findw_soon": {
+  "key": "8ca91983b85a",
+  "text": "#say:Find the word|*soon"
+ },
+ "findw_star": {
+  "key": "9e5838d0e8b1",
+  "text": "#say:Find the word|*star"
+ },
+ "findw_start": {
+  "key": "5aa7da591865",
+  "text": "#say:Find the word|*start"
+ },
+ "findw_stop": {
+  "key": "f9b64b524a4a",
+  "text": "#say:Find the word|*stop"
+ },
+ "findw_sun": {
+  "key": "b49485228102",
+  "text": "#say:Find the word|*sun"
+ },
+ "findw_take": {
+  "key": "a13177a8d0b8",
+  "text": "#say:Find the word|*take"
+ },
+ "findw_tell": {
+  "key": "23a1b2f12abb",
+  "text": "#say:Find the word|*tell"
+ },
+ "findw_ten": {
+  "key": "2dd49799006e",
+  "text": "#say:Find the word|*ten"
+ },
+ "findw_thank": {
+  "key": "7aa16cecf1c2",
+  "text": "#say:Find the word|*thank"
+ },
+ "findw_that": {
+  "key": "a718f005120a",
+  "text": "#say:Find the word|*that"
+ },
+ "findw_the": {
+  "key": "d9721cea8758",
+  "text": "#say:Find the word|*the"
+ },
+ "findw_them": {
+  "key": "c858fd5e0779",
+  "text": "#say:Find the word|*them"
+ },
+ "findw_then": {
+  "key": "4c6185e2d60a",
+  "text": "#say:Find the word|*then"
+ },
+ "findw_there": {
+  "key": "cc3b8a398217",
+  "text": "#say:Find the word|*there"
+ },
+ "findw_they": {
+  "key": "98cc9c0b2503",
+  "text": "#say:Find the word|*they"
+ },
+ "findw_think": {
+  "key": "ae933bb315e2",
+  "text": "#say:Find the word|*think"
+ },
+ "findw_thirteen": {
+  "key": "969e64d5b27a",
+  "text": "#say:Find the word|*thirteen"
+ },
+ "findw_this": {
+  "key": "0a5dfa777266",
+  "text": "#say:Find the word|*this"
+ },
+ "findw_three": {
+  "key": "06f977675e19",
+  "text": "#say:Find the word|*three"
+ },
+ "findw_to": {
+  "key": "d8293b3a922e",
+  "text": "#say:Find the word|*to"
+ },
+ "findw_today": {
+  "key": "561adbfa8c55",
+  "text": "#say:Find the word|*today"
+ },
+ "findw_together": {
+  "key": "8ed865ce3348",
+  "text": "#say:Find the word|*together"
+ },
+ "findw_too": {
+  "key": "097495784fc8",
+  "text": "#say:Find the word|*too"
+ },
+ "findw_tree": {
+  "key": "0cb9eaebd942",
+  "text": "#say:Find the word|*tree"
+ },
+ "findw_try": {
+  "key": "9b37add55aa3",
+  "text": "#say:Find the word|*try"
+ },
+ "findw_twelve": {
+  "key": "2276bde00fff",
+  "text": "#say:Find the word|*twelve"
+ },
+ "findw_twenty": {
+  "key": "2879425ca25b",
+  "text": "#say:Find the word|*twenty"
+ },
+ "findw_two": {
+  "key": "431cca74a475",
+  "text": "#say:Find the word|*two"
+ },
+ "findw_under": {
+  "key": "460e5d1fe4c0",
+  "text": "#say:Find the word|*under"
+ },
+ "findw_unicorn": {
+  "key": "fe29dc46045f",
+  "text": "#say:Find the word|*unicorn"
+ },
+ "findw_up": {
+  "key": "058c96ba3f9d",
+  "text": "#say:Find the word|*up"
+ },
+ "findw_us": {
+  "key": "2c2c67a0ca93",
+  "text": "#say:Find the word|*us"
+ },
+ "findw_very": {
+  "key": "a6594569f856",
+  "text": "#say:Find the word|*very"
+ },
+ "findw_walk": {
+  "key": "63b06968807d",
+  "text": "#say:Find the word|*walk"
+ },
+ "findw_want": {
+  "key": "e52f38ec4826",
+  "text": "#say:Find the word|*want"
+ },
+ "findw_warm": {
+  "key": "7cdeaf17b65a",
+  "text": "#say:Find the word|*warm"
+ },
+ "findw_was": {
+  "key": "450db746ee46",
+  "text": "#say:Find the word|*was"
+ },
+ "findw_we": {
+  "key": "73a64756c010",
+  "text": "#say:Find the word|*we"
+ },
+ "findw_well": {
+  "key": "a85083e6a1c9",
+  "text": "#say:Find the word|*well"
+ },
+ "findw_went": {
+  "key": "4ad281caf5f9",
+  "text": "#say:Find the word|*went"
+ },
+ "findw_were": {
+  "key": "c531caa54abc",
+  "text": "#say:Find the word|*were"
+ },
+ "findw_what": {
+  "key": "6d8e3f1be551",
+  "text": "#say:Find the word|*what"
+ },
+ "findw_when": {
+  "key": "c815d6062483",
+  "text": "#say:Find the word|*when"
+ },
+ "findw_where": {
+  "key": "02e46fb2c6ba",
+  "text": "#say:Find the word|*where"
+ },
+ "findw_white": {
+  "key": "6a28333b1896",
+  "text": "#say:Find the word|*white"
+ },
+ "findw_who": {
+  "key": "8b1a6fe4afc1",
+  "text": "#say:Find the word|*who"
+ },
+ "findw_will": {
+  "key": "d3cce0789869",
+  "text": "#say:Find the word|*will"
+ },
+ "findw_with": {
+  "key": "c23f2fc514dc",
+  "text": "#say:Find the word|*with"
+ },
+ "findw_yellow": {
+  "key": "323d39d3aaa6",
+  "text": "#say:Find the word|*yellow"
+ },
+ "findw_yes": {
+  "key": "bf46b7071445",
+  "text": "#say:Find the word|*yes"
+ },
+ "findw_you": {
+  "key": "0bd19c1b6ca6",
+  "text": "#say:Find the word|*you"
+ },
+ "findw_your": {
+  "key": "569c1a18d3cf",
+  "text": "#say:Find the word|*your"
+ },
  "game_letters": {
   "ipa": "lˈɛɾɚz!",
   "key": "6d3f2fb9e2d6",
@@ -299,10 +1195,20 @@
   "key": "1cef73ac61bf",
   "text": "Let's find letters! Listen, then tap the letter I say."
  },
+ "intro_numbers": {
+  "ipa": "lˈɛts plˈeɪ wɪð nˈʌmbɚz! lˈɪsən, ðˈɛn tˈæp ðə ɹˈaɪt wˌʌn.",
+  "key": "7cf17092d2d7",
+  "text": "Let's play with numbers! Listen, then tap the right one."
+ },
  "intro_sounds": {
   "ipa": "lˈɛts plˈeɪ wɪð lˈɛɾɚ sˈaʊndz! lˈɪsən tə ðə sˈaʊnd, ðˈɛn tˈæp ðə lˈɛɾɚ ðæt mˈeɪks ɪt.",
   "key": "23d38e1dd53b",
   "text": "Let's play with letter sounds! Listen to the sound, then tap the letter that makes it."
+ },
+ "intro_words": {
+  "ipa": "lˈɛts ɹˈiːd wˈɜːdz! lˈɪsən, ðˈɛn tˈæp ðə wˈɜːd aɪ sˈeɪ.",
+  "key": "676bbd7d0fc8",
+  "text": "Let's read words! Listen, then tap the word I say."
  },
  "like_a": {
   "ipa": "lˈaɪk ˈæpəl.",
@@ -438,6 +1344,11 @@
   "ipa": "fˈaɪnd ðə lˈoʊɚkˌeɪs lˈɛɾɚ ðæt ɡoʊz wɪð ðɪs kˈæpɪɾəl lˈɛɾɚ.",
   "key": "eacccf778465",
   "text": "Find the lowercase letter that goes with this capital letter."
+ },
+ "n2w_prompt": {
+  "ipa": "wˌɪtʃ wˈɜːd sˈɛz ðɪs nˈʌmbɚ?",
+  "key": "f4e880e97937",
+  "text": "Which word says this number?"
  },
  "pair_A": {
   "ipa": "kˈæpɪɾəl ˈeɪ, lˈoʊɚkˌeɪs ˈeɪ!",
@@ -1378,6 +2289,86 @@
   "key": "c2e08caa0f16",
   "text": "Yay! You earned a sticker!"
  },
+ "thatn_1": {
+  "key": "75e4a7069263",
+  "text": "#say:That one is|*one"
+ },
+ "thatn_10": {
+  "key": "5012d99e1033",
+  "text": "#say:That one is|*ten"
+ },
+ "thatn_11": {
+  "key": "b89016b20b72",
+  "text": "#say:That one is|*eleven"
+ },
+ "thatn_12": {
+  "key": "c739ea452636",
+  "text": "#say:That one is|*twelve"
+ },
+ "thatn_13": {
+  "key": "851b3c93563a",
+  "text": "#say:That one is|*thirteen"
+ },
+ "thatn_14": {
+  "key": "d9be25048f05",
+  "text": "#say:That one is|*fourteen"
+ },
+ "thatn_15": {
+  "key": "c6b621987331",
+  "text": "#say:That one is|*fifteen"
+ },
+ "thatn_16": {
+  "key": "1b61ec21819c",
+  "text": "#say:That one is|*sixteen"
+ },
+ "thatn_17": {
+  "key": "cf5fca981851",
+  "text": "#say:That one is|*seventeen"
+ },
+ "thatn_18": {
+  "key": "e00c0756a2f9",
+  "text": "#say:That one is|*eighteen"
+ },
+ "thatn_19": {
+  "key": "3674adfa6ad0",
+  "text": "#say:That one is|*nineteen"
+ },
+ "thatn_2": {
+  "key": "b625bae1260c",
+  "text": "#say:That one is|*two"
+ },
+ "thatn_20": {
+  "key": "e49ad357d372",
+  "text": "#say:That one is|*twenty"
+ },
+ "thatn_3": {
+  "key": "f974a39c47e8",
+  "text": "#say:That one is|*three"
+ },
+ "thatn_4": {
+  "key": "9a586820f600",
+  "text": "#say:That one is|*four"
+ },
+ "thatn_5": {
+  "key": "5b9705936921",
+  "text": "#say:That one is|*five"
+ },
+ "thatn_6": {
+  "key": "bddb0b8797b3",
+  "text": "#say:That one is|*six"
+ },
+ "thatn_7": {
+  "key": "3cd145aa92cb",
+  "text": "#say:That one is|*seven"
+ },
+ "thatn_8": {
+  "key": "f7cb7cab7924",
+  "text": "#say:That one is|*eight"
+ },
+ "thatn_9": {
+  "key": "1a1a13d437ca",
+  "text": "#say:That one is|*nine"
+ },
  "thats_A": {
   "ipa": "ðˈætwˌʌn ɪz ˈeɪ.",
   "key": "e2b3b3ab2ce7",
@@ -1508,6 +2499,822 @@
   "key": "9e957c9e0b74",
   "text": "That one is Z."
  },
+ "thatw_a": {
+  "key": "114d887e6a1f",
+  "text": "#say:That one says|*a"
+ },
+ "thatw_after": {
+  "key": "f4e079a6594e",
+  "text": "#say:That one says|*after"
+ },
+ "thatw_again": {
+  "key": "2d015376427f",
+  "text": "#say:That one says|*again"
+ },
+ "thatw_all": {
+  "key": "ce4ab0403696",
+  "text": "#say:That one says|*all"
+ },
+ "thatw_am": {
+  "key": "2579112cb4d0",
+  "text": "#say:That one says|*am"
+ },
+ "thatw_an": {
+  "key": "bf78deaaa9ce",
+  "text": "#say:That one says|*an"
+ },
+ "thatw_and": {
+  "key": "117f65f9b03c",
+  "text": "#say:That one says|*and"
+ },
+ "thatw_any": {
+  "key": "702be17a6344",
+  "text": "#say:That one says|*any"
+ },
+ "thatw_are": {
+  "key": "2496e30ca3d3",
+  "text": "#say:That one says|*are"
+ },
+ "thatw_as": {
+  "key": "7cca4edc2f34",
+  "text": "#say:That one says|*as"
+ },
+ "thatw_ask": {
+  "key": "6249b509a1f5",
+  "text": "#say:That one says|*ask"
+ },
+ "thatw_at": {
+  "key": "0b9f5ab04e60",
+  "text": "#say:That one says|*at"
+ },
+ "thatw_away": {
+  "key": "abac54c4514c",
+  "text": "#say:That one says|*away"
+ },
+ "thatw_be": {
+  "key": "a028b0bcb7cb",
+  "text": "#say:That one says|*be"
+ },
+ "thatw_big": {
+  "key": "34fe46053460",
+  "text": "#say:That one says|*big"
+ },
+ "thatw_black": {
+  "key": "20b9e27016e2",
+  "text": "#say:That one says|*black"
+ },
+ "thatw_blue": {
+  "key": "7fae583346ff",
+  "text": "#say:That one says|*blue"
+ },
+ "thatw_book": {
+  "key": "72ef91e3e4c3",
+  "text": "#say:That one says|*book"
+ },
+ "thatw_boy": {
+  "key": "67f44b07da39",
+  "text": "#say:That one says|*boy"
+ },
+ "thatw_brown": {
+  "key": "844d5a074e14",
+  "text": "#say:That one says|*brown"
+ },
+ "thatw_but": {
+  "key": "c9a955673d7a",
+  "text": "#say:That one says|*but"
+ },
+ "thatw_butterfly": {
+  "key": "6248fc00d052",
+  "text": "#say:That one says|*butterfly"
+ },
+ "thatw_by": {
+  "key": "7fb7e06617a5",
+  "text": "#say:That one says|*by"
+ },
+ "thatw_cake": {
+  "key": "11cf12b465bb",
+  "text": "#say:That one says|*cake"
+ },
+ "thatw_came": {
+  "key": "9342281c4830",
+  "text": "#say:That one says|*came"
+ },
+ "thatw_can": {
+  "key": "87504eb727de",
+  "text": "#say:That one says|*can"
+ },
+ "thatw_cat": {
+  "key": "5b9128f9057f",
+  "text": "#say:That one says|*cat"
+ },
+ "thatw_come": {
+  "key": "511da1e79c63",
+  "text": "#say:That one says|*come"
+ },
+ "thatw_could": {
+  "key": "5fe832bad71d",
+  "text": "#say:That one says|*could"
+ },
+ "thatw_crown": {
+  "key": "b3664d7772bf",
+  "text": "#say:That one says|*crown"
+ },
+ "thatw_cupcake": {
+  "key": "b7609e0caf14",
+  "text": "#say:That one says|*cupcake"
+ },
+ "thatw_dad": {
+  "key": "bae6a7b83f3f",
+  "text": "#say:That one says|*dad"
+ },
+ "thatw_day": {
+  "key": "ec033cfdd8c4",
+  "text": "#say:That one says|*day"
+ },
+ "thatw_did": {
+  "key": "899f14bb000f",
+  "text": "#say:That one says|*did"
+ },
+ "thatw_do": {
+  "key": "92b079b7101f",
+  "text": "#say:That one says|*do"
+ },
+ "thatw_dog": {
+  "key": "93fad118a9d2",
+  "text": "#say:That one says|*dog"
+ },
+ "thatw_down": {
+  "key": "4d4043795ac7",
+  "text": "#say:That one says|*down"
+ },
+ "thatw_eat": {
+  "key": "f81f2d1412cf",
+  "text": "#say:That one says|*eat"
+ },
+ "thatw_eight": {
+  "key": "e17fe0ffebe4",
+  "text": "#say:That one says|*eight"
+ },
+ "thatw_eighteen": {
+  "key": "ba35b0786336",
+  "text": "#say:That one says|*eighteen"
+ },
+ "thatw_eleven": {
+  "key": "f0aee52ad226",
+  "text": "#say:That one says|*eleven"
+ },
+ "thatw_every": {
+  "key": "e5f0679bd1b4",
+  "text": "#say:That one says|*every"
+ },
+ "thatw_fifteen": {
+  "key": "3138b3a83cf1",
+  "text": "#say:That one says|*fifteen"
+ },
+ "thatw_find": {
+  "key": "034a17dad0b4",
+  "text": "#say:That one says|*find"
+ },
+ "thatw_fish": {
+  "key": "d9146b346693",
+  "text": "#say:That one says|*fish"
+ },
+ "thatw_five": {
+  "key": "624490b95f73",
+  "text": "#say:That one says|*five"
+ },
+ "thatw_fly": {
+  "key": "588b75d61aa5",
+  "text": "#say:That one says|*fly"
+ },
+ "thatw_for": {
+  "key": "a3c0a98a5c46",
+  "text": "#say:That one says|*for"
+ },
+ "thatw_four": {
+  "key": "4bf8dbbb23bd",
+  "text": "#say:That one says|*four"
+ },
+ "thatw_fourteen": {
+  "key": "72279b43a01c",
+  "text": "#say:That one says|*fourteen"
+ },
+ "thatw_friend": {
+  "key": "ac6c5760ee0c",
+  "text": "#say:That one says|*friend"
+ },
+ "thatw_from": {
+  "key": "b4cdc49561bc",
+  "text": "#say:That one says|*from"
+ },
+ "thatw_funny": {
+  "key": "6305670d81d6",
+  "text": "#say:That one says|*funny"
+ },
+ "thatw_get": {
+  "key": "f84fa382ca18",
+  "text": "#say:That one says|*get"
+ },
+ "thatw_girl": {
+  "key": "6e9c60517de6",
+  "text": "#say:That one says|*girl"
+ },
+ "thatw_give": {
+  "key": "12d077b84a66",
+  "text": "#say:That one says|*give"
+ },
+ "thatw_go": {
+  "key": "5cda6524f609",
+  "text": "#say:That one says|*go"
+ },
+ "thatw_going": {
+  "key": "c6f53acf959e",
+  "text": "#say:That one says|*going"
+ },
+ "thatw_good": {
+  "key": "d588b45bca4f",
+  "text": "#say:That one says|*good"
+ },
+ "thatw_gray": {
+  "key": "29549c363b46",
+  "text": "#say:That one says|*gray"
+ },
+ "thatw_green": {
+  "key": "c371bbaaa10e",
+  "text": "#say:That one says|*green"
+ },
+ "thatw_had": {
+  "key": "7e43e74390ba",
+  "text": "#say:That one says|*had"
+ },
+ "thatw_happy": {
+  "key": "a9259bfcaf10",
+  "text": "#say:That one says|*happy"
+ },
+ "thatw_has": {
+  "key": "b4fb6be85a06",
+  "text": "#say:That one says|*has"
+ },
+ "thatw_have": {
+  "key": "dfa9821ac412",
+  "text": "#say:That one says|*have"
+ },
+ "thatw_he": {
+  "key": "152a93eaa62b",
+  "text": "#say:That one says|*he"
+ },
+ "thatw_help": {
+  "key": "7c4d2cf9f6eb",
+  "text": "#say:That one says|*help"
+ },
+ "thatw_her": {
+  "key": "3f84ce1312e7",
+  "text": "#say:That one says|*her"
+ },
+ "thatw_here": {
+  "key": "613f5a7cb883",
+  "text": "#say:That one says|*here"
+ },
+ "thatw_him": {
+  "key": "0dff405373b0",
+  "text": "#say:That one says|*him"
+ },
+ "thatw_his": {
+  "key": "be898a24656e",
+  "text": "#say:That one says|*his"
+ },
+ "thatw_home": {
+  "key": "c3039c54e952",
+  "text": "#say:That one says|*home"
+ },
+ "thatw_how": {
+  "key": "abfd1b45018d",
+  "text": "#say:That one says|*how"
+ },
+ "thatw_i": {
+  "key": "36b3b3e5d6ba",
+  "text": "#say:That one says|*I"
+ },
+ "thatw_if": {
+  "key": "efaf994d5599",
+  "text": "#say:That one says|*if"
+ },
+ "thatw_in": {
+  "key": "ae72475c7b39",
+  "text": "#say:That one says|*in"
+ },
+ "thatw_into": {
+  "key": "f20ef64ebcaf",
+  "text": "#say:That one says|*into"
+ },
+ "thatw_is": {
+  "key": "bbd375e19314",
+  "text": "#say:That one says|*is"
+ },
+ "thatw_it": {
+  "key": "b34a4a805712",
+  "text": "#say:That one says|*it"
+ },
+ "thatw_its": {
+  "key": "430e91f0165e",
+  "text": "#say:That one says|*its"
+ },
+ "thatw_jump": {
+  "key": "9cc406288088",
+  "text": "#say:That one says|*jump"
+ },
+ "thatw_just": {
+  "key": "0459a751f080",
+  "text": "#say:That one says|*just"
+ },
+ "thatw_king": {
+  "key": "fdbf95be6917",
+  "text": "#say:That one says|*king"
+ },
+ "thatw_know": {
+  "key": "c97506252627",
+  "text": "#say:That one says|*know"
+ },
+ "thatw_let": {
+  "key": "48649d80e3bd",
+  "text": "#say:That one says|*let"
+ },
+ "thatw_like": {
+  "key": "7112bf531f06",
+  "text": "#say:That one says|*like"
+ },
+ "thatw_little": {
+  "key": "0eaac465a455",
+  "text": "#say:That one says|*little"
+ },
+ "thatw_long": {
+  "key": "78de6f3fcc99",
+  "text": "#say:That one says|*long"
+ },
+ "thatw_look": {
+  "key": "02d29fc08762",
+  "text": "#say:That one says|*look"
+ },
+ "thatw_love": {
+  "key": "0f19bca096c9",
+  "text": "#say:That one says|*love"
+ },
+ "thatw_made": {
+  "key": "74095964767d",
+  "text": "#say:That one says|*made"
+ },
+ "thatw_make": {
+  "key": "e9353053d16a",
+  "text": "#say:That one says|*make"
+ },
+ "thatw_many": {
+  "key": "b5316f60c31b",
+  "text": "#say:That one says|*many"
+ },
+ "thatw_may": {
+  "key": "6567a02bbae0",
+  "text": "#say:That one says|*may"
+ },
+ "thatw_me": {
+  "key": "e7b442e10d01",
+  "text": "#say:That one says|*me"
+ },
+ "thatw_mermaid": {
+  "key": "0a430261dfe3",
+  "text": "#say:That one says|*mermaid"
+ },
+ "thatw_mom": {
+  "key": "eb00af1e777f",
+  "text": "#say:That one says|*mom"
+ },
+ "thatw_moon": {
+  "key": "243fb9932ed5",
+  "text": "#say:That one says|*moon"
+ },
+ "thatw_more": {
+  "key": "f4486325a36d",
+  "text": "#say:That one says|*more"
+ },
+ "thatw_must": {
+  "key": "c93710f0f6fa",
+  "text": "#say:That one says|*must"
+ },
+ "thatw_my": {
+  "key": "44fabd4c1247",
+  "text": "#say:That one says|*my"
+ },
+ "thatw_myself": {
+  "key": "bc0d97aa869f",
+  "text": "#say:That one says|*myself"
+ },
+ "thatw_new": {
+  "key": "e5dc0f9e4567",
+  "text": "#say:That one says|*new"
+ },
+ "thatw_nine": {
+  "key": "510c8f959a27",
+  "text": "#say:That one says|*nine"
+ },
+ "thatw_nineteen": {
+  "key": "11f7a2f9f9d4",
+  "text": "#say:That one says|*nineteen"
+ },
+ "thatw_no": {
+  "key": "2cb283b8b72e",
+  "text": "#say:That one says|*no"
+ },
+ "thatw_not": {
+  "key": "e9ef7452424b",
+  "text": "#say:That one says|*not"
+ },
+ "thatw_now": {
+  "key": "6fe18c9b5387",
+  "text": "#say:That one says|*now"
+ },
+ "thatw_of": {
+  "key": "14255e581325",
+  "text": "#say:That one says|*of"
+ },
+ "thatw_off": {
+  "key": "01396a5f9a43",
+  "text": "#say:That one says|*off"
+ },
+ "thatw_old": {
+  "key": "586edf1a3566",
+  "text": "#say:That one says|*old"
+ },
+ "thatw_on": {
+  "key": "329caad8e7cc",
+  "text": "#say:That one says|*on"
+ },
+ "thatw_once": {
+  "key": "e55dca871da8",
+  "text": "#say:That one says|*once"
+ },
+ "thatw_one": {
+  "key": "c0694695833a",
+  "text": "#say:That one says|*one"
+ },
+ "thatw_only": {
+  "key": "816eb7e0a7aa",
+  "text": "#say:That one says|*only"
+ },
+ "thatw_open": {
+  "key": "53165ca857ba",
+  "text": "#say:That one says|*open"
+ },
+ "thatw_or": {
+  "key": "f04f31bcd615",
+  "text": "#say:That one says|*or"
+ },
+ "thatw_orange": {
+  "key": "22f25df3dcae",
+  "text": "#say:That one says|*orange"
+ },
+ "thatw_our": {
+  "key": "7e022809337d",
+  "text": "#say:That one says|*our"
+ },
+ "thatw_out": {
+  "key": "0146c4ad849a",
+  "text": "#say:That one says|*out"
+ },
+ "thatw_over": {
+  "key": "84fe318ab704",
+  "text": "#say:That one says|*over"
+ },
+ "thatw_own": {
+  "key": "6926c783d13f",
+  "text": "#say:That one says|*own"
+ },
+ "thatw_pick": {
+  "key": "13e1bd63ade2",
+  "text": "#say:That one says|*pick"
+ },
+ "thatw_pink": {
+  "key": "1f22042c6e5f",
+  "text": "#say:That one says|*pink"
+ },
+ "thatw_play": {
+  "key": "2f8d9e0fb695",
+  "text": "#say:That one says|*play"
+ },
+ "thatw_please": {
+  "key": "fcff9655419e",
+  "text": "#say:That one says|*please"
+ },
+ "thatw_pretty": {
+  "key": "734de0ba474d",
+  "text": "#say:That one says|*pretty"
+ },
+ "thatw_princess": {
+  "key": "188c02152f8e",
+  "text": "#say:That one says|*princess"
+ },
+ "thatw_purple": {
+  "key": "4b8e5dbb5c41",
+  "text": "#say:That one says|*purple"
+ },
+ "thatw_put": {
+  "key": "7a47ffa09049",
+  "text": "#say:That one says|*put"
+ },
+ "thatw_queen": {
+  "key": "8a339e14b6a4",
+  "text": "#say:That one says|*queen"
+ },
+ "thatw_ran": {
+  "key": "a27c7af7d713",
+  "text": "#say:That one says|*ran"
+ },
+ "thatw_red": {
+  "key": "fb047e0863fb",
+  "text": "#say:That one says|*red"
+ },
+ "thatw_ride": {
+  "key": "b5aef51afc09",
+  "text": "#say:That one says|*ride"
+ },
+ "thatw_round": {
+  "key": "442f93af9826",
+  "text": "#say:That one says|*round"
+ },
+ "thatw_run": {
+  "key": "3f0a56a1b2b7",
+  "text": "#say:That one says|*run"
+ },
+ "thatw_said": {
+  "key": "26edbb6e9ab0",
+  "text": "#say:That one says|*said"
+ },
+ "thatw_saw": {
+  "key": "ee4ef8ebb4a0",
+  "text": "#say:That one says|*saw"
+ },
+ "thatw_say": {
+  "key": "4208d4547162",
+  "text": "#say:That one says|*say"
+ },
+ "thatw_school": {
+  "key": "71085fea9b51",
+  "text": "#say:That one says|*school"
+ },
+ "thatw_see": {
+  "key": "46d352de1cef",
+  "text": "#say:That one says|*see"
+ },
+ "thatw_seven": {
+  "key": "922519017b46",
+  "text": "#say:That one says|*seven"
+ },
+ "thatw_seventeen": {
+  "key": "fce918b9404a",
+  "text": "#say:That one says|*seventeen"
+ },
+ "thatw_she": {
+  "key": "dfb00823b4ac",
+  "text": "#say:That one says|*she"
+ },
+ "thatw_show": {
+  "key": "d1cd12df9d0f",
+  "text": "#say:That one says|*show"
+ },
+ "thatw_sing": {
+  "key": "d40b38effcff",
+  "text": "#say:That one says|*sing"
+ },
+ "thatw_sit": {
+  "key": "0c4e681702ae",
+  "text": "#say:That one says|*sit"
+ },
+ "thatw_six": {
+  "key": "8135a233f5ca",
+  "text": "#say:That one says|*six"
+ },
+ "thatw_sixteen": {
+  "key": "ae489888ddd2",
+  "text": "#say:That one says|*sixteen"
+ },
+ "thatw_sleep": {
+  "key": "d1684275263e",
+  "text": "#say:That one says|*sleep"
+ },
+ "thatw_so": {
+  "key": "23fcae4fd3cf",
+  "text": "#say:That one says|*so"
+ },
+ "thatw_some": {
+  "key": "fe30388c9dfe",
+  "text": "#say:That one says|*some"
+ },
+ "thatw_soon": {
+  "key": "72915e66f98f",
+  "text": "#say:That one says|*soon"
+ },
+ "thatw_star": {
+  "key": "cd08eee1162c",
+  "text": "#say:That one says|*star"
+ },
+ "thatw_start": {
+  "key": "12696f9c29b2",
+  "text": "#say:That one says|*start"
+ },
+ "thatw_stop": {
+  "key": "852d4d72b77c",
+  "text": "#say:That one says|*stop"
+ },
+ "thatw_sun": {
+  "key": "21c2f5a84289",
+  "text": "#say:That one says|*sun"
+ },
+ "thatw_take": {
+  "key": "70041c41dd24",
+  "text": "#say:That one says|*take"
+ },
+ "thatw_tell": {
+  "key": "d4b04a031c0a",
+  "text": "#say:That one says|*tell"
+ },
+ "thatw_ten": {
+  "key": "a206672ace71",
+  "text": "#say:That one says|*ten"
+ },
+ "thatw_thank": {
+  "key": "52b74bcf19a2",
+  "text": "#say:That one says|*thank"
+ },
+ "thatw_that": {
+  "key": "9b1d0efe7e49",
+  "text": "#say:That one says|*that"
+ },
+ "thatw_the": {
+  "key": "1b64f7fe27f7",
+  "text": "#say:That one says|*the"
+ },
+ "thatw_them": {
+  "key": "5d2ae0c27642",
+  "text": "#say:That one says|*them"
+ },
+ "thatw_then": {
+  "key": "d739bc15479a",
+  "text": "#say:That one says|*then"
+ },
+ "thatw_there": {
+  "key": "c52a6f80e91b",
+  "text": "#say:That one says|*there"
+ },
+ "thatw_they": {
+  "key": "431384894a45",
+  "text": "#say:That one says|*they"
+ },
+ "thatw_think": {
+  "key": "64643fc30629",
+  "text": "#say:That one says|*think"
+ },
+ "thatw_thirteen": {
+  "key": "b54253b1082f",
+  "text": "#say:That one says|*thirteen"
+ },
+ "thatw_this": {
+  "key": "030b5c227da4",
+  "text": "#say:That one says|*this"
+ },
+ "thatw_three": {
+  "key": "62129024ad19",
+  "text": "#say:That one says|*three"
+ },
+ "thatw_to": {
+  "key": "9a81960eab92",
+  "text": "#say:That one says|*to"
+ },
+ "thatw_today": {
+  "key": "29df5631a5c8",
+  "text": "#say:That one says|*today"
+ },
+ "thatw_together": {
+  "key": "c3fb64b6c29c",
+  "text": "#say:That one says|*together"
+ },
+ "thatw_too": {
+  "key": "1307cf127575",
+  "text": "#say:That one says|*too"
+ },
+ "thatw_tree": {
+  "key": "96afb2beddb8",
+  "text": "#say:That one says|*tree"
+ },
+ "thatw_try": {
+  "key": "0aebcad4a559",
+  "text": "#say:That one says|*try"
+ },
+ "thatw_twelve": {
+  "key": "8b78515f0244",
+  "text": "#say:That one says|*twelve"
+ },
+ "thatw_twenty": {
+  "key": "e93d514017c4",
+  "text": "#say:That one says|*twenty"
+ },
+ "thatw_two": {
+  "key": "3d8933ac4740",
+  "text": "#say:That one says|*two"
+ },
+ "thatw_under": {
+  "key": "e454661d5025",
+  "text": "#say:That one says|*under"
+ },
+ "thatw_unicorn": {
+  "key": "09aa9c79cf98",
+  "text": "#say:That one says|*unicorn"
+ },
+ "thatw_up": {
+  "key": "bf0bc9ac22ba",
+  "text": "#say:That one says|*up"
+ },
+ "thatw_us": {
+  "key": "5e6c285da536",
+  "text": "#say:That one says|*us"
+ },
+ "thatw_very": {
+  "key": "bdd63c9c4eb8",
+  "text": "#say:That one says|*very"
+ },
+ "thatw_walk": {
+  "key": "dc26b1c44c47",
+  "text": "#say:That one says|*walk"
+ },
+ "thatw_want": {
+  "key": "7235e34fa80e",
+  "text": "#say:That one says|*want"
+ },
+ "thatw_warm": {
+  "key": "40ba05bfa46b",
+  "text": "#say:That one says|*warm"
+ },
+ "thatw_was": {
+  "key": "aa8492fe029e",
+  "text": "#say:That one says|*was"
+ },
+ "thatw_we": {
+  "key": "084da5922e6a",
+  "text": "#say:That one says|*we"
+ },
+ "thatw_well": {
+  "key": "46c55a857929",
+  "text": "#say:That one says|*well"
+ },
+ "thatw_went": {
+  "key": "66b9e6167fa6",
+  "text": "#say:That one says|*went"
+ },
+ "thatw_were": {
+  "key": "108258f2a697",
+  "text": "#say:That one says|*were"
+ },
+ "thatw_what": {
+  "key": "2de5d3a8f055",
+  "text": "#say:That one says|*what"
+ },
+ "thatw_when": {
+  "key": "644f46ff4bd2",
+  "text": "#say:That one says|*when"
+ },
+ "thatw_where": {
+  "key": "80d946cc4fd5",
+  "text": "#say:That one says|*where"
+ },
+ "thatw_white": {
+  "key": "cff8d1cdac82",
+  "text": "#say:That one says|*white"
+ },
+ "thatw_who": {
+  "key": "30a8bfee1aea",
+  "text": "#say:That one says|*who"
+ },
+ "thatw_will": {
+  "key": "69955e91f0e3",
+  "text": "#say:That one says|*will"
+ },
+ "thatw_with": {
+  "key": "fb505edad9c1",
+  "text": "#say:That one says|*with"
+ },
+ "thatw_yellow": {
+  "key": "7f14a874385c",
+  "text": "#say:That one says|*yellow"
+ },
+ "thatw_yes": {
+  "key": "37ef8de13d23",
+  "text": "#say:That one says|*yes"
+ },
+ "thatw_you": {
+  "key": "59c930ff45b4",
+  "text": "#say:That one says|*you"
+ },
+ "thatw_your": {
+  "key": "224a2f55ddf4",
+  "text": "#say:That one says|*your"
+ },
  "try_1": {
   "ipa": "həm, tɹˈaɪ ɐɡˈɛn.",
   "key": "c377d133a5cc",
@@ -1522,6 +3329,11 @@
   "ipa": "ˈɔːlmoʊst! tɹˈaɪ ɐɡˈɛn.",
   "key": "9dadab9413b4",
   "text": "Almost! Try again."
+ },
+ "w2n_prompt": {
+  "ipa": "wˌɪtʃ nˈʌmbɚ dˈʌz ðɪs wˈɜːd sˈeɪ?",
+  "key": "4895689df13d",
+  "text": "Which number does this word say?"
  },
  "word_a": {
   "ipa": "ˈeɪ",

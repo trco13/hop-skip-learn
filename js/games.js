@@ -62,5 +62,53 @@
     }
   };
 
-  root.Games = { letters: Letters, sounds: Sounds, soundClip: soundClip, wordMode: wordMode };
+  function wid(word) { return Content.wordAudioId(word).slice(5); }
+
+  function praise() { return 'praise_' + (1 + Math.floor(Math.random() * 8)); }
+
+  var Words = {
+    key: 'words',
+    store: 'words',
+    intro: 'intro_words',
+    // The teacher's words (from the parent area) first; words without a
+    // voice clip are left out.
+    items: function () {
+      var teacher = root.Parent ? root.Parent.teacherWords() : null;
+      return Content.wordItems(teacher, function (w) { return root.Sound.has('findw_' + wid(w)); });
+    },
+    cardClass: 'word',
+    prompt: function (item) { return ['findw_' + wid(item.word)]; },
+    rightSay: function (item, firstTry) {
+      return ['sfx_chime', 'word_' + wid(item.word)].concat(firstTry ? [praise()] : []);
+    },
+    wrongSay: function (picked) { return ['thatw_' + wid(picked.word)]; }
+  };
+
+  var Numbers = {
+    key: 'numbers',
+    store: 'numbers',
+    intro: 'intro_numbers',
+    items: Content.numberItems,
+    cardClass: function (item) { return item.group === 'n2w' ? 'word' : 'numeral'; },
+    cue: function (item) {
+      if (item.group === 'n2w') return item.cue;
+      if (item.group === 'w2n') return '<span class="cue-word">' + item.cue + '</span>';
+      return null;
+    },
+    prompt: function (item) {
+      if (item.group === 'n2w') return ['n2w_prompt'];
+      if (item.group === 'w2n') return ['w2n_prompt'];
+      return ['findn_' + item.n];
+    },
+    rightSay: function (item, firstTry) {
+      return ['sfx_chime', 'word_' + Content.NUMBER_WORDS[item.n - 1]].concat(firstTry ? [praise()] : []);
+    },
+    wrongSay: function (picked) {
+      if (picked.group === 'n2w') return ['thatw_' + picked.show];
+      return ['thatn_' + picked.n];
+    }
+  };
+
+  root.Games = { letters: Letters, sounds: Sounds, words: Words, numbers: Numbers,
+    soundClip: soundClip, wordMode: wordMode };
 })(window.HSL = window.HSL || {});

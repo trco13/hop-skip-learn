@@ -14,7 +14,9 @@
   // One engine per game, read-only here.
   var GAMES = [
     { store: 'letters', name: 'Letters', items: Content.letterItems, skills: ['capitals', 'lowercase', 'matching'] },
-    { store: 'sounds', name: 'Letter sounds', items: Content.soundItems, skills: ['sounds'] }
+    { store: 'sounds', name: 'Letter sounds', items: Content.soundItems, skills: ['sounds'] },
+    { store: 'words', name: 'Words', items: function () { return root.Games.words.items(); }, skills: ['words'], keepOrder: true },
+    { store: 'numbers', name: 'Numbers', items: Content.numberItems, skills: ['numerals', 'numberwords'], keepOrder: true }
   ];
 
   function engineFor(g) {
@@ -42,7 +44,8 @@
   // ---------- progress ----------
 
   var SKILL_NAMES = { capitals: 'Capital letters', lowercase: 'Lowercase letters',
-    matching: 'Capital to lowercase', sounds: 'Letter sounds' };
+    matching: 'Capital to lowercase', sounds: 'Letter sounds', words: 'Sight words',
+    numerals: 'Numbers 1-20', numberwords: 'Numbers and number words' };
 
   function statusOf(e, id) {
     var st = e.peekState(id);
@@ -56,11 +59,15 @@
     if (it.group === 'match') return it.cue + ' to ' + it.show;
     if (it.group === 'uc') return 'capital ' + it.show;
     if (it.group === 'lc') return 'lowercase ' + it.show;
+    if (it.group === 'w') return 'the word "' + it.show + '"';
+    if (it.group === 'num') return 'the number ' + it.show;
+    if (it.group === 'n2w' || it.group === 'w2n') return it.cue + ' to ' + it.show;
     return 'sound of ' + it.show;
   }
 
   function tileLabel(it) {
     if (it.group === 'match') return it.cue + it.show;
+    if (it.group === 'n2w' || it.group === 'w2n') return it.cue + '=' + it.show;
     return it.show;
   }
 
@@ -73,7 +80,8 @@
       var sum = e.summary();
       var items = g.items();
       // Show sounds in alphabet order, not teaching order.
-      items.sort(function (a, b) { return a.show < b.show ? -1 : (a.show > b.show ? 1 : 0); });
+      if (!g.keepOrder) items.sort(function (a, b) { return a.show < b.show ? -1 : (a.show > b.show ? 1 : 0); });
+      var hidden = 0;
       g.skills.forEach(function (skill) {
         var gs = sum[skill];
         html += '<h3>' + SKILL_NAMES[skill] + ' <small>' + gs.mastered + ' of ' + gs.total + ' mastered</small></h3>' +
@@ -82,10 +90,14 @@
         items.forEach(function (it) {
           if (it.skill !== skill) return;
           var st = e.peekState(it.id);
+          // The word list is long: show words started, plus the next few.
+          if (g.store === 'words' && !(st && st.seen) && it.order > 14) { hidden++; return; }
           var tip = st && st.seen ? (st.right + ' right, ' + st.wrong + ' missed') : 'not tried yet';
           html += '<span class="tile ' + statusOf(e, it.id) + '" title="' + esc(tip) + '">' + esc(tileLabel(it)) + '</span>';
         });
         html += '</div>';
+        if (hidden) html += '<p class="note">and ' + hidden + ' more words not started yet</p>';
+        hidden = 0;
       });
       items.forEach(function (it) {
         var st = e.peekState(it.id);
@@ -220,6 +232,9 @@
     App.$('pLowercase').checked = s.skills.lowercase !== false;
     App.$('pMatching').checked = s.skills.matching !== false;
     App.$('pSoundsOn').checked = s.skills.sounds !== false;
+    App.$('pWordsOn').checked = s.skills.words !== false;
+    App.$('pNumerals').checked = s.skills.numerals !== false;
+    App.$('pNumberWords').checked = s.skills.numberwords !== false;
   }
 
   function saveSettings() {
@@ -230,9 +245,13 @@
       capitals: App.$('pCapitals').checked,
       lowercase: App.$('pLowercase').checked,
       matching: App.$('pMatching').checked,
-      sounds: App.$('pSoundsOn').checked
+      sounds: App.$('pSoundsOn').checked,
+      words: App.$('pWordsOn').checked,
+      numerals: App.$('pNumerals').checked,
+      numberwords: App.$('pNumberWords').checked
     };
-    if (!s.skills.capitals && !s.skills.lowercase && !s.skills.matching && !s.skills.sounds) {
+    if (!s.skills.capitals && !s.skills.lowercase && !s.skills.matching && !s.skills.sounds &&
+        !s.skills.words && !s.skills.numerals && !s.skills.numberwords) {
       s.skills.capitals = true;
       App.$('pCapitals').checked = true;
     }
@@ -266,7 +285,7 @@
 
   function resetData() {
     if (!window.confirm('Erase all progress, stickers and crowns on this device?')) return;
-    ['letters', 'sounds', 'rewards'].forEach(function (k) { Store.remove(k); });
+    ['letters', 'sounds', 'words', 'numbers', 'rewards'].forEach(function (k) { Store.remove(k); });
     flash('Progress erased.');
     renderAll();
   }
@@ -308,7 +327,8 @@
       }
     });
     App.on(App.$('pSounds'), 'click', onSoundPick);
-    ['pMinutes', 'pChoices', 'pCapitals', 'pLowercase', 'pMatching', 'pSoundsOn'].forEach(function (id) {
+    ['pMinutes', 'pChoices', 'pCapitals', 'pLowercase', 'pMatching', 'pSoundsOn', 'pWordsOn',
+      'pNumerals', 'pNumberWords'].forEach(function (id) {
       App.on(App.$(id), 'change', saveSettings);
     });
     App.on(App.$('pMinutes'), 'input', function () { App.$('pMinutesOut').innerHTML = App.$('pMinutes').value + ' minutes'; });

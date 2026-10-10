@@ -251,9 +251,15 @@
       var d = this.pickRandom(drill);
       chosen.push(d);
     }
+    // Prefer distractors about as long as the answer, so a word can't be
+    // picked out by its length alone ("do" next to "unicorn").
+    var len = String(item.show || '').length;
+    var lenWeight = function (id) {
+      return 1 / (1 + 2 * Math.abs(String(self.byId[id].show || '').length - len));
+    };
     while (chosen.length < n - 1 && pool.length) {
-      var idx = Math.floor(this.random() * pool.length);
-      var pick = pool.splice(idx, 1)[0];
+      var pick = this.pickWeighted(pool, lenWeight);
+      pool.splice(pool.indexOf(pick), 1);
       if (chosen.indexOf(pick) < 0) chosen.push(pick);
     }
     chosen.push(item.id);
