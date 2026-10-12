@@ -1205,6 +1205,11 @@
   "key": "23d38e1dd53b",
   "text": "Let's play with letter sounds! Listen to the sound, then tap the letter that makes it."
  },
+ "intro_trace": {
+  "ipa": "lˈɛts ɹˈaɪt nˈʌmbɚz! tɹˈeɪs ðˌɛm wɪð jʊɹ fˈɪŋɡɚ.",
+  "key": "dbd0bfc7aaaf",
+  "text": "Let's write numbers! Trace them with your finger."
+ },
  "intro_words": {
   "ipa": "lˈɛts ɹˈiːd wˈɜːdz! lˈɪsən, ðˈɛn tˈæp ðə wˈɜːd aɪ sˈeɪ.",
   "key": "676bbd7d0fc8",
@@ -3314,6 +3319,101 @@
  "thatw_your": {
   "key": "224a2f55ddf4",
   "text": "#say:That one says|*your"
+ },
+ "trace_follow": {
+  "ipa": "fˈɑːloʊ ðə pˈæθ.",
+  "key": "2cf2061d1c39",
+  "text": "Follow the path."
+ },
+ "trace_start": {
+  "ipa": "nˈaʊ juː! stˈɑːɹt æt ðə ɡɹˈiːn dˈɑːt.",
+  "key": "12956617b153",
+  "text": "Now you! Start at the green dot."
+ },
+ "trace_watch": {
+  "ipa": "wˈɑːtʃ mˌiː fˈɜːst!",
+  "key": "14bae3f0bbb7",
+  "text": "Watch me first!"
+ },
+ "tracen_1": {
+  "key": "539a544f73d4",
+  "text": "#say:Trace the number|*one"
+ },
+ "tracen_10": {
+  "key": "addbe314e8e3",
+  "text": "#say:Trace the number|*ten"
+ },
+ "tracen_11": {
+  "key": "4d687e8fab0d",
+  "text": "#say:Trace the number|*eleven"
+ },
+ "tracen_12": {
+  "key": "6ba43a9743d9",
+  "text": "#say:Trace the number|*twelve"
+ },
+ "tracen_13": {
+  "key": "374eb55e87de",
+  "text": "#say:Trace the number|*thirteen"
+ },
+ "tracen_14": {
+  "key": "a7228768e543",
+  "text": "#say:Trace the number|*fourteen"
+ },
+ "tracen_15": {
+  "key": "5ed1f05653a1",
+  "text": "#say:Trace the number|*fifteen"
+ },
+ "tracen_16": {
+  "key": "9fbb1948a46f",
+  "text": "#say:Trace the number|*sixteen"
+ },
+ "tracen_17": {
+  "key": "94b834b7b072",
+  "text": "#say:Trace the number|*seventeen"
+ },
+ "tracen_18": {
+  "key": "64e973e68866",
+  "text": "#say:Trace the number|*eighteen"
+ },
+ "tracen_19": {
+  "key": "362d6912bc64",
+  "text": "#say:Trace the number|*nineteen"
+ },
+ "tracen_2": {
+  "key": "00876f45b81d",
+  "text": "#say:Trace the number|*two"
+ },
+ "tracen_20": {
+  "key": "098de937f436",
+  "text": "#say:Trace the number|*twenty"
+ },
+ "tracen_3": {
+  "key": "489f7c010e0a",
+  "text": "#say:Trace the number|*three"
+ },
+ "tracen_4": {
+  "key": "f5d7675bb938",
+  "text": "#say:Trace the number|*four"
+ },
+ "tracen_5": {
+  "key": "db19a2cd55ed",
+  "text": "#say:Trace the number|*five"
+ },
+ "tracen_6": {
+  "key": "8b370d8c6e44",
+  "text": "#say:Trace the number|*six"
+ },
+ "tracen_7": {
+  "key": "00b65e889fa7",
+  "text": "#say:Trace the number|*seven"
+ },
+ "tracen_8": {
+  "key": "6167ed0c3df0",
+  "text": "#say:Trace the number|*eight"
+ },
+ "tracen_9": {
+  "key": "314972279af6",
+  "text": "#say:Trace the number|*nine"
  },
  "try_1": {
   "ipa": "həm, tɹˈaɪ ɐɡˈɛn.",

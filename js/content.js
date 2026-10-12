@@ -211,6 +211,19 @@
     return items;
   }
 
+  // ---------- tracing game ----------
+
+  // tr:N  trace the number N. 11-20 first (the teacher's current focus),
+  // then 1-10.
+  function traceItems() {
+    var items = [];
+    for (var n = 1; n <= 20; n++) {
+      items.push({ id: 'tr:' + n, group: 'tr', skill: 'tracing', show: String(n), n: n,
+        order: n >= 11 ? n - 11 : n + 9 });
+    }
+    return items;
+  }
+
   var Content = {
     UPPER: UPPER,
     letterItems: letterItems,
@@ -226,6 +239,7 @@
     wordAudioId: wordAudioId,
     wordItems: wordItems,
     numberItems: numberItems,
+    traceItems: traceItems,
     wordsLookAlike: wordsLookAlike
   };
 

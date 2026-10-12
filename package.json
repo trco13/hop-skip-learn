@@ -3,6 +3,7 @@
   "private": true,
   "description": "Learning games. Static site, no build step. Node is only used for tests.",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "test:browser": "node tests/browser/trace-touch.js"
   }
 }
